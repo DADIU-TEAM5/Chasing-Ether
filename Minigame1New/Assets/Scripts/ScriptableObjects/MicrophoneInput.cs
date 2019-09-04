@@ -9,7 +9,7 @@ public class testMicro : MonoBehaviour
 {
     public int windspeed = 5;
     public int countBackground = 50;
-
+  
     private static float volume;
     private AudioClip micRecord;
     string device;
@@ -19,7 +19,6 @@ public class testMicro : MonoBehaviour
 
     void Start()
     {
-        windspeed = 5;
         device = Microphone.devices[0];
         micRecord = Microphone.Start(device, true, 5, 44100);
     }
