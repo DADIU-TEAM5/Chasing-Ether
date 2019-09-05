@@ -21,8 +21,8 @@ public class GyroController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GyroRotate();
-        Vector3 rotation = Input.gyro.rotationRate;
+        //GyroRotate();
+         rotation = Input.gyro.rotationRate;
  
         //Water.transform.Rotate(Vector3.forward, rotation.y);
 

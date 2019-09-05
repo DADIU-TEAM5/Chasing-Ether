@@ -13,9 +13,12 @@ public class MicrophoneInput : MonoBehaviour
     private static float volume;
     private AudioClip micRecord;
     string device;
-    public float x,y,z;
+   // public float x,y,z;
     private float backgroundSoundsSum = 0;
     private float backgroundSoundsArv;
+
+    public bool soundIsActivated = false;
+
 
     void Start()
     {
@@ -25,9 +28,9 @@ public class MicrophoneInput : MonoBehaviour
     void Update()
     {
         volume = GetMaxVolume();
-        x = gameObject.transform.position.x;
-		y = gameObject.transform.position.y;
-		z = gameObject.transform.position.z;
+       // x = gameObject.transform.position.x;
+		//y = gameObject.transform.position.y;
+		//z = gameObject.transform.position.z;
 
         if (Time.frameCount < countBackground)
             backgroundSoundsSum += volume;
@@ -43,15 +46,33 @@ public class MicrophoneInput : MonoBehaviour
 
     private void MoveObject()
     {
-        if (volume -0.2 > backgroundSoundsArv)
+        if(volume > 0.1f)
         {
-            volume = volume * windspeed * Time.deltaTime;
-            gameObject.transform.position = new Vector3(x, y + volume * 10, 0);
+            soundIsActivated = true;
         }
         else
         {
-            gameObject.transform.position = new Vector3(x, y, 0);
+            soundIsActivated = false;
         }
+           // print(volume);
+        
+
+        /*
+        print(volume);
+        if (volume -0.2 > backgroundSoundsArv)
+        {
+
+            soundIsActivated = true;
+            //volume = volume * windspeed * Time.deltaTime;
+            //gameObject.transform.position = new Vector3(x, y + volume * 10, 0);
+        }
+        else
+        {
+            soundIsActivated = false;
+            //gameObject.transform.position = new Vector3(x, y, 0);
+        }
+
+    */
     }
   
     private float GetMaxVolume()
