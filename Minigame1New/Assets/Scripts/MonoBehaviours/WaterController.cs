@@ -24,12 +24,12 @@ public class WaterController : MonoBehaviour
 
     void Update()
     {
-    //    Shader.SetGlobalFloat("_WaterScale", scale);
-    //    Shader.SetGlobalFloat("_WaterSpeed", speed);
-    //    Shader.SetGlobalFloat("_WaterDistance", waveDistance);
-    //    Shader.SetGlobalFloat("_WaterTime", Time.time);
-    //    Shader.SetGlobalFloat("_WaterNoiseStrength", noiseStrength);
-    //    Shader.SetGlobalFloat("_WaterNoiseWalk", noiseWalk);
+        Shader.SetGlobalFloat("_WaterScale", scale);
+        Shader.SetGlobalFloat("_WaterSpeed", speed);
+        Shader.SetGlobalFloat("_WaterDistance", waveDistance);
+        Shader.SetGlobalFloat("_WaterTime", Time.time);
+        Shader.SetGlobalFloat("_WaterNoiseStrength", noiseStrength);
+        Shader.SetGlobalFloat("_WaterNoiseWalk", noiseWalk);
     }
 
     //Get the y coordinate from whatever wavetype we are using
@@ -44,9 +44,6 @@ public class WaterController : MonoBehaviour
         {
             return 0f;
         }
-        
-		
-		return 0f;
     }
 
     //Find the distance from a vertice to water
