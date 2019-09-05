@@ -63,12 +63,14 @@ public class BoatPhysics : MonoBehaviour
         //Add forces to the part of the boat that's below the water
         if (modifyBoatMesh.underWaterTriangleData.Count > 0)
         {
+            Debug.Log("Boat is partially under water");
             AddUnderWaterForces();
         }
 
         //Add forces to the part of the boat that's above the water
         if (modifyBoatMesh.aboveWaterTriangleData.Count > 0)
         {
+            Debug.Log("Boat is partially above water");
             AddAboveWaterForces();
         }
     }
