@@ -80,7 +80,7 @@ public class JointData : MonoBehaviour
             //print("We got here");
             for (int i = 0; i < animations[(int)currentFrame].joints.Length; i++)
             {
-               getBoneWithIndex(i).rotation =vec4ToQuaternion( animations[(int)currentFrame].joints[i].rotation);
+               getBoneWithIndex(animations[(int)currentFrame].joints[i].boneIndex).rotation =vec4ToQuaternion( animations[(int)currentFrame].joints[i].rotation);
                // getBoneWithIndex(i).position = animations[50].joints[i].position;
 
             }

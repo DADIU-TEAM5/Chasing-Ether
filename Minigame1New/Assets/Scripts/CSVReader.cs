@@ -13,6 +13,8 @@ public class CSVReader : MonoBehaviour
     public bool done = false;
     // Start is called before the first frame update
     
+
+
     public List<Frame> animations = new List<Frame>(); 
     void Start()
     {
@@ -28,7 +30,7 @@ public class CSVReader : MonoBehaviour
 
             var nameLine= reader.ReadLine();
             var boneName = nameLine.Split(',');
-
+            
             for (int i = 0; i < boneName.Length; i++)
             {
                 for (int j = 0; j < listOfAllBones.Count; j++)
@@ -36,7 +38,7 @@ public class CSVReader : MonoBehaviour
                    if(boneName[i].Contains(listOfAllBones[j].name))
                     {
                         indexedBone bone = new indexedBone();
-                        bone.index = i/7 ;
+                        bone.index = i ;
 
                         //print("bone with index " + bone.index + " created");
                         bone.bone = listOfAllBones[j];
@@ -44,9 +46,9 @@ public class CSVReader : MonoBehaviour
                     }
                 }
             }
-
             
-            print(indexedBones[7].bone.name +" "+indexedBones[7].index);
+            
+            
 
 
             while (!reader.EndOfStream)
@@ -109,7 +111,7 @@ public class CSVReader : MonoBehaviour
                         Vector4 tempvec4 = new Vector4(floatValues[i + 3], floatValues[i + 4], floatValues[i + 5], floatValues[i + 6]);
                         temp.joints[j].rotation = tempvec4;
 
-
+                        temp.joints[j].boneIndex = i;
 
                     }
 
@@ -127,7 +129,15 @@ public class CSVReader : MonoBehaviour
 
             }
             */
+
+
+            
+
+
         }
+
+
+        
 
 
         print("Data Loaded");
@@ -163,6 +173,7 @@ public struct Joint
 {
     public Vector3 position;
     public Vector4 rotation;
+    public int boneIndex;
 
 }
 
