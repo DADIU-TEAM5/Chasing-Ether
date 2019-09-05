@@ -8,6 +8,7 @@ public class CheckPoint : MonoBehaviour
     public bool activated = false;
     //list all checkpoint objects in the scene
     public static GameObject[] CheckPointsList;
+    public Vector3Variable latestCheckpoint;
 
     // Start is called before the first frame update
     void Start()
@@ -33,6 +34,8 @@ public class CheckPoint : MonoBehaviour
         if (other.tag == "Player")
         {
             ActivateCheckPoint();
+            print("Checkpoint active");
+            latestCheckpoint.Value = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z);
         }
     }
 
