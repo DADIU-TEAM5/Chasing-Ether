@@ -15,6 +15,8 @@ public class FloatInWater : MonoBehaviour
 
     //used components
     protected Rigidbody Rigidbody;
+
+    [SerializeField]
     protected Waves Waves;
 
     //water line
@@ -32,7 +34,6 @@ public class FloatInWater : MonoBehaviour
     void Awake()
     {
         //get components
-        Waves = FindObjectOfType<Waves>();
         Rigidbody = GetComponent<Rigidbody>();
         Rigidbody.useGravity = false;
 
