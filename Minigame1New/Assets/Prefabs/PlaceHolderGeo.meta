@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Minigame1New/Assets/Prefabs/PlaceHolderGeo.meta
 guid: de8ab6f558c8e2d408f51f4daad05609
+=======
+guid: 9d766916a33f28849afe65e82f951fe8
+>>>>>>> bf1b8d76815b75262d7b01d16112fabd34e4d26a:Minigame1New/Assets/Models/Buoy.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
