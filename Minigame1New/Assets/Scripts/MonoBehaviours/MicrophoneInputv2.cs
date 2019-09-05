@@ -5,30 +5,25 @@ using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
 
-public class testMicro : MonoBehaviour
+public class MicrophoneInputv2 : MonoBehaviour
 {
     public int windspeed = 5;
     public int countBackground = 50;
 
-    private static float volume;
+    public float volume;
     private AudioClip micRecord;
     string device;
-    private float x,y,z;
     private float backgroundSoundsSum = 0;
     private float backgroundSoundsArv;
 
     void Start()
     {
-        windspeed = 5;
         device = Microphone.devices[0];
         micRecord = Microphone.Start(device, true, 5, 44100);
     }
     void Update()
     {
         volume = GetMaxVolume();
-        x = gameObject.transform.position.x;
-		y = gameObject.transform.position.y;
-		z = gameObject.transform.position.z;
 
         if (Time.frameCount < countBackground)
             backgroundSoundsSum += volume;
@@ -38,21 +33,22 @@ public class testMicro : MonoBehaviour
             backgroundSoundsArv = backgroundSoundsSum / countBackground;
         }
         else
-            MoveObject();
+            ExtractVolume();
     }
 
 
-    private void MoveObject()
+    private float ExtractVolume()
     {
         if (volume -0.2 > backgroundSoundsArv)
         {
-            volume = volume * windspeed * Time.deltaTime;
-            gameObject.transform.position = new Vector3(x, y + volume * 10, 0);
+            volume = (volume * windspeed * Time.deltaTime)*10;
         }
         else
         {
-            gameObject.transform.position = new Vector3(x, y, 0);
+            volume = 1;
         }
+
+        return volume;
     }
   
     private float GetMaxVolume()

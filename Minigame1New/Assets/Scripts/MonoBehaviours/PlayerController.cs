@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     public float boostFactor;
     private float boostInput;
     private float mvFactor;
+    private float volume;
     private CharacterController pController;
     private Vector3 forwardMove;
 
@@ -22,6 +23,9 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        volume = GetComponent<MicrophoneInputv2>().volume;
+        Debug.Log(volume);
+        forwardVel = volume;
         Movement();
     }
 
@@ -34,11 +38,15 @@ public class PlayerController : MonoBehaviour
             boost();
         }
 
+        //Debug.Log(forwardVel);
+
         forwardMove = new Vector3(0, 0, forwardVel + mvFactor * Time.deltaTime);
 
         forwardMove = transform.TransformDirection(forwardMove);
         
-        transform.Rotate(Vector3.up * Input.GetAxis("Horizontal") * rotateVel);
+
+
+        transform.Rotate(Vector3.up * GetComponent<GyroController>().rotation.y * rotateVel);
 
         pController.Move(forwardMove);
 

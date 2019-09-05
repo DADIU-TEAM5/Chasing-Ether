@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class GyroController : MonoBehaviour
 {
-    public GameObject Water;
-
+    public GameObject Object;
+    public Vector3 rotation;
 
     Quaternion lastFrameRotation;
     Quaternion currentFrameRotation;
@@ -21,15 +21,20 @@ public class GyroController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        GyroRotate();
         Vector3 rotation = Input.gyro.rotationRate;
-        //float rotation = Input.GetAxis("Horizontal");
-
-        Water.transform.Rotate(Vector3.forward, rotation.y);
+ 
+        //Water.transform.Rotate(Vector3.forward, rotation.y);
 
 
     }
 
+    private Vector3 GyroRotate()
+    {
+        rotation = Input.gyro.rotationRate;
+
+        return rotation;
+    }
 
     bool WasPhoneRotated()
     {
