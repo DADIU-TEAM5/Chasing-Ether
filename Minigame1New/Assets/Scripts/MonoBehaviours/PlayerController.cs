@@ -57,6 +57,11 @@ public class PlayerController : MonoBehaviour
         else
         {
             transform.Rotate(Vector3.up * Input.GetAxis("Horizontal") * rotateVel);
+
+            // var rotation = transform.eulerAngles;
+            // rotation.z = Mathf.Clamp(transform.eulerAngles.z, -10, 10);
+
+            // transform.eulerAngles = rotation;
         }
 
         pController.Move(forwardMove);
