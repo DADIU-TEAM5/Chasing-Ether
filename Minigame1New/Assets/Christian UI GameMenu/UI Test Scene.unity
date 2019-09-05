@@ -582,5 +582,35 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 4723756531066445877, guid: 14d363fe01c2a294996f4abae3cc0bf7,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 81cbac0d4fb69fe448ec07cfe3ad25d2,
+        type: 3}
+    - target: {fileID: 4723756531417481263, guid: 14d363fe01c2a294996f4abae3cc0bf7,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 015fbe05d1b6161418fa9537ccc3736c,
+        type: 3}
+    - target: {fileID: 4723756532136321645, guid: 14d363fe01c2a294996f4abae3cc0bf7,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5b0cf0b02388c2845bcf41b723c531b4,
+        type: 3}
+    - target: {fileID: 4723756532212902237, guid: 14d363fe01c2a294996f4abae3cc0bf7,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 89d43eb64f6ea554982c0889a00d8c5b,
+        type: 3}
+    - target: {fileID: 4723756532574213100, guid: 14d363fe01c2a294996f4abae3cc0bf7,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: fbb9a296e334c7d4691417cc250c9ebb,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14d363fe01c2a294996f4abae3cc0bf7, type: 3}
