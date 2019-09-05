@@ -111,7 +111,7 @@ public class FloatInWater : MonoBehaviour
             if (FloatPoints[i] == null)
                 continue;
 
-            if (Waves != null)
+            if (Waves != null && WaterLinePoints?.Length > 0)
             {
 
                 //draw cube
