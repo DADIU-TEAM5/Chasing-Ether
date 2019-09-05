@@ -1,5 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+<<<<<<< HEAD:Minigame1New/Assets/Models/Sea_Urchin.meta
 guid: 1a2cbf5c819f73141961e97157252f42
+=======
+guid: 5961a2f303a4e804bab2eec469a2e2cb
+>>>>>>> 11126ca1f5dd3536c9d05f3bf3b8f13e46044e68:Minigame1New/Assets/Models/Buoy.meta
+=======
+guid: 8aa9852b95f505d4ea5bc5efe106db9e
+>>>>>>> 11126ca1f5dd3536c9d05f3bf3b8f13e46044e68
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
