@@ -96,10 +96,10 @@ public class CSVReader : MonoBehaviour
 
 
 
-
-                for (int i = 1; i < values.Length - 8; i += 7)
+                for (int j = 0; j < temp.joints.Length; j++)
+                    
                 {
-                    for (int j = 0; j < temp.joints.Length; j++)
+                    for (int i = 1; i < values.Length - 8; i += 7)
                     {
 
 
@@ -112,6 +112,7 @@ public class CSVReader : MonoBehaviour
                         temp.joints[j].rotation = tempvec4;
 
                         temp.joints[j].boneIndex = i;
+                        
 
                     }
 
@@ -136,7 +137,10 @@ public class CSVReader : MonoBehaviour
 
         }
 
-
+        for (int i = 0; i < animations[0].joints.Length; i++)
+        {
+            print("index number "+ animations[0].joints[i].boneIndex);
+        }
         
 
 
