@@ -5,11 +5,13 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
 
+    public bool phoneControl;
     public float forwardVel;
     public float rotateVel;
     public float boostFactor;
     private float boostInput;
     private float mvFactor;
+    private float volume;
     private CharacterController pController;
     private Vector3 forwardMove;
 
@@ -22,6 +24,13 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (phoneControl == true)
+        {
+            volume = GetComponent<MicrophoneInputv2>().volume;
+            Debug.Log(volume);
+            forwardVel = volume;
+        }
+
         Movement();
     }
 
@@ -34,11 +43,21 @@ public class PlayerController : MonoBehaviour
             boost();
         }
 
+        //Debug.Log(forwardVel);
+
         forwardMove = new Vector3(0, 0, forwardVel + mvFactor * Time.deltaTime);
 
         forwardMove = transform.TransformDirection(forwardMove);
         
-        transform.Rotate(Vector3.up * Input.GetAxis("Horizontal") * rotateVel);
+
+        if (phoneControl == true)
+        {
+            transform.Rotate(Vector3.up * GetComponent<GyroController>().rotation.y * rotateVel);
+        }
+        else
+        {
+            transform.Rotate(Vector3.up * Input.GetAxis("Horizontal") * rotateVel);
+        }
 
         pController.Move(forwardMove);
 
