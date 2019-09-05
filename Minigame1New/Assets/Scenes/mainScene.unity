@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -2629,6 +2629,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2838816aedf7fd4cb70ce9722791d51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  micVolText: 
 --- !u!1 &2126045233
 GameObject:
   m_ObjectHideFlags: 0
@@ -2795,12 +2796,12 @@ PrefabInstance:
     - target: {fileID: 1249225497680740106, guid: a7fc11d29e701eb4bb8e3375f79edfb1,
         type: 3}
       propertyPath: rotateVel
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1249225497680740106, guid: a7fc11d29e701eb4bb8e3375f79edfb1,
         type: 3}
       propertyPath: forwardVel
-      value: 0.02
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8792159384883872233, guid: a7fc11d29e701eb4bb8e3375f79edfb1,
         type: 3}
@@ -2810,6 +2811,16 @@ PrefabInstance:
     - target: {fileID: 8792159384883872233, guid: a7fc11d29e701eb4bb8e3375f79edfb1,
         type: 3}
       propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249225497680740105, guid: a7fc11d29e701eb4bb8e3375f79edfb1,
+        type: 3}
+      propertyPath: m_Drag
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249225497680740105, guid: a7fc11d29e701eb4bb8e3375f79edfb1,
+        type: 3}
+      propertyPath: m_IsKinematic
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
