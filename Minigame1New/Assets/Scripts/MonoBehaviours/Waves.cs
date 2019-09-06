@@ -66,7 +66,7 @@ public class Waves : MonoBehaviour
                    + Mesh.vertices[index(p4.x, p4.z)].y * (max - Vector3.Distance(p4, localPos));
 
         //scale
-        Debug.Log($"Height: {height * transform.lossyScale.y / dist}");
+        //Debug.Log($"Height: {height * transform.lossyScale.y / dist}");
         return height * transform.lossyScale.y / dist;
 
     }

@@ -1,5 +1,19 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!64 &7097962803946645705
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246090339699596694}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4068373912626513877, guid: 2a6b1b26fdc129d44bfbd62ee293d625, type: 3}
 --- !u!1 &1079284844324509450
 GameObject:
   m_ObjectHideFlags: 0
@@ -49,10 +63,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   phoneControls: 0
   vectorInFrontOfBoat: {fileID: 7097962803017195901}
-  forwardVel: 0.1
-  rotateVel: 60
-  boostFactor: 50
-  maxRotation: 45
+  MaxSpeed: 40
+  MinSpeed: 5
+  SpeedDecayRate: 15
+  RotationSpeed: 20
+  BoostAccelerationRate: 30
+  maxRotationAngle: 45
   boatGraphics: {fileID: 7097962804631244483}
   gyroController: {fileID: 0}
   microPhoneInput: {fileID: 0}
@@ -404,20 +420,6 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!64 &7097962803946645705
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 246090339699596694}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 4068373912626513877, guid: 2a6b1b26fdc129d44bfbd62ee293d625, type: 3}
 --- !u!1 &7097962804177157322
 GameObject:
   m_ObjectHideFlags: 0
@@ -628,7 +630,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7097962804631244483}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.00011876524, y: 0.010639001, z: 0.0041543725}
+  m_LocalPosition: {x: -0.00011876524, y: -0.071, z: 0.0041543725}
   m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
   m_Children:
   - {fileID: 5936402771613591099}

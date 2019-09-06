@@ -6,19 +6,24 @@ public class PlayerController : MonoBehaviour
 {
 
     public bool phoneControls;
+    
 
     public Transform vectorInFrontOfBoat;
 
-    public float forwardVel;
-    public float rotateVel;
-    public float boostFactor;
+    public float MaxSpeed;
+    public float MinSpeed;
+    public float SpeedDecayRate;
+    public float RotationSpeed;
+    public float BoostAccelerationRate;
     private float boostInput;
 
-    public float maxRotation = 45;
-    private float mvFactor;
+    float velocity =1;
+
+    public float maxRotationAngle = 45;
+    
     private float volume;
     private CharacterController pController;
-    private Vector3 forwardMove;
+    
 
     public GameObject boatGraphics;
 
@@ -43,15 +48,49 @@ public class PlayerController : MonoBehaviour
             forwardVel = volume;
         }
         */
+
+        if (phoneControls)
+        {
+
+
+
+            currentRotation = Input.gyro.rotationRate.y;
+
+            
+                print(currentRotation);
+
+                if (currentRotation < 0)
+                {
+                    currentRotation = -1 * Mathf.Clamp01(Mathf.Abs(currentRotation));
+                }
+                else
+                {
+                    currentRotation = Mathf.Clamp01(Mathf.Abs(currentRotation));
+                }
+            
+
+            print(currentRotation);
+
+        }
+        else
+        {
+            currentRotation = Input.GetAxis("Horizontal");
+        }
         
-        currentRotation = Input.GetAxis("Horizontal");
 
         Movement();
     }
 
     public void Movement()
     {
-        mvFactor = 1f;
+
+        if (velocity > MinSpeed)
+        {
+            velocity -= SpeedDecayRate * Time.deltaTime;
+            if (velocity < MinSpeed)
+                velocity = MinSpeed;
+        }
+
 
 
         if (Input.GetButton("Jump") || microPhoneInput.soundIsActivated)
@@ -61,7 +100,7 @@ public class PlayerController : MonoBehaviour
 
         //Debug.Log(forwardVel);
 
-        forwardMove = new Vector3(0, 0, forwardVel + mvFactor * Time.deltaTime);
+        
 
         //forwardMove = transform.TransformDirection(forwardMove);
 
@@ -72,33 +111,19 @@ public class PlayerController : MonoBehaviour
         
         
 
-            if (phoneControls)
-            {
-                transform.Rotate(Vector3.up * gyroController.rotation.y * rotateVel);
-                boatGraphics.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, -20 * gyroController.rotation.y));
-
-            if (Vector3.Angle(vectorInFrontOfBoat.position - transform.position, Vector3.forward) >= maxRotation)
-            {
-                transform.Rotate(Vector3.up * -gyroController.rotation.y * rotateVel * Time.deltaTime);
-
-
-            }
-
-        }
-            else
-            {
-                transform.Rotate(Vector3.up * currentRotation * rotateVel * Time.deltaTime);
+            
+                transform.Rotate(Vector3.up * currentRotation * RotationSpeed * Time.deltaTime);
 
                 boatGraphics.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, -20 * currentRotation));
 
-                if(Vector3.Angle(vectorInFrontOfBoat.position - transform.position, Vector3.forward) >= maxRotation)
+                if(Vector3.Angle(vectorInFrontOfBoat.position - transform.position, Vector3.forward) >= maxRotationAngle)
                 {
-                    transform.Rotate(Vector3.up * -currentRotation * rotateVel * Time.deltaTime);
+                    transform.Rotate(Vector3.up * -currentRotation * RotationSpeed * Time.deltaTime);
 
                     
                 }
 
-            }
+            
             
             
 
@@ -112,7 +137,7 @@ public class PlayerController : MonoBehaviour
         // transform.eulerAngles = rotation;
 
 
-        transform.Translate(forwardMove);
+        transform.Translate(Vector3.forward*velocity *Time.deltaTime);
 
     }
 
@@ -122,11 +147,14 @@ public class PlayerController : MonoBehaviour
         // Get input from keys/controller
         //boostInput = Input.GetAxis("Jump");
 
-        
-        // Set the factor for the input
-        mvFactor = boostFactor ;
 
-        return mvFactor;
+        // Set the factor for the input
+        velocity += BoostAccelerationRate*Time.deltaTime;
+
+        if (velocity > MaxSpeed)
+            velocity = MaxSpeed;
+
+        return BoostAccelerationRate;
                
     }
 
