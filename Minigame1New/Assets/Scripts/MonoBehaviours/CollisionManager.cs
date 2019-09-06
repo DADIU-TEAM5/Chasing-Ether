@@ -28,7 +28,7 @@ public class CollisionManager : MonoBehaviour
     {
         if (collider.tag != "CheckPoint")
         {
-            print("Hit!");
+            //print("Hit!");
             Killed();
 
         }
@@ -40,14 +40,14 @@ public class CollisionManager : MonoBehaviour
 
         if (playerHealth.Value > 0)
         {
-            print("respawn location:  " + respawnPoint.Value);
-            print("position:   " + gameObject.transform.position);
+            //print("respawn location:  " + respawnPoint.Value);
+            //print("position:   " + gameObject.transform.position);
             thisRigidbody.transform.position.Set(respawnPoint.Value.x, respawnPoint.Value.y, respawnPoint.Value.z);
             thisRigidbody.transform.position = respawnPoint.Value;
 
         }
 
-        print(playerHealth.Value);
+       // print(playerHealth.Value);
     }
 
 }
