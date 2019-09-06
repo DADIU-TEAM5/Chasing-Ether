@@ -1,25 +1,45 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
 
-    public bool phoneControls;
+   
 
-    public Transform vectorInFrontOfBoat;
+   
 
-    public float forwardVel;
-    public float rotateVel;
-    public float boostFactor;
+    [Header("Boat Variables")]
+
+    public float MaxSpeed;
+    public float MinSpeed;
+    public float SpeedDecayRate;
+    public float RotationSpeed;
+    public float BoostAccelerationRate;
+    public float maxRotationAngle = 45;
+
+
+    [Header("Phone Controls")]
+
+    public bool enablePhoneControls;
+    public float minTiltAngleThreshold = 1;
+    //public float maxTiltAngleThreshold = 5;
+
     private float boostInput;
 
-    public float maxRotation = 45;
-    private float mvFactor;
+    [Header("Set up")]
+    public Transform vectorInFrontOfBoat;
+
+    float velocity ;
+
+    
+    
     private float volume;
     private CharacterController pController;
-    private Vector3 forwardMove;
 
+
+    public Transform fan;
     public GameObject boatGraphics;
 
     float currentRotation;
@@ -30,6 +50,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        velocity = MinSpeed;
         pController = gameObject.GetComponent<CharacterController>();
     }
 
@@ -43,15 +64,71 @@ public class PlayerController : MonoBehaviour
             forwardVel = volume;
         }
         */
+
+        if (enablePhoneControls)
+        {
+
+
+
+
+            currentRotation = Input.gyro.attitude.x;
+            
+            if (Mathf.Abs(currentRotation) > minTiltAngleThreshold)
+            {
+                currentRotation = currentRotation * -1;
+            }
+            else
+            {
+                currentRotation = 0;
+            }
+
+
+                /*
+                if (Mathf.Abs(currentRotation) > minTiltAngleThreshold)
+                {
+
+                    print(currentRotation);
+
+                    if (currentRotation < 0)
+                    {
+                        currentRotation = -1 * Mathf.Lerp(minTiltAngleThreshold, maxTiltAngleThreshold, Mathf.Abs(currentRotation));
+                    }
+                    else
+                    {
+                        currentRotation = Mathf.Lerp(minTiltAngleThreshold, maxTiltAngleThreshold, Mathf.Abs(currentRotation));
+                    }
+
+                }
+                else
+                {
+                    currentRotation = 0;
+                }
+                print(currentRotation);
+                */
+               
+        }
+        else
+        {
+            currentRotation = Input.GetAxis("Horizontal");
+            currentRotation *= 0.3f;
+        }
         
-        currentRotation = Input.GetAxis("Horizontal");
 
         Movement();
     }
 
     public void Movement()
     {
-        mvFactor = 1f;
+
+        
+
+        if (velocity > MinSpeed)
+        {
+            velocity -= SpeedDecayRate * Time.deltaTime;
+            if (velocity < MinSpeed)
+                velocity = MinSpeed;
+        }
+
 
 
         if (Input.GetButton("Jump") || microPhoneInput.soundIsActivated)
@@ -61,7 +138,7 @@ public class PlayerController : MonoBehaviour
 
         //Debug.Log(forwardVel);
 
-        forwardMove = new Vector3(0, 0, forwardVel + mvFactor * Time.deltaTime);
+        
 
         //forwardMove = transform.TransformDirection(forwardMove);
 
@@ -72,47 +149,33 @@ public class PlayerController : MonoBehaviour
         
         
 
-            if (phoneControls)
-            {
-                transform.Rotate(Vector3.up * gyroController.rotation.y * rotateVel);
-                boatGraphics.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, -20 * gyroController.rotation.y));
+            
+                transform.Rotate(Vector3.up * currentRotation * RotationSpeed * Time.deltaTime);
 
-            if (Vector3.Angle(vectorInFrontOfBoat.position - transform.position, Vector3.forward) >= maxRotation)
-            {
-                transform.Rotate(Vector3.up * -gyroController.rotation.y * rotateVel * Time.deltaTime);
+                boatGraphics.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, -RotationSpeed * currentRotation));
 
-
-            }
-
-        }
-            else
-            {
-                transform.Rotate(Vector3.up * currentRotation * rotateVel * Time.deltaTime);
-
-                boatGraphics.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, -20 * currentRotation));
-
-                if(Vector3.Angle(vectorInFrontOfBoat.position - transform.position, Vector3.forward) >= maxRotation)
+                if(Vector3.Angle(vectorInFrontOfBoat.position - transform.position, Vector3.forward) >= maxRotationAngle)
                 {
-                    transform.Rotate(Vector3.up * -currentRotation * rotateVel * Time.deltaTime);
+                    transform.Rotate(Vector3.up * -currentRotation * RotationSpeed * Time.deltaTime);
 
                     
                 }
 
-            }
-            
-            
 
-        
-        
-        
+
+
+
+
+
+
 
         // var rotation = transform.eulerAngles;
         // rotation.z = Mathf.Clamp(transform.eulerAngles.z, -10, 10);
 
         // transform.eulerAngles = rotation;
 
-
-        transform.Translate(forwardMove);
+        fan.Rotate(Vector3.forward, -10* velocity * Time.deltaTime);
+        transform.Translate(Vector3.forward*velocity *Time.deltaTime);
 
     }
 
@@ -122,11 +185,14 @@ public class PlayerController : MonoBehaviour
         // Get input from keys/controller
         //boostInput = Input.GetAxis("Jump");
 
-        
-        // Set the factor for the input
-        mvFactor = boostFactor ;
 
-        return mvFactor;
+        // Set the factor for the input
+        velocity += BoostAccelerationRate*Time.deltaTime;
+
+        if (velocity > MaxSpeed)
+            velocity = MaxSpeed;
+
+        return BoostAccelerationRate;
                
     }
 
