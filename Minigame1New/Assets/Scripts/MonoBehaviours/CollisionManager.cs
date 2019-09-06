@@ -12,13 +12,16 @@ public class CollisionManager : MonoBehaviour
     public Vector3 respawnTemp;
     public int healthTemp;
 
+    
     public GameObject TeleportObject;
 
     // Start is called before the first frame update
     void Start()
     {
-        playerHealth.Value = 5;
 
+        print("wat");
+        playerHealth.Value = 5;
+        
         respawnPoint.Value = transform.position;
     }
 
@@ -44,6 +47,9 @@ public class CollisionManager : MonoBehaviour
 
     private void TeleportToLastCheckpoint() {
         TeleportObject.transform.position = respawnPoint.Value;
+        TeleportObject.transform.rotation = Quaternion.identity;
+        transform.localPosition = Vector3.zero;
+        transform.localRotation = Quaternion.identity;
     }
 
 }

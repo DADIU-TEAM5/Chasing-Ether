@@ -110,6 +110,7 @@ public class PlayerController : MonoBehaviour
         else
         {
             currentRotation = Input.GetAxis("Horizontal");
+            currentRotation *= 0.3f;
         }
         
 
