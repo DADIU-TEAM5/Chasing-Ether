@@ -17,14 +17,15 @@ public class PlayerController : MonoBehaviour
     public float BoostAccelerationRate;
     private float boostInput;
 
-    float velocity =1;
+    float velocity ;
 
     public float maxRotationAngle = 45;
     
     private float volume;
     private CharacterController pController;
-    
 
+
+    public Transform fan;
     public GameObject boatGraphics;
 
     float currentRotation;
@@ -35,6 +36,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        velocity = MinSpeed;
         pController = gameObject.GetComponent<CharacterController>();
     }
 
@@ -84,6 +86,8 @@ public class PlayerController : MonoBehaviour
     public void Movement()
     {
 
+        
+
         if (velocity > MinSpeed)
         {
             velocity -= SpeedDecayRate * Time.deltaTime;
@@ -123,20 +127,20 @@ public class PlayerController : MonoBehaviour
                     
                 }
 
-            
-            
-            
 
-        
-        
-        
+
+
+
+
+
+
 
         // var rotation = transform.eulerAngles;
         // rotation.z = Mathf.Clamp(transform.eulerAngles.z, -10, 10);
 
         // transform.eulerAngles = rotation;
 
-
+        fan.Rotate(Vector3.forward, -10* velocity * Time.deltaTime);
         transform.Translate(Vector3.forward*velocity *Time.deltaTime);
 
     }
