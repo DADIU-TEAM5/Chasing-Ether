@@ -159,7 +159,7 @@ MonoBehaviour:
   - {fileID: 3651236770868338109}
   - {fileID: 4667297446442443367}
   - {fileID: 3979619182023056674}
-  Waves: {fileID: 0}
+  Waves: {fileID: 9208208614629774460, guid: e0f9651f1c991ee41800affc651b566e, type: 3}
 --- !u!1 &8517953031001872223
 GameObject:
   m_ObjectHideFlags: 0
