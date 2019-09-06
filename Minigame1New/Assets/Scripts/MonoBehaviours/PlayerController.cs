@@ -76,7 +76,15 @@ public class PlayerController : MonoBehaviour
             {
                 transform.Rotate(Vector3.up * gyroController.rotation.y * rotateVel);
                 boatGraphics.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, -20 * gyroController.rotation.y));
+
+            if (Vector3.Angle(vectorInFrontOfBoat.position - transform.position, Vector3.forward) >= maxRotation)
+            {
+                transform.Rotate(Vector3.up * -gyroController.rotation.y * rotateVel * Time.deltaTime);
+
+
             }
+
+        }
             else
             {
                 transform.Rotate(Vector3.up * currentRotation * rotateVel * Time.deltaTime);
