@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8419198078000613495}
   - component: {fileID: 8419198078000613494}
   m_Layer: 0
-  m_Name: Buoy_geo
+  m_Name: checkpoint
   m_TagString: CheckPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -107,3 +107,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activated: 0
+  latestCheckpoint: {fileID: 11400000, guid: 88c24af687ea9174fadd9eab5ca5e849, type: 2}
