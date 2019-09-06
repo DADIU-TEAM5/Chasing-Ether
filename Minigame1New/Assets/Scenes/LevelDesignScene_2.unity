@@ -3072,7 +3072,7 @@ PrefabInstance:
     - target: {fileID: 7892729442292193015, guid: 7fe00ebafa6984d4abec3e8e0b25d816,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7892729442292193015, guid: 7fe00ebafa6984d4abec3e8e0b25d816,
         type: 3}
@@ -3092,17 +3092,17 @@ PrefabInstance:
     - target: {fileID: 7892729442292193001, guid: 7fe00ebafa6984d4abec3e8e0b25d816,
         type: 3}
       propertyPath: Octaves.Array.data[0].scale.x
-      value: 10
+      value: 68.5
       objectReference: {fileID: 0}
     - target: {fileID: 7892729442292193001, guid: 7fe00ebafa6984d4abec3e8e0b25d816,
         type: 3}
       propertyPath: Octaves.Array.data[0].scale.y
-      value: 10
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 7892729442292193001, guid: 7fe00ebafa6984d4abec3e8e0b25d816,
         type: 3}
       propertyPath: Octaves.Array.data[0].height
-      value: 25
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7892729442292193001, guid: 7fe00ebafa6984d4abec3e8e0b25d816,
         type: 3}
@@ -11007,7 +11007,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &925151710
 MonoBehaviour:
   m_ObjectHideFlags: 0
