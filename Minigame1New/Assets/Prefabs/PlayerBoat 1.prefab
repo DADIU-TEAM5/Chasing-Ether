@@ -126,6 +126,8 @@ GameObject:
   - component: {fileID: 1664328624081637415}
   - component: {fileID: 1664328624081637416}
   - component: {fileID: 8824196592949318595}
+  - component: {fileID: 7862909520271985123}
+  - component: {fileID: 434069429663753093}
   m_Layer: 0
   m_Name: Boat 1
   m_TagString: Untagged
@@ -190,6 +192,35 @@ MonoBehaviour:
   - {fileID: 8962207746450267541}
   - {fileID: 1664328624551762186}
   Waves: {fileID: 0}
+--- !u!65 &7862909520271985123
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1664328624081637418}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.47, y: 0.75, z: 1}
+  m_Center: {x: 0, y: 0.4, z: 0}
+--- !u!114 &434069429663753093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1664328624081637418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b6bd8f4d8010664794313d88c0dbed4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHealth: {fileID: 11400000, guid: c82d58691da7ad64e8ba01887aec1b17, type: 2}
+  respawnPoint: {fileID: 11400000, guid: 88c24af687ea9174fadd9eab5ca5e849, type: 2}
+  respawnTemp: {x: 0, y: 0, z: 0}
+  healthTemp: 0
 --- !u!1 &1664328624551762187
 GameObject:
   m_ObjectHideFlags: 0
