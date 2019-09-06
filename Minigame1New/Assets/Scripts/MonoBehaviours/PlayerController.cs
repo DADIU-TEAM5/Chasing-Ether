@@ -1,25 +1,39 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
 
-    public bool phoneControls;
-    
+   
 
-    public Transform vectorInFrontOfBoat;
+   
+
+    [Header("Boat Variables")]
 
     public float MaxSpeed;
     public float MinSpeed;
     public float SpeedDecayRate;
     public float RotationSpeed;
     public float BoostAccelerationRate;
+    public float maxRotationAngle = 45;
+
+
+    [Header("Phone Controls")]
+
+    public bool enablePhoneControls;
+    public float minTiltAngleThreshold = 1;
+    //public float maxTiltAngleThreshold = 5;
+
     private float boostInput;
+
+    [Header("Set up")]
+    public Transform vectorInFrontOfBoat;
 
     float velocity ;
 
-    public float maxRotationAngle = 45;
+    
     
     private float volume;
     private CharacterController pController;
@@ -51,28 +65,47 @@ public class PlayerController : MonoBehaviour
         }
         */
 
-        if (phoneControls)
+        if (enablePhoneControls)
         {
 
 
 
-            currentRotation = Input.gyro.rotationRate.y;
 
+            currentRotation = Input.gyro.attitude.x;
             
-                print(currentRotation);
+            if (Mathf.Abs(currentRotation) > minTiltAngleThreshold)
+            {
+                currentRotation = currentRotation * -1;
+            }
+            else
+            {
+                currentRotation = 0;
+            }
 
-                if (currentRotation < 0)
+
+                /*
+                if (Mathf.Abs(currentRotation) > minTiltAngleThreshold)
                 {
-                    currentRotation = -1 * Mathf.Clamp01(Mathf.Abs(currentRotation));
+
+                    print(currentRotation);
+
+                    if (currentRotation < 0)
+                    {
+                        currentRotation = -1 * Mathf.Lerp(minTiltAngleThreshold, maxTiltAngleThreshold, Mathf.Abs(currentRotation));
+                    }
+                    else
+                    {
+                        currentRotation = Mathf.Lerp(minTiltAngleThreshold, maxTiltAngleThreshold, Mathf.Abs(currentRotation));
+                    }
+
                 }
                 else
                 {
-                    currentRotation = Mathf.Clamp01(Mathf.Abs(currentRotation));
+                    currentRotation = 0;
                 }
-            
-
-            print(currentRotation);
-
+                print(currentRotation);
+                */
+               
         }
         else
         {
@@ -118,7 +151,7 @@ public class PlayerController : MonoBehaviour
             
                 transform.Rotate(Vector3.up * currentRotation * RotationSpeed * Time.deltaTime);
 
-                boatGraphics.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, -20 * currentRotation));
+                boatGraphics.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, -RotationSpeed * currentRotation));
 
                 if(Vector3.Angle(vectorInFrontOfBoat.position - transform.position, Vector3.forward) >= maxRotationAngle)
                 {
