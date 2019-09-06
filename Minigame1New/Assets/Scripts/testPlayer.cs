@@ -7,11 +7,14 @@ public class testPlayer : MonoBehaviour
     GameObject thisRigidbody;
     private float x, y, z;
     public int speed=1;
+    SoundsManager soudmanager;
 
     // Start is called before the first frame update
     void Start()
     {
         thisRigidbody =  GameObject.FindGameObjectWithTag("Player");
+        soudmanager = FindObjectOfType<SoundsManager>();
+        soudmanager.PlaySounds("engine");
     }
 
     // Update is called once per frame
@@ -25,6 +28,7 @@ public class testPlayer : MonoBehaviour
         if (collision.gameObject.tag == "testEnemy")
         {
             thisRigidbody.transform.position = CheckPoint.GetActiveCheckPointPosition();
+            soudmanager.PlaySounds("death");
         }
     }
 

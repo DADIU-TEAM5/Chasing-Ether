@@ -137,8 +137,7 @@ GameObject:
   - component: {fileID: 1249225497680740109}
   - component: {fileID: 1249225497680740106}
   - component: {fileID: 1249225497680740105}
-  - component: {fileID: 1249225497680740107}
-  - component: {fileID: 8792159384883872233}
+  - component: {fileID: 3419511231130996365}
   m_Layer: 0
   m_Name: Boat
   m_TagString: Untagged
@@ -191,7 +190,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 421a659ff2ad36c4f9d2f5bc80ab0e2b, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -237,9 +236,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e972d520608718b42bade4eca35166c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  phoneControls: 0
+  vectorInFrontOfBoat: {fileID: 0}
   forwardVel: 0.2
   rotateVel: 2
   boostFactor: 50
+  maxRotation: 45
+  boatGraphics: {fileID: 0}
+  gyroController: {fileID: 0}
+  microPhoneInput: {fileID: 0}
 --- !u!54 &1249225497680740105
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -256,25 +261,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!143 &1249225497680740107
-CharacterController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1249225497680740108}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Height: 1
-  m_Radius: 0.05
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 1.96, z: 0}
---- !u!114 &8792159384883872233
+--- !u!114 &3419511231130996365
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -283,14 +270,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1249225497680740108}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b061ee25aae0d22458e4738c7f539514, type: 3}
+  m_Script: {fileID: 11500000, guid: 535934d68daef744ebc1a27cb4f64c3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  windspeed: 5
-  countBackground: 50
-  x: 0
-  y: 0
-  z: 0
+  speed: 1
 --- !u!1 &1249225498188451204
 GameObject:
   m_ObjectHideFlags: 0
