@@ -9,9 +9,13 @@ public class LocaleManager : ScriptableObject
 
     public LocaleVariable CurrentLocale;
 
+    public GameEvent LocaleChangedEvent; 
+
     public void SetLocale(Locale locale) {
-        if (locale != null)
+        if (locale != null) {
             CurrentLocale.Value = locale;
+            LocaleChangedEvent.Raise();
+        }
     }
 
     public Locale GetLocale() => CurrentLocale.Value;
