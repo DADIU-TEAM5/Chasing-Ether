@@ -1,19 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 [CreateAssetMenu]
 public class GameText : ScriptableObject
 {
-    public Dictionary<Locale, string> TextVariations;
+    public List<TextVariation> TextVariations;
 
     public LocaleVariable CurrentLocale; 
 
     public string GetText() {
-        var text = "";
+        var variation = TextVariations.FirstOrDefault(x => x.Locale == CurrentLocale);
 
-        TextVariations.TryGetValue(CurrentLocale.Value, out text);
+        return variation.Text ?? "";
+    }
 
-        return text;
+    [System.Serializable]
+    public class TextVariation {
+        public Locale Locale;
+        public string Text;
     }
 }

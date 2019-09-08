@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
+using System.Linq;
 
 [CustomEditor(typeof(GameText))]
 public class GameTextEditor : Editor
@@ -18,23 +19,21 @@ public class GameTextEditor : Editor
         var gametextObj = (GameText) target;
 
         if (gametextObj.TextVariations == null) {
-            gametextObj.TextVariations = new Dictionary<Locale, string>();
+            gametextObj.TextVariations = new List<GameText.TextVariation>();
         }
 
-        foreach(var localetext in gametextObj.TextVariations) {
-            GUILayout.Label(localetext.Key.name);
-            gametextObj.TextVariations[localetext.Key] = EditorGUILayout.TextArea(localetext.Value);
-        }
-
-
-        _newLocale = (Locale) EditorGUILayout.ObjectField(_newLocale, typeof(Locale), true);
+        _newLocale = (Locale) EditorGUILayout.ObjectField(_newLocale, typeof(Locale), false);
         _newText = EditorGUILayout.TextArea(_newText);
 
         if (GUILayout.Button("Add locale text")) {
-            if (!gametextObj.TextVariations.ContainsKey(_newLocale) && _newText?.Length > 0) {
-                 gametextObj.TextVariations.Add(_newLocale, _newText);
+            if (!gametextObj.TextVariations.Any(x => x.Locale == _newLocale) && _newText?.Length > 0) {
+                 gametextObj.TextVariations.Add(new GameText.TextVariation { Locale = _newLocale, Text = _newText});
             }
         }
-   }
 
+        for (int i = 0; i < gametextObj.TextVariations.Count; i++) {
+            GUILayout.Label(gametextObj.TextVariations[i].Locale.name);
+            gametextObj.TextVariations[i].Text = EditorGUILayout.TextArea(gametextObj.TextVariations[i].Text);
+        }
+   }
 }
