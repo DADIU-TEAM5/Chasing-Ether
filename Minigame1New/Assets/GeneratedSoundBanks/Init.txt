@@ -1,0 +1,16 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	1298537561	DistanceToCheckpoint			\Default Work Unit\Music\DistanceToCheckpoint	
+
+State	ID	Name	State Group			Notes
+	0	None	DistanceToCheckpoint			
+	1183803292	Far	DistanceToCheckpoint			
+	2577305654	Closest	DistanceToCheckpoint			
+	3012222967	Closer	DistanceToCheckpoint			
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+
