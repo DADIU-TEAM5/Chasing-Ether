@@ -3727,7 +3727,7 @@ PrefabInstance:
     - target: {fileID: 7097962804688195830, guid: e2fcee761e3e0f047a62175e9a633985,
         type: 3}
       propertyPath: enablePhoneControls
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7097962804688195830, guid: e2fcee761e3e0f047a62175e9a633985,
         type: 3}
@@ -3744,16 +3744,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.071
       objectReference: {fileID: 0}
-    - target: {fileID: 1664328624081637415, guid: e2fcee761e3e0f047a62175e9a633985,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -9.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7097962803038767167, guid: e2fcee761e3e0f047a62175e9a633985,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 29.2
-      objectReference: {fileID: 0}
     - target: {fileID: 7862909520271985123, guid: e2fcee761e3e0f047a62175e9a633985,
         type: 3}
       propertyPath: m_IsTrigger
@@ -3764,6 +3754,16 @@ PrefabInstance:
       propertyPath: TeleportObject
       value: 
       objectReference: {fileID: 569757867}
+    - target: {fileID: 1664328624081637415, guid: e2fcee761e3e0f047a62175e9a633985,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7097962803038767167, guid: e2fcee761e3e0f047a62175e9a633985,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 29.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2fcee761e3e0f047a62175e9a633985, type: 3}
 --- !u!1001 &2035351612
@@ -3847,41 +3847,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Waves
       objectReference: {fileID: 0}
-    - target: {fileID: 7892729442292193001, guid: 7fe00ebafa6984d4abec3e8e0b25d816,
-        type: 3}
-      propertyPath: Dimensions.x
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 7892729442292193001, guid: 7fe00ebafa6984d4abec3e8e0b25d816,
-        type: 3}
-      propertyPath: Dimensions.y
-      value: 400
-      objectReference: {fileID: 0}
-    - target: {fileID: 7892729442292193001, guid: 7fe00ebafa6984d4abec3e8e0b25d816,
-        type: 3}
-      propertyPath: Octaves.Array.data[0].scale.x
-      value: 68.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7892729442292193001, guid: 7fe00ebafa6984d4abec3e8e0b25d816,
-        type: 3}
-      propertyPath: Octaves.Array.data[0].scale.y
-      value: 80
-      objectReference: {fileID: 0}
-    - target: {fileID: 7892729442292193001, guid: 7fe00ebafa6984d4abec3e8e0b25d816,
-        type: 3}
-      propertyPath: Octaves.Array.data[0].height
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7892729442292193001, guid: 7fe00ebafa6984d4abec3e8e0b25d816,
-        type: 3}
-      propertyPath: Octaves.Array.data[0].speed.x
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7892729442292193001, guid: 7fe00ebafa6984d4abec3e8e0b25d816,
-        type: 3}
-      propertyPath: Octaves.Array.data[0].speed.y
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7892729442292193015, guid: 7fe00ebafa6984d4abec3e8e0b25d816,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3946,6 +3911,41 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892729442292193001, guid: 7fe00ebafa6984d4abec3e8e0b25d816,
+        type: 3}
+      propertyPath: Dimensions.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892729442292193001, guid: 7fe00ebafa6984d4abec3e8e0b25d816,
+        type: 3}
+      propertyPath: Dimensions.y
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892729442292193001, guid: 7fe00ebafa6984d4abec3e8e0b25d816,
+        type: 3}
+      propertyPath: Octaves.Array.data[0].scale.x
+      value: 68.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892729442292193001, guid: 7fe00ebafa6984d4abec3e8e0b25d816,
+        type: 3}
+      propertyPath: Octaves.Array.data[0].scale.y
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892729442292193001, guid: 7fe00ebafa6984d4abec3e8e0b25d816,
+        type: 3}
+      propertyPath: Octaves.Array.data[0].height
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892729442292193001, guid: 7fe00ebafa6984d4abec3e8e0b25d816,
+        type: 3}
+      propertyPath: Octaves.Array.data[0].speed.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892729442292193001, guid: 7fe00ebafa6984d4abec3e8e0b25d816,
+        type: 3}
+      propertyPath: Octaves.Array.data[0].speed.y
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7fe00ebafa6984d4abec3e8e0b25d816, type: 3}
