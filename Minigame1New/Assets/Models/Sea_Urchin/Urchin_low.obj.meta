@@ -3,7 +3,12 @@ guid: b95be7dcd3a726643a50f692ced89f3a
 ModelImporter:
   serializedVersion: 26
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: UrchinMat
+    second: {fileID: 2100000, guid: 6081fb95889e11641996bbb1d4a327dc, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
