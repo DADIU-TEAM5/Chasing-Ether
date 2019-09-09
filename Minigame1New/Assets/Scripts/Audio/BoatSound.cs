@@ -6,8 +6,10 @@ public class BoatSound : MonoBehaviour
 {
    
 
-    AK.Wwise.Event EngineLoop;
+    public AK.Wwise.Event EngineLoop;
+    public AK.Wwise.Event BoatTurn;
     public FloatVariable Speed;
+    public FloatVariable TurnAngle;
 
     void Start()
     {
@@ -18,6 +20,6 @@ public class BoatSound : MonoBehaviour
     {
         // Send speed value to Wwise, controlling engine pitch
         AkSoundEngine.SetRTPCValue("BoatSpeed", Speed.Value);
-   
+        AkSoundEngine.SetRTPCValue("BoatTurnAngle", TurnAngle.Value);
     }
 }
