@@ -82,7 +82,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faa58075134ba214ebdf35255f0eaa88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Dimension: 20
+  Dimensions: {x: 0, y: 0}
   UVScale: 30
   Octaves:
   - speed: {x: 1, y: 0}

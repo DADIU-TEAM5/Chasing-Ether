@@ -1,0 +1,350 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddf63efc8bb3d0b4a8de4aab11cf946a, type: 3}
+  m_Name: AkWwiseProjectData
+  m_EditorClassIdentifier: 
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: f07f29150fa6b842abb4887a6e35125d
+    GuidInternal: 
+    m_lastTime: -8586335928755388862
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 1f821f16063d7948a8515cc1fb91d91a
+    GuidInternal: 
+    m_lastTime: -8586335928755747917
+    List: []
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 407a5e149ab40d42963e2fbf21c15881
+    GuidInternal: 
+    m_lastTime: -8586335928756914526
+    List:
+    - name: Music
+      guid: 37084c1a0aad1f43aae2e0157e658f39
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 7
+      Path: Default Work Unit\Music
+    - name: SFX
+      guid: 32064c5cc095f440b22eef97480591a8
+      id: 393239870
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 7
+      Path: Default Work Unit\SFX
+  EventWwu:
+  - PhysicalPath: Events\Atmos.wwu
+    ParentPhysicalPath: 
+    guid: 2d04a79c25ee5b46b5c8332e62af7def
+    GuidInternal: 
+    m_lastTime: -8586335928757296881
+    List:
+    - name: Atmos
+      guid: 7050b5108d45d941b72fcecd2ccec0cd
+      id: 3034623661
+      PathAndIcons:
+      - ElementName: Atmos
+        ObjectType: 12
+      - ElementName: Atmos
+        ObjectType: 3
+      Path: Atmos\Atmos
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+  - PhysicalPath: Events\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 801f2da21413ed4c88a1c7557ee0b7b4
+    GuidInternal: 
+    m_lastTime: -8586335928756495903
+    List: []
+  - PhysicalPath: Events\Music.wwu
+    ParentPhysicalPath: 
+    guid: 250fe24a06607f45b754e3b976a0cab6
+    GuidInternal: 
+    m_lastTime: -8586335928756196434
+    List:
+    - name: MusicMain
+      guid: 08199cfdfb5f7e4898f8fba1673f70be
+      id: 374987273
+      PathAndIcons:
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: MusicMain
+        ObjectType: 3
+      Path: Music\MusicMain
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+  - PhysicalPath: Events\SFX.wwu
+    ParentPhysicalPath: 
+    guid: 8b2327f5e89c474f99aff6e11b49d2d2
+    GuidInternal: 
+    m_lastTime: -8586335928756306138
+    List:
+    - name: BoatAccel
+      guid: d9ef26a09200784ba2ce337a3cf735ab
+      id: 2966425545
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Boat
+        ObjectType: 4
+      - ElementName: BoatAccel
+        ObjectType: 3
+      Path: SFX\Boat\BoatAccel
+      maxAttenuation: 0
+      maxDuration: 14782630
+      minDuration: 9081383
+    - name: BoatAngle
+      guid: f6965fd2b0978c4fa466f15f623f0332
+      id: 28419968
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Boat
+        ObjectType: 4
+      - ElementName: BoatAngle
+        ObjectType: 3
+      Path: SFX\Boat\BoatAngle
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: BoatCollision
+      guid: 3049995662f28648b86fc9801e3637fd
+      id: 3905425309
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Boat
+        ObjectType: 4
+      - ElementName: BoatCollision
+        ObjectType: 3
+      Path: SFX\Boat\BoatCollision
+      maxAttenuation: 0
+      maxDuration: 2793968
+      minDuration: 2793968
+    - name: BoatEngine
+      guid: 99251eb1b4e2a24b838c46ee7b5101fe
+      id: 3434945777
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Boat
+        ObjectType: 4
+      - ElementName: BoatEngine
+        ObjectType: 3
+      Path: SFX\Boat\BoatEngine
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: CheckpointCheck
+      guid: 8f50db14a182e44bbae9d812e2708a87
+      id: 1390999685
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Checkpoint
+        ObjectType: 4
+      - ElementName: CheckpointCheck
+        ObjectType: 3
+      Path: SFX\Checkpoint\CheckpointCheck
+      maxAttenuation: 0
+      maxDuration: 4212563
+      minDuration: 4212563
+    - name: CheckpointShimmer
+      guid: dc20bb2d8821a54b9f6acdae3f7f6a8a
+      id: 1309997348
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Checkpoint
+        ObjectType: 4
+      - ElementName: CheckpointShimmer
+        ObjectType: 3
+      Path: SFX\Checkpoint\CheckpointShimmer
+      maxAttenuation: 0
+      maxDuration: 27826100
+      minDuration: 27826100
+    - name: Obstacles_ClayHit
+      guid: 7d5338246950004ab3ac308f98111110
+      id: 2521554274
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Obstacles
+        ObjectType: 4
+      - ElementName: Obstacles_ClayHit
+        ObjectType: 3
+      Path: SFX\Obstacles\Obstacles_ClayHit
+      maxAttenuation: 0
+      maxDuration: 1631633
+      minDuration: 1219864
+    - name: Obstacles_SeaUrchinHit
+      guid: 1352f5f04cce474ebb930a5996829225
+      id: 1213636067
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Obstacles
+        ObjectType: 4
+      - ElementName: Obstacles_SeaUrchinHit
+        ObjectType: 3
+      Path: SFX\Obstacles\Obstacles_SeaUrchinHit
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: ObstaclesDistance
+      guid: e7fcb0504de722439b148c3cfa198109
+      id: 176106368
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Obstacles
+        ObjectType: 4
+      - ElementName: ObstaclesDistance
+        ObjectType: 3
+      Path: SFX\Obstacles\ObstaclesDistance
+      maxAttenuation: 0
+      maxDuration: 11304354
+      minDuration: 11304354
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Boat.wwu
+    ParentPhysicalPath: 
+    guid: a8e5becc2da7834c93307ba6fe14bb4e
+    GuidInternal: 
+    m_lastTime: -8586335928757237325
+    List:
+    - name: BoatSpeed
+      guid: 10c1051a72406f42aaffe3ed3f9b8dd8
+      id: 659411096
+      PathAndIcons:
+      - ElementName: Boat
+        ObjectType: 12
+      - ElementName: BoatSpeed
+        ObjectType: 13
+      Path: Boat\BoatSpeed
+    - name: BoatTurnAngle
+      guid: 1a1e06ba1e628f41b2f58880ca8453f5
+      id: 173832523
+      PathAndIcons:
+      - ElementName: Boat
+        ObjectType: 12
+      - ElementName: BoatTurnAngle
+        ObjectType: 13
+      Path: Boat\BoatTurnAngle
+    - name: DistanceToCheckpoint
+      guid: b2e5f8bc08d0db439995f4f424f9906a
+      id: 1298537561
+      PathAndIcons:
+      - ElementName: Boat
+        ObjectType: 12
+      - ElementName: DistanceToCheckpoint
+        ObjectType: 13
+      Path: Boat\DistanceToCheckpoint
+    - name: DistanceToGolem
+      guid: 64adf63d047a854da89321c1d4d17558
+      id: 208146177
+      PathAndIcons:
+      - ElementName: Boat
+        ObjectType: 12
+      - ElementName: DistanceToGolem
+        ObjectType: 13
+      Path: Boat\DistanceToGolem
+    - name: DistanceToNearestObstacle
+      guid: 368b9e89a2ecb7428514e49acc74b681
+      id: 2528135412
+      PathAndIcons:
+      - ElementName: Boat
+        ObjectType: 12
+      - ElementName: DistanceToNearestObstacle
+        ObjectType: 13
+      Path: Boat\DistanceToNearestObstacle
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 7f9840344201964ebc7850064509a7cb
+    GuidInternal: 
+    m_lastTime: -8586335928756246297
+    List: []
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: ceaa53e128bdb742bce0587073ea4c8c
+    GuidInternal: 
+    m_lastTime: -8586335928756436068
+    List:
+    - name: DistanceToCheckpoint
+      guid: 51cec6f32fd9254b94e04a766de574bc
+      id: 1298537561
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 4
+      - ElementName: DistanceToCheckpoint
+        ObjectType: 9
+      Path: Default Work Unit\Music\DistanceToCheckpoint
+      values:
+      - name: Closer
+        guid: 4ef16ba4df0616439e8fc1b7d8efa321
+        id: 3012222967
+        PathAndIcons:
+        - ElementName: Closer
+          ObjectType: 8
+      - name: Closest
+        guid: 4b4c780d3457d741b9047908f640ef2f
+        id: 2577305654
+        PathAndIcons:
+        - ElementName: Closest
+          ObjectType: 8
+      - name: Far
+        guid: 876505e0915c564ea25a35976c8d2b1e
+        id: 1183803292
+        PathAndIcons:
+        - ElementName: Far
+          ObjectType: 8
+      - name: None
+        guid: d894e9075aadbd40857ea4f3b3c49647
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: d819d7b83766234fa477b9d6025e34ad
+    GuidInternal: 
+    m_lastTime: -8586335928757177489
+    List: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: fcf3da7783f0d34684c68aa493d0d06e
+    GuidInternal: 
+    m_lastTime: -8586335928756974334
+    List: []
+  ExpandedItems:
+  - /Minigame1New_WwiseProject
+  autoPopulateEnabled: 1
+  CurrentPluginConfig: 
