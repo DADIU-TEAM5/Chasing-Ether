@@ -1980,7 +1980,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 924e803e830233847b713a88afa4dd9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  throwingAnim: {fileID: 11400000, guid: c6b2f85bc2c80f448a482f631b7f308b, type: 2}
+  walkingAnim: {fileID: 11400000, guid: c6b2f85bc2c80f448a482f631b7f308b, type: 2}
 --- !u!114 &1077545886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1996,7 +1996,7 @@ MonoBehaviour:
   finishLineObj: {fileID: 864475649}
   playerObj: {fileID: 1892405572}
   lerpSpeed: 0.3
-  throwingAnim: {fileID: 11400000, guid: c6b2f85bc2c80f448a482f631b7f308b, type: 2}
+  walkingAnim: {fileID: 11400000, guid: c6b2f85bc2c80f448a482f631b7f308b, type: 2}
 --- !u!1 &1283288715 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7097962803038767166, guid: e2fcee761e3e0f047a62175e9a633985,

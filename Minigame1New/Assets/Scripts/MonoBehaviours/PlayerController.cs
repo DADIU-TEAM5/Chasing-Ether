@@ -42,6 +42,8 @@ public class PlayerController : MonoBehaviour
     //public MicrophoneInput microPhoneInput;
     public BoolVariable microPhoneInput;
 
+    public BoolVariable playerMove;
+
     // Start is called before the first frame update
     void Start()
     {

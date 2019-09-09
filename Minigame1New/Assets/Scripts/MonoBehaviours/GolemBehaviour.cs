@@ -14,7 +14,7 @@ public class GolemBehaviour : MonoBehaviour
     private float playerBossDist;
     public float lerpSpeed = 2f;
     private Vector3 tempSpeed = Vector3.zero;
-    public BoolVariable throwingAnim;
+    public BoolVariable walkingAnim;
 
     // Start is called before the first frame update
     void Start()
@@ -29,7 +29,7 @@ public class GolemBehaviour : MonoBehaviour
     void Update()
     {
 
-        if(throwingAnim.Value != true)
+        if(walkingAnim.Value == true)
         {
             playerCurPos = playerObj.transform.position;
 

@@ -5,7 +5,7 @@ using UnityEngine;
 public class WalkCycle : MonoBehaviour
 {
     static Animator anim;
-    public BoolVariable throwingAnim;
+    public BoolVariable walkingAnim;
 
     // Start is called before the first frame update
     void Start()
@@ -16,33 +16,39 @@ public class WalkCycle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButton("Jump"))
         {
             anim.SetBool("isWalking", true);
             anim.SetBool("isStopping", false);
-         }
-        else if(Input.GetButtonDown("Fire1"))
+
+            walkingAnim.Value = true;
+        }
+        else if(Input.GetButton("Fire1"))
         {
             anim.SetBool("isWalking", true);
             anim.SetBool("isStopping", false);
             anim.SetBool("isThrowing", true);
 
-            throwingAnim.Value = true;
-        } /*else if (Input)
+            walkingAnim.Value = false;
+        } else
         {
             anim.SetBool("isWalking", false);
             anim.SetBool("isStopping", true);
             anim.SetBool("isThrowing", false);
-            throwingAnim.Value = false;
+
+
+            walkingAnim.Value = true;
         }
-        */
+   
     }
 
-    public void animationEnded()
+    public void throwingAnimEnd()
     {
         anim.SetBool("isWalking", true);
         anim.SetBool("isStopping", false);
         anim.SetBool("isThrowing", false);
+
+        walkingAnim.Value = true;
     }
 
 }
