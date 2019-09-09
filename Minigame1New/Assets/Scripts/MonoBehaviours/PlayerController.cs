@@ -6,9 +6,9 @@ using UnityEngine.UI;
 public class PlayerController : MonoBehaviour
 {
 
-   
 
-   
+
+    public FloatVariable gyroY;
 
     [Header("Boat Variables")]
 
@@ -33,19 +33,16 @@ public class PlayerController : MonoBehaviour
 
     float velocity ;
 
-    
-    
     private float volume;
     private CharacterController pController;
-
 
     public Transform fan;
     public GameObject boatGraphics;
 
     float currentRotation;
 
-    public GyroController gyroController;
-    public MicrophoneInput microPhoneInput;
+    //public MicrophoneInput microPhoneInput;
+    public BoolVariable microPhoneInput;
 
     // Start is called before the first frame update
     void Start()
@@ -57,20 +54,10 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*if (phoneControl == true)
-        {
-            volume = GetComponent<MicrophoneInputv2>().volume;
-            Debug.Log(volume);
-            forwardVel = volume;
-        }
-        */
 
         if (enablePhoneControls)
         {
-
-
-
-
+            
             currentRotation = Input.gyro.attitude.x;
             
             if (Mathf.Abs(currentRotation) > minTiltAngleThreshold)
@@ -83,7 +70,7 @@ public class PlayerController : MonoBehaviour
             }
 
 
-                /*
+                /* DELETEABLE?
                 if (Mathf.Abs(currentRotation) > minTiltAngleThreshold)
                 {
 
@@ -112,16 +99,13 @@ public class PlayerController : MonoBehaviour
             currentRotation = Input.GetAxis("Horizontal");
             currentRotation *= 0.3f;
         }
-        
 
         Movement();
     }
 
     public void Movement()
     {
-
         
-
         if (velocity > MinSpeed)
         {
             velocity -= SpeedDecayRate * Time.deltaTime;
@@ -129,44 +113,26 @@ public class PlayerController : MonoBehaviour
                 velocity = MinSpeed;
         }
 
-
-
-        if (Input.GetButton("Jump") || microPhoneInput.soundIsActivated)
+        if (Input.GetButton("Jump") || microPhoneInput.Value)
         {
             boost();
         }
 
         //Debug.Log(forwardVel);
 
-        
-
         //forwardMove = transform.TransformDirection(forwardMove);
-
-
+        
         //print(microPhoneInput.soundIsActivated);
 
-        
-        
-        
-
             
-                transform.Rotate(Vector3.up * currentRotation * RotationSpeed * Time.deltaTime);
+        transform.Rotate(Vector3.up * currentRotation * RotationSpeed * Time.deltaTime);
 
-                boatGraphics.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, -RotationSpeed * currentRotation));
+        boatGraphics.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, -RotationSpeed * currentRotation));
 
-                if(Vector3.Angle(vectorInFrontOfBoat.position - transform.position, Vector3.forward) >= maxRotationAngle)
-                {
-                    transform.Rotate(Vector3.up * -currentRotation * RotationSpeed * Time.deltaTime);
-
-                    
-                }
-
-
-
-
-
-
-
+        if(Vector3.Angle(vectorInFrontOfBoat.position - transform.position, Vector3.forward) >= maxRotationAngle)
+        {
+            transform.Rotate(Vector3.up * -currentRotation * RotationSpeed * Time.deltaTime);
+        }
 
 
         // var rotation = transform.eulerAngles;
@@ -182,10 +148,6 @@ public class PlayerController : MonoBehaviour
 
     public float boost()
     {
-        // Get input from keys/controller
-        //boostInput = Input.GetAxis("Jump");
-
-
         // Set the factor for the input
         velocity += BoostAccelerationRate*Time.deltaTime;
 
