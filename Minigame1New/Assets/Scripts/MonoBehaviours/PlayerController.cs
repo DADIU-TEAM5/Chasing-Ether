@@ -174,9 +174,6 @@ public class PlayerController : MonoBehaviour
             if (boatTurn < 0)
                 boatTurn = 0;
         }
-
-
-        print(boatTurn);
     }
 
 
