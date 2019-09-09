@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7097962804688195830}
   m_Layer: 0
   m_Name: PlayerBoat 1
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -55,6 +55,7 @@ MonoBehaviour:
   enablePhoneControls: 1
   minTiltAngleThreshold: 0.1
   vectorInFrontOfBoat: {fileID: 7097962803017195901}
+  velocity: 0
   fan: {fileID: 1265611317731363600}
   boatGraphics: {fileID: 7097962804631244483}
   gyroController: {fileID: 0}
@@ -134,7 +135,7 @@ GameObject:
   - component: {fileID: 434069429663753093}
   m_Layer: 0
   m_Name: Boat 1
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
