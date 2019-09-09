@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Ship_mat
+  m_Name: Cliff02_mat
   m_Shader: {fileID: -6465566751694194690, guid: 3613d6eb46d09294d854b6557f976f0c,
     type: 3}
   m_ShaderKeywords: 
@@ -21,15 +21,15 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - Texture2D_7848FCBA:
-        m_Texture: {fileID: 2800000, guid: 6a0612677d0a2094a87d53e064daf7ce, type: 3}
+        m_Texture: {fileID: 2800000, guid: ada46e17a7d889b44af5ce71df169d66, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_7EFCF882:
-        m_Texture: {fileID: 2800000, guid: 5bccc8da5da0774458a1a1afa112fe77, type: 3}
+        m_Texture: {fileID: 2800000, guid: 131a97b1ce2ee564db873e13d01f4266, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_952CA6FE:
-        m_Texture: {fileID: 2800000, guid: b9337001dda762f438605d69aa4d7fbe, type: 3}
+        m_Texture: {fileID: 2800000, guid: 917018bf8b2bacc4ab5026fedf24940b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseMap:
@@ -61,7 +61,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_72538CB4: 1
+    - Vector1_72538CB4: 0
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -88,7 +88,7 @@ Material:
     - _Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
---- !u!114 &3101611844348397821
+--- !u!114 &496781490774341334
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}

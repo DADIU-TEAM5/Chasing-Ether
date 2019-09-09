@@ -51,6 +51,7 @@ public class CollisionManager : MonoBehaviour
         TeleportObject.transform.rotation = Quaternion.identity;
         transform.localPosition = Vector3.zero;
         transform.localRotation = Quaternion.identity;
+        TeleportObject.GetComponent<PlayerController>().velocity = TeleportObject.GetComponent<PlayerController>().MinSpeed;
     }
 
 }
