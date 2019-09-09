@@ -17,13 +17,17 @@ public class MicrophoneInput : MonoBehaviour
     private float backgroundSoundsSum = 0;
     private float backgroundSoundsArv;
 
-    public bool soundIsActivated = false;
+    //public bool soundIsActivated = false;
+    public BoolVariable soundIsActivated;
 
 
     void Start()
     {
-        device = Microphone.devices[0];
-        micRecord = Microphone.Start(device, true, 5, 44100);
+        if (Microphone.devices.Length > 0)
+        {
+            device = Microphone.devices[0];
+            micRecord = Microphone.Start(device, true, 5, 44100);
+        }
     }
     void Update()
     {
@@ -48,11 +52,11 @@ public class MicrophoneInput : MonoBehaviour
     {
         if(volume > 0.1f)
         {
-            soundIsActivated = true;
+            soundIsActivated.Value = true;
         }
         else
         {
-            soundIsActivated = false;
+            soundIsActivated.Value = false;
         }
            // print(volume);
         
