@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbfcc83bd907dd7459d956d045d0da9d, type: 3}
   m_Name: RespawnPoint
   m_EditorClassIdentifier: 
-  Value: {x: -0.47, y: 0.6, z: 0}
+  Value: {x: 38.8, y: 0, z: -554.69995}
