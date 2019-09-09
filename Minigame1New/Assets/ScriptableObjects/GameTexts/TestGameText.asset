@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f1d3251148ceb441910a132ae2c2d2e, type: 3}
+  m_Name: TestGameText
+  m_EditorClassIdentifier: 
+  TextVariations:
+  - Locale: {fileID: 11400000, guid: e52206de7e99dbd41865852de75603a1, type: 2}
+    Text: Indstillinger
+  - Locale: {fileID: 11400000, guid: cc213f77c55818c4ca5fa11f859d3cf9, type: 2}
+    Text: Settings
+  CurrentLocale: {fileID: 11400000, guid: 09984dd6fd0e21c48877546c22a58749, type: 2}
