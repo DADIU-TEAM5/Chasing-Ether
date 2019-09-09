@@ -234,6 +234,7 @@ GameObject:
   - component: {fileID: 175599920}
   - component: {fileID: 175599919}
   - component: {fileID: 175599918}
+  - component: {fileID: 175599921}
   m_Layer: 5
   m_Name: E
   m_TagString: Untagged
@@ -304,9 +305,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 774904616}
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 774904621}
+        m_MethodName: pressUI
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -355,6 +356,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 175599916}
   m_CullTransparentMesh: 0
+--- !u!114 &175599921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175599916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e23a8e459ec44fc49a46b321b84dc475, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Manager: {fileID: 11400000, guid: 08b3df570c4b65f46b31e46df67a255d, type: 2}
+  Locale: {fileID: 11400000, guid: cc213f77c55818c4ca5fa11f859d3cf9, type: 2}
 --- !u!1 &349733925 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4723756531066445875, guid: 14d363fe01c2a294996f4abae3cc0bf7,
@@ -507,6 +522,7 @@ GameObject:
   - component: {fileID: 598696792}
   - component: {fileID: 598696791}
   - component: {fileID: 598696790}
+  - component: {fileID: 598696793}
   m_Layer: 5
   m_Name: E
   m_TagString: pop
@@ -649,6 +665,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 598696788}
   m_CullTransparentMesh: 0
+--- !u!114 &598696793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 598696788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59bc3dd9e6cdf2149a85e656bdccf217, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mute: {fileID: 0}
+  low: {fileID: 0}
+  middle: {fileID: 0}
+  high: {fileID: 0}
 --- !u!1 &774904616
 GameObject:
   m_ObjectHideFlags: 0
@@ -661,6 +693,7 @@ GameObject:
   - component: {fileID: 774904620}
   - component: {fileID: 774904619}
   - component: {fileID: 774904618}
+  - component: {fileID: 774904621}
   m_Layer: 5
   m_Name: D
   m_TagString: pop
@@ -792,6 +825,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 774904616}
   m_CullTransparentMesh: 0
+--- !u!114 &774904621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774904616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59bc3dd9e6cdf2149a85e656bdccf217, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mute: {fileID: 0}
+  low: {fileID: 0}
+  middle: {fileID: 0}
+  high: {fileID: 0}
 --- !u!224 &923089501 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4723756531337208052, guid: 14d363fe01c2a294996f4abae3cc0bf7,
@@ -1298,9 +1347,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 598696788}
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 598696793}
+        m_MethodName: pressUI
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1311,6 +1360,20 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &1301557057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1301557052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e23a8e459ec44fc49a46b321b84dc475, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Manager: {fileID: 11400000, guid: 08b3df570c4b65f46b31e46df67a255d, type: 2}
+  Locale: {fileID: 11400000, guid: e52206de7e99dbd41865852de75603a1, type: 2}
 --- !u!114 &1342166162 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2537265369682843979, guid: d13d0f9d95271e24ab3a94652fe1f2d5,
