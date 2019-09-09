@@ -20,20 +20,34 @@ public class MicrophoneInput : MonoBehaviour
     public bool soundIsActivated = false;
 
 
+    public Text tex;
+
     void Start()
     {
+        
         if (Microphone.devices.Length > 0)
         {
-            device = Microphone.devices[0];
+            int workingdevice =0;
+            for (int i = 0; i < Microphone.devices.Length; i++)
+            {
+
+                if(Microphone.devices[i] != null)
+                {
+                    workingdevice = i;
+                }
+            }
+            device = Microphone.devices[workingdevice];
             micRecord = Microphone.Start(device, true, 5, 44100);
         }
     }
     void Update()
     {
         volume = GetMaxVolume();
-       // x = gameObject.transform.position.x;
-		//y = gameObject.transform.position.y;
-		//z = gameObject.transform.position.z;
+        // x = gameObject.transform.position.x;
+        //y = gameObject.transform.position.y;
+        //z = gameObject.transform.position.z;
+        //print("work now!");
+        
 
         if (Time.frameCount < countBackground)
             backgroundSoundsSum += volume;
@@ -49,7 +63,8 @@ public class MicrophoneInput : MonoBehaviour
 
     private void MoveObject()
     {
-        if(volume > 0.1f)
+        tex.text = "volume level " + GetMaxVolume() * 1000;
+        if (volume > 0.1f)
         {
             soundIsActivated = true;
         }
@@ -80,9 +95,12 @@ public class MicrophoneInput : MonoBehaviour
   
     private float GetMaxVolume()
     {
+        print("n0");
         float maxVolume = 0f;
         int sampleSize = 128;
         float[] volumeData = new float[sampleSize];
+
+        
         int offset = Microphone.GetPosition(device) - sampleSize + 1;
         if (offset < 0)
         {
@@ -90,6 +108,7 @@ public class MicrophoneInput : MonoBehaviour
         }
         micRecord.GetData(volumeData, offset);
 
+        
         for (int i = 0; i < 128; i++)
         {
             float tempMax = volumeData[i];
@@ -98,6 +117,7 @@ public class MicrophoneInput : MonoBehaviour
                 maxVolume = tempMax;
             }
         }
+        tex.text = "goat";
         return maxVolume;
     }
 

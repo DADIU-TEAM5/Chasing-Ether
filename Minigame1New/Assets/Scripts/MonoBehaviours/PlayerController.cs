@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
-
+    
     float boatTurn =0;
 
    // public GameObject testCube;
@@ -113,7 +113,7 @@ public class PlayerController : MonoBehaviour
                 velocity = MinSpeed;
         }
 
-
+        
 
         if (Input.GetButton("Jump") || microPhoneInput.soundIsActivated)
         {
