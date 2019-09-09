@@ -31,7 +31,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 407a5e149ab40d42963e2fbf21c15881
     GuidInternal: 
-    m_lastTime: -8586335928756914526
+    m_lastTime: -8586335854327429737
     List:
     - name: Music
       guid: 37084c1a0aad1f43aae2e0157e658f39
@@ -98,7 +98,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 8b2327f5e89c474f99aff6e11b49d2d2
     GuidInternal: 
-    m_lastTime: -8586335928756306138
+    m_lastTime: -8586335767582845387
     List:
     - name: BoatAccel
       guid: d9ef26a09200784ba2ce337a3cf735ab
@@ -231,7 +231,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: a8e5becc2da7834c93307ba6fe14bb4e
     GuidInternal: 
-    m_lastTime: -8586335928757237325
+    m_lastTime: -8586335767582915192
     List:
     - name: BoatSpeed
       guid: 10c1051a72406f42aaffe3ed3f9b8dd8
@@ -346,5 +346,9 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /Minigame1New_WwiseProject
+  - /Minigame1New_WwiseProject/Events
+  - /Minigame1New_WwiseProject/Events/Atmos
+  - /Minigame1New_WwiseProject/Events/SFX
+  - /Minigame1New_WwiseProject/Events/SFX/Boat
   autoPopulateEnabled: 1
   CurrentPluginConfig: 
