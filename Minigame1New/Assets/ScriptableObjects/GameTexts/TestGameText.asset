@@ -12,4 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f1d3251148ceb441910a132ae2c2d2e, type: 3}
   m_Name: TestGameText
   m_EditorClassIdentifier: 
+  TextVariations:
+  - Locale: {fileID: 11400000, guid: e52206de7e99dbd41865852de75603a1, type: 2}
+    Text: Indstillinger
+  - Locale: {fileID: 11400000, guid: cc213f77c55818c4ca5fa11f859d3cf9, type: 2}
+    Text: Settings
   CurrentLocale: {fileID: 11400000, guid: 09984dd6fd0e21c48877546c22a58749, type: 2}

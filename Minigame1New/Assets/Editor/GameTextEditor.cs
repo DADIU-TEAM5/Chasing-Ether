@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 using System.Linq;
+using UnityEditor.EditorTools;
 
 [CustomEditor(typeof(GameText))]
 public class GameTextEditor : Editor
@@ -35,5 +36,7 @@ public class GameTextEditor : Editor
             GUILayout.Label(gametextObj.TextVariations[i].Locale.name);
             gametextObj.TextVariations[i].Text = EditorGUILayout.TextArea(gametextObj.TextVariations[i].Text);
         }
+
+        EditorUtility.SetDirty(target);
    }
 }
