@@ -176,7 +176,7 @@ public class PlayerController : MonoBehaviour
         }
 
 
-        print(boatTurn);
+        //print(boatTurn);
     }
 
 
