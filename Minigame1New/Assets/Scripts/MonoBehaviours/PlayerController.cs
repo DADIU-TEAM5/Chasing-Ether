@@ -8,8 +8,6 @@ public class PlayerController : MonoBehaviour
 
 
 
-    public FloatVariable gyroY;
-
     [Header("Boat Variables")]
 
     public float MaxSpeed;

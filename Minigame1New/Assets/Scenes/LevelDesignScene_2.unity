@@ -7546,7 +7546,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &621539393
 Transform:
   m_ObjectHideFlags: 0
@@ -11936,7 +11936,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   windspeed: 5
   countBackground: 50
-  soundIsActivated: {fileID: 0}
+  soundIsActivated: {fileID: 11400000, guid: c85467cec31a1a443920d3d70aa97f3e, type: 2}
 --- !u!114 &983955900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11944,7 +11944,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 983955898}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e0e91016bd4b64d43a42fe2ae913062a, type: 3}
   m_Name: 
@@ -13247,7 +13247,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1105058497
 Transform:
   m_ObjectHideFlags: 0
@@ -16762,7 +16762,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1296946417
 Transform:
   m_ObjectHideFlags: 0
@@ -25297,7 +25297,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: d0848511e5acef746bb55721d0dad645,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 23
+      value: 66
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: d0848511e5acef746bb55721d0dad645,
         type: 3}
@@ -25307,7 +25307,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: d0848511e5acef746bb55721d0dad645,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -350
+      value: 324
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: d0848511e5acef746bb55721d0dad645,
         type: 3}
