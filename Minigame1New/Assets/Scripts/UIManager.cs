@@ -17,6 +17,15 @@ public class UIManager : MonoBehaviour
         gameObject.SetActive(!originalState);
     }
 
+    public void playAnimation()
+    {
+        Animator animator;
+        bool animatorStatus;
+        animator = GetComponent<Animator>();
+        animatorStatus =animator.GetBool("isOpen");
+        animator.SetBool("isOpen", !animatorStatus);
+    }
+
     public void volumeCheck()
     {
         GameObject sliderGO = transform.Find("Slider").gameObject;
