@@ -9,6 +9,7 @@ public class SceneController : MonoBehaviour
 
     private AssetBundle myLoadedAssetBundle;
     private string[] scenePaths;
+    public GameObject menuParrent;
 
     void Start()
     {
@@ -22,6 +23,9 @@ public class SceneController : MonoBehaviour
         
     }
 
+
+    // Called when a level is selected from the menu
+    // TODO Add the relevant levels
     public void startScene(int sceneNumber)
     {
 
@@ -32,8 +36,12 @@ public class SceneController : MonoBehaviour
             print("Loading LevelDesignScene_2");
             SceneManager.LoadScene("LevelDesignScene_2", LoadSceneMode.Additive);
 
+            Destroy(menuParrent);
+
             print("Changing to LevelDesignScene_2");
             SceneManager.SetActiveScene(SceneManager.GetSceneByName("LevelDesignScene_2"));
+
+           
         }
       
        

@@ -6,6 +6,7 @@ public class buttonHandler : MonoBehaviour
 {
     public Button yourButton;
     public RawImage image;
+   // public Camera cam;
 
     void Start()
     {
@@ -17,5 +18,7 @@ public class buttonHandler : MonoBehaviour
     {
         print("You have clicked the button!");
         image.GetComponent<Animator>().SetBool("pressedTitle", true);
+        
+        
     }
 }
