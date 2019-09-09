@@ -22,8 +22,11 @@ public class MicrophoneInput : MonoBehaviour
 
     void Start()
     {
-        device = Microphone.devices[0];
-        micRecord = Microphone.Start(device, true, 5, 44100);
+        if (Microphone.devices.Length > 0)
+        {
+            device = Microphone.devices[0];
+            micRecord = Microphone.Start(device, true, 5, 44100);
+        }
     }
     void Update()
     {
