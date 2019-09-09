@@ -43,6 +43,7 @@ public class PlayerController : MonoBehaviour
 
     //public MicrophoneInput microPhoneInput;
     public BoolVariable microPhoneInput;
+    public GyroController gyroController;
 
     public BoolVariable playerMove;
 
