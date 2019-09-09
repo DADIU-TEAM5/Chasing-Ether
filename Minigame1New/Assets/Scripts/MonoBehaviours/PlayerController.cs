@@ -6,9 +6,9 @@ using UnityEngine.UI;
 public class PlayerController : MonoBehaviour
 {
 
-   
+    float boatTurn =0;
 
-   
+   // public GameObject testCube;
 
     [Header("Boat Variables")]
 
@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
     [Header("Set up")]
     public Transform vectorInFrontOfBoat;
 
-    float velocity ;
+    public float velocity ;
 
     
     
@@ -68,11 +68,10 @@ public class PlayerController : MonoBehaviour
         if (enablePhoneControls)
         {
 
-
-
-
-            currentRotation = Input.gyro.attitude.x;
+            currentRotation = gyroController.steeringInput;
             
+
+            /*
             if (Mathf.Abs(currentRotation) > minTiltAngleThreshold)
             {
                 currentRotation = currentRotation * -1;
@@ -83,34 +82,13 @@ public class PlayerController : MonoBehaviour
             }
 
 
-                /*
-                if (Mathf.Abs(currentRotation) > minTiltAngleThreshold)
-                {
-
-                    print(currentRotation);
-
-                    if (currentRotation < 0)
-                    {
-                        currentRotation = -1 * Mathf.Lerp(minTiltAngleThreshold, maxTiltAngleThreshold, Mathf.Abs(currentRotation));
-                    }
-                    else
-                    {
-                        currentRotation = Mathf.Lerp(minTiltAngleThreshold, maxTiltAngleThreshold, Mathf.Abs(currentRotation));
-                    }
-
-                }
-                else
-                {
-                    currentRotation = 0;
-                }
-                print(currentRotation);
-                */
+              */ 
                
         }
         else
         {
             currentRotation = Input.GetAxis("Horizontal");
-            currentRotation *= 0.3f;
+            
         }
         
 
@@ -120,7 +98,13 @@ public class PlayerController : MonoBehaviour
     public void Movement()
     {
 
-        
+        if (Mathf.Abs(boatTurn) < 1)
+        {
+            boatTurn += Time.deltaTime *currentRotation*2;
+
+
+        }
+
 
         if (velocity > MinSpeed)
         {
@@ -152,7 +136,7 @@ public class PlayerController : MonoBehaviour
             
                 transform.Rotate(Vector3.up * currentRotation * RotationSpeed * Time.deltaTime);
 
-                boatGraphics.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, -RotationSpeed * currentRotation));
+                boatGraphics.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, -35 * boatTurn));
 
                 if(Vector3.Angle(vectorInFrontOfBoat.position - transform.position, Vector3.forward) >= maxRotationAngle)
                 {
@@ -177,6 +161,22 @@ public class PlayerController : MonoBehaviour
         fan.Rotate(Vector3.forward, -10* velocity * Time.deltaTime);
         transform.Translate(Vector3.forward*velocity *Time.deltaTime);
 
+
+        if(boatTurn < 0)
+        {
+            boatTurn += Time.deltaTime;
+            if (boatTurn > 0)
+                boatTurn = 0;
+        }
+        else if(boatTurn> 0)
+        {
+            boatTurn -= Time.deltaTime;
+            if (boatTurn < 0)
+                boatTurn = 0;
+        }
+
+
+        print(boatTurn);
     }
 
 
@@ -194,6 +194,11 @@ public class PlayerController : MonoBehaviour
 
         return BoostAccelerationRate;
                
+    }
+
+    private static Quaternion GyroToUnity(Quaternion q)
+    {
+        return new Quaternion(q.x, q.y, -q.z, -q.w);
     }
 
 }
