@@ -6,6 +6,7 @@ TagManager:
   tags:
   - CheckPoint
   - testEnemy
+  - pop
   layers:
   - Default
   - TransparentFX
