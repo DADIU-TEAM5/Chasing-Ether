@@ -22,7 +22,7 @@ public class GyroController : MonoBehaviour
     void Update()
     {
         //GyroRotate();
-         rotation = Input.gyro.rotationRate;
+         //rotation = Input.gyro.rotationRate;
  
         //Water.transform.Rotate(Vector3.forward, rotation.y);
 
