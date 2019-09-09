@@ -58,7 +58,7 @@ Transform:
   m_GameObject: {fileID: 2070856981661830415}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 4890043213626051393}
   m_Father: {fileID: 0}
@@ -87,14 +87,16 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2070856981661830415}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: abf58f49d207d7f4cb36ad30e88a86b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
-  isPatroling: 0
-  wayPoints: []
+  isPatroling: 1
+  wayPoints:
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &131669737913102589
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -298,43 +300,7 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -1440817405386165052, guid: b95be7dcd3a726643a50f692ced89f3a,
         type: 3}
-    - target: {fileID: 1881222450244475565, guid: 72217c93305c8774bbb86fee27f392d4,
-        type: 3}
-      propertyPath: wayPoints.Array.data[0]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1881222450244475565, guid: 72217c93305c8774bbb86fee27f392d4,
-        type: 3}
-      propertyPath: wayPoints.Array.data[1]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8322881467763825113, guid: 72217c93305c8774bbb86fee27f392d4,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.67
-      objectReference: {fileID: 0}
-    - target: {fileID: 8322881467763825113, guid: 72217c93305c8774bbb86fee27f392d4,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.57
-      objectReference: {fileID: 0}
-    - target: {fileID: 8322881467763825113, guid: 72217c93305c8774bbb86fee27f392d4,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.26
-      objectReference: {fileID: 0}
-    - target: {fileID: 8963976467355410518, guid: 72217c93305c8774bbb86fee27f392d4,
-        type: 3}
-      propertyPath: m_Name
-      value: FloatPoint
-      objectReference: {fileID: 0}
-    - target: {fileID: 8144279177678427974, guid: 72217c93305c8774bbb86fee27f392d4,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ac880936408cfe14998b3d5a41ef3758, type: 2}
-    m_RemovedComponents:
-    - {fileID: 1881222450244475565, guid: 72217c93305c8774bbb86fee27f392d4, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72217c93305c8774bbb86fee27f392d4, type: 3}
 --- !u!1 &8468937443417749842 stripped
 GameObject:
