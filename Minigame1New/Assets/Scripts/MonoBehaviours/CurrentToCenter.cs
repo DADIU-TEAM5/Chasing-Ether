@@ -26,7 +26,12 @@ public class CurrentToCenter : MonoBehaviour
         EnterCurrent.Raise();
     }
 
+    void OnTriggerExit(Collider collider) {
+        ExitCurrent.Raise();
+    }
+
     IEnumerator MoveToInner(Transform otherTransform, Vector3 lookAt) {
+        Debug.Log("OYOO");
         var start = otherTransform.rotation;
         var end = Vector3.Normalize(lookAt - otherTransform.position); 
 
@@ -38,7 +43,7 @@ public class CurrentToCenter : MonoBehaviour
         //    yield return new WaitForSeconds(Time.deltaTime);
         //}
 
-        otherTransform.rotation = quaternionLookat;
+        otherTransform.rotation = Quaternion.Lerp(start, quaternionLookat, 1f);
         yield break;
     }
 }
