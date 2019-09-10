@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class SceneController : MonoBehaviour
 {
@@ -10,11 +11,15 @@ public class SceneController : MonoBehaviour
     private AssetBundle myLoadedAssetBundle;
     private string[] scenePaths;
     public GameObject menuParrent;
+    public int sceneNumber;
+
+    public Text text;
 
     void Start()
     {
         //myLoadedAssetBundle = AssetBundle.LoadFromFile("Assets/scenes");
         //scenePaths = myLoadedAssetBundle.GetAllScenePaths();
+        
     }
 
     // Update is called once per frame
@@ -26,7 +31,7 @@ public class SceneController : MonoBehaviour
 
     // Called when a level is selected from the menu
     // TODO Add the relevant levels
-    public void startScene(int sceneNumber)
+    public void startScene()
     {
 
         print("Enter scene");
@@ -45,6 +50,37 @@ public class SceneController : MonoBehaviour
         }
       
        
+    }
+
+    public void goLeft()
+    {
+        if (sceneNumber > 0)
+            sceneNumber--;
+        print("Left :" + sceneNumber);
+        changeText();
+    }
+
+    public void goRigth()
+    {
+        if (sceneNumber < 3)
+            sceneNumber++;
+        print("Right :" + sceneNumber);
+        changeText();
+    }
+
+    public void changeText()
+    {
+        string level;
+        if (sceneNumber == 0)
+        {
+            level = "Tutorial";
+        }
+        else
+        {
+            level = "Level " + sceneNumber;
+        }
+        
+        text.text = level;
     }
 
 }
