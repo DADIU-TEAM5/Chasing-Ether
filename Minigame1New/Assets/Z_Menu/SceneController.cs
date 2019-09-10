@@ -35,18 +35,21 @@ public class SceneController : MonoBehaviour
     {
 
         print("Enter scene");
-
+        if (sceneNumber == 0)
+        {
+            SceneManager.LoadScene("Tutorial");
+        }
         if (sceneNumber == 1)
         {
-            print("Loading LevelDesignScene_2");
-            SceneManager.LoadScene("LevelDesignScene_2", LoadSceneMode.Additive);
-
-            Destroy(menuParrent);
-
-            print("Changing to LevelDesignScene_2");
-            SceneManager.SetActiveScene(SceneManager.GetSceneByName("LevelDesignScene_2"));
-
-           
+            SceneManager.LoadScene("Level 1");
+        }
+        if (sceneNumber == 2)
+        {
+            SceneManager.LoadScene("Level 2");
+        } 
+        if (sceneNumber == 3)
+        {
+            SceneManager.LoadScene("Level 3");
         }
       
        
