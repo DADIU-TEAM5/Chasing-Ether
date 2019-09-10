@@ -1,14 +1,19 @@
 State Group	ID	Name			Wwise Object Path	Notes
-	1298537561	DistanceToCheckpoint			\Default Work Unit\Music\DistanceToCheckpoint	
+	1546448942	DistanceToGiant			\Default Work Unit\Music\DistanceToGiant	
 
 State	ID	Name	State Group			Notes
-	0	None	DistanceToCheckpoint			
-	1183803292	Far	DistanceToCheckpoint			
-	2577305654	Closest	DistanceToCheckpoint			
-	3012222967	Closer	DistanceToCheckpoint			
+	0	None	DistanceToGiant			
+	1183803292	Far	DistanceToGiant			
+	2577305654	Closest	DistanceToGiant			
+	3012222967	Closer	DistanceToGiant			
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	348963605	Reverb			\Default Work Unit\Reverb	
+	1316910230	Impacts			\Default Work Unit\Impacts	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Effect plug-ins	ID	Name	Type				Notes
+	898787341	Have_U_Ever_Been_Outside (Custom)	Wwise RoomVerb			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			
