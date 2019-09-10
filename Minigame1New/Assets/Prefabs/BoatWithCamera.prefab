@@ -278,6 +278,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7097962804688195830, guid: e2fcee761e3e0f047a62175e9a633985,
         type: 3}
+      propertyPath: MaxSpeed
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 7097962804688195830, guid: e2fcee761e3e0f047a62175e9a633985,
+        type: 3}
+      propertyPath: RotationSpeed
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 7097962804688195830, guid: e2fcee761e3e0f047a62175e9a633985,
+        type: 3}
       propertyPath: distanceToDanger
       value: 
       objectReference: {fileID: 11400000, guid: 43c259d177ce18247963aaa3dceaa186,
