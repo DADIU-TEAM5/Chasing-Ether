@@ -20,8 +20,6 @@ public class MicrophoneInput : MonoBehaviour
     public bool soundIsActivated = false;
 
 
-    public Text tex;
-
     void Start()
     {
         
@@ -63,7 +61,6 @@ public class MicrophoneInput : MonoBehaviour
 
     private void MoveObject()
     {
-        tex.text = "volume level " + GetMaxVolume() * 1000;
         if (volume > 0.1f)
         {
             soundIsActivated = true;
@@ -95,7 +92,6 @@ public class MicrophoneInput : MonoBehaviour
   
     private float GetMaxVolume()
     {
-        print("n0");
         float maxVolume = 0f;
         int sampleSize = 128;
         float[] volumeData = new float[sampleSize];
@@ -117,7 +113,6 @@ public class MicrophoneInput : MonoBehaviour
                 maxVolume = tempMax;
             }
         }
-        tex.text = "goat";
         return maxVolume;
     }
 
