@@ -1,9 +1,14 @@
 fileFormatVersion: 2
-guid: d50bfc8e106f93843a28c8405759d29c
+guid: 4c5e6fec9176c814ab7b55ead987d30c
 ModelImporter:
   serializedVersion: 26
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cliff04_low_polySurface1Mat
+    second: {fileID: 2100000, guid: a646d0bf6f6cdd8489dbddc17902fc21, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

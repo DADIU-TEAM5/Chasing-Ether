@@ -1,9 +1,14 @@
 fileFormatVersion: 2
-guid: df9d0d26a6479fb408fa10edf32a8dee
+guid: 9c3909c5ed93f4c45a46b253a8157c0b
 ModelImporter:
   serializedVersion: 26
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cliff05Mat
+    second: {fileID: 2100000, guid: d2bb7fbfcb141564a9dbfa70256db2d5, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

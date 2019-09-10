@@ -27,10 +27,11 @@ public class CollisionManager : MonoBehaviour
 
     void OnTriggerEnter(Collider collider)
     {
-        if (collider.tag != "CheckPoint")
+        if (collider.tag != "CheckPoint" && collider.tag != "wayPoint")
         {
             Killed();
         }
+
     }
 
     public void Killed()
@@ -50,6 +51,7 @@ public class CollisionManager : MonoBehaviour
         TeleportObject.transform.rotation = Quaternion.identity;
         transform.localPosition = Vector3.zero;
         transform.localRotation = Quaternion.identity;
+        TeleportObject.GetComponent<PlayerController>().velocity = TeleportObject.GetComponent<PlayerController>().MinSpeed;
     }
 
 }
