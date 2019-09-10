@@ -1027,11 +1027,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 144814987620713142, guid: 63c9a3050e329d7438834604f50d7b23,
-        type: 3}
-      propertyPath: m_Name
-      value: Cliff05_low (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 3772087592839803045, guid: 63c9a3050e329d7438834604f50d7b23,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1086,6 +1081,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 144814987620713142, guid: 63c9a3050e329d7438834604f50d7b23,
+        type: 3}
+      propertyPath: m_Name
+      value: Cliff05_low (2)
       objectReference: {fileID: 0}
     - target: {fileID: 1913547590392985539, guid: 63c9a3050e329d7438834604f50d7b23,
         type: 3}
@@ -1323,11 +1323,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 144814987620713142, guid: 63c9a3050e329d7438834604f50d7b23,
-        type: 3}
-      propertyPath: m_Name
-      value: Cliff05_low (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 3772087592839803045, guid: 63c9a3050e329d7438834604f50d7b23,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1397,6 +1392,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.33911097
+      objectReference: {fileID: 0}
+    - target: {fileID: 144814987620713142, guid: 63c9a3050e329d7438834604f50d7b23,
+        type: 3}
+      propertyPath: m_Name
+      value: Cliff05_low (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63c9a3050e329d7438834604f50d7b23, type: 3}
@@ -4943,6 +4943,7 @@ MonoBehaviour:
   windspeed: 5
   countBackground: 50
   soundIsActivated: 0
+  tex: {fileID: 0}
 --- !u!114 &1431912427
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5112,11 +5113,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6094980022305530118, guid: 21ff6e4a5dad8b744a7630fd00c91809,
-        type: 3}
-      propertyPath: m_Name
-      value: StraightPathWide Variant
-      objectReference: {fileID: 0}
     - target: {fileID: 8678531600020623266, guid: 21ff6e4a5dad8b744a7630fd00c91809,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5186,6 +5182,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1.727
+      objectReference: {fileID: 0}
+    - target: {fileID: 6094980022305530118, guid: 21ff6e4a5dad8b744a7630fd00c91809,
+        type: 3}
+      propertyPath: m_Name
+      value: StraightPathWide Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21ff6e4a5dad8b744a7630fd00c91809, type: 3}
@@ -5806,11 +5807,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 144814987620713142, guid: 63c9a3050e329d7438834604f50d7b23,
-        type: 3}
-      propertyPath: m_Name
-      value: Cliff05_low
-      objectReference: {fileID: 0}
     - target: {fileID: 3772087592839803045, guid: 63c9a3050e329d7438834604f50d7b23,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5865,6 +5861,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 144814987620713142, guid: 63c9a3050e329d7438834604f50d7b23,
+        type: 3}
+      propertyPath: m_Name
+      value: Cliff05_low
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63c9a3050e329d7438834604f50d7b23, type: 3}
@@ -6672,12 +6673,12 @@ PrefabInstance:
     - target: {fileID: 7892729442292193001, guid: 7fe00ebafa6984d4abec3e8e0b25d816,
         type: 3}
       propertyPath: Dimensions.x
-      value: 100
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7892729442292193001, guid: 7fe00ebafa6984d4abec3e8e0b25d816,
         type: 3}
       propertyPath: Dimensions.y
-      value: 400
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 7892729442292193001, guid: 7fe00ebafa6984d4abec3e8e0b25d816,
         type: 3}
@@ -6707,7 +6708,7 @@ PrefabInstance:
     - target: {fileID: 7892729442292193015, guid: 7fe00ebafa6984d4abec3e8e0b25d816,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -325
+      value: -219
       objectReference: {fileID: 0}
     - target: {fileID: 7892729442292193015, guid: 7fe00ebafa6984d4abec3e8e0b25d816,
         type: 3}
@@ -6717,7 +6718,7 @@ PrefabInstance:
     - target: {fileID: 7892729442292193015, guid: 7fe00ebafa6984d4abec3e8e0b25d816,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -673
+      value: -516
       objectReference: {fileID: 0}
     - target: {fileID: 7892729442292193015, guid: 7fe00ebafa6984d4abec3e8e0b25d816,
         type: 3}
@@ -7139,6 +7140,16 @@ PrefabInstance:
       propertyPath: microPhoneInput
       value: 
       objectReference: {fileID: 1431912426}
+    - target: {fileID: 5189289374458031686, guid: b7bdfd4d8ed1b914c9a4216b25df2ba1,
+        type: 3}
+      propertyPath: RotationSpeed
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 5189289374458031686, guid: b7bdfd4d8ed1b914c9a4216b25df2ba1,
+        type: 3}
+      propertyPath: MaxSpeed
+      value: 35
+      objectReference: {fileID: 0}
     - target: {fileID: 5832390959661542771, guid: b7bdfd4d8ed1b914c9a4216b25df2ba1,
         type: 3}
       propertyPath: Waves
