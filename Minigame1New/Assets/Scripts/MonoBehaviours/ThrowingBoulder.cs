@@ -9,6 +9,9 @@ public class ThrowingBoulder : MonoBehaviour
     public GameObject boat;
     public GameObject target;
 
+
+    public BoolVariable throwing;
+
     PlayerController boatScript;
 
     public Transform handPosition;
@@ -24,6 +27,9 @@ public class ThrowingBoulder : MonoBehaviour
     {
         boatScript = boat.GetComponent<PlayerController>();
         cooldown = timeBetweenThrows;
+
+        boulder.SetActive(false);
+        target.SetActive(false);
     }
 
     // Update is called once per frame
@@ -34,22 +40,36 @@ public class ThrowingBoulder : MonoBehaviour
 
         if(cooldown >= timeBetweenThrows)
         {
-            cooldown = 0;
-            throwPoint = handPosition.position;
-            boulder.transform.position = handPosition.position;
-
-
-           target.transform.position = boat.transform.position + (Vector3.forward*((timeBetweenThrows* boatScript.velocity)-timeBetweenThrows*boatScript.SpeedDecayRate))+Vector3.up +(Vector3.right*Random.Range(-2,2));
             
-
+            throwing.Value = true;
         }
         else
         {
             moveBoulder();
         }
+
+        if (!(timeBetweenThrows > cooldown))
+        {
+            boulder.SetActive(false);
+            target.SetActive(false);
+        }
     }
 
+    public void ThrowEvent()
+    {
 
+        cooldown = 0;
+        throwPoint = handPosition.position;
+        boulder.SetActive(true);
+        target.SetActive(true);
+
+        boulder.transform.position = handPosition.position;
+
+
+        target.transform.position = boat.transform.position + (Vector3.forward * ((timeBetweenThrows * boatScript.velocity) - timeBetweenThrows * boatScript.SpeedDecayRate)) + Vector3.up + (Vector3.right * Random.Range(-2, 2));
+
+       print("throw");
+    }
     void moveBoulder()
     {
         float cTime = cooldown/timeBetweenThrows;
@@ -59,5 +79,7 @@ public class ThrowingBoulder : MonoBehaviour
         currentPos.y += 40 * Mathf.Sin(Mathf.Clamp01(cTime) * Mathf.PI);
         // finally assign the computed position to our gameObject:
         boulder.transform.position = currentPos;
+
+        
     }
 }
