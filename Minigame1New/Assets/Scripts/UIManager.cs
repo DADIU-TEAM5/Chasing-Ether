@@ -63,7 +63,7 @@ public class UIManager : MonoBehaviour
 
     public void loadHome()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("MenuScene2");
     }
 
 }
