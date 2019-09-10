@@ -631,8 +631,9 @@ GameObject:
   - component: {fileID: 9148287470451300285}
   - component: {fileID: 2255973190482320741}
   - component: {fileID: 2255973190482320742}
+  - component: {fileID: 4696808093103427682}
   m_Layer: 0
-  m_Name: golemRigWithSphere
+  m_Name: golemRigWithSphere_andAnim
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -704,6 +705,24 @@ MonoBehaviour:
   playerObj: {fileID: 0}
   lerpSpeed: 0.3
   walkingAnim: {fileID: 11400000, guid: c6b2f85bc2c80f448a482f631b7f308b, type: 2}
+  distanceToGolem: {fileID: 11400000, guid: dd9ffb722c87ba54b9e5b4fd10932b95, type: 2}
+--- !u!114 &4696808093103427682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2748432608704219348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b54b2c625b680d4c96fb0e3dc9f6194, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boulder: {fileID: 0}
+  boat: {fileID: 0}
+  target: {fileID: 0}
+  handPosition: {fileID: 3934472224031648808}
+  timeBetweenThrows: 2
 --- !u!1 &3014596557370697597
 GameObject:
   m_ObjectHideFlags: 0
@@ -860,6 +879,7 @@ Transform:
   - {fileID: 6471697246100052226}
   - {fileID: 8560454204450330359}
   - {fileID: 4342683387558298847}
+  - {fileID: 3934472224031648808}
   m_Father: {fileID: 2788274846563859065}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -893,6 +913,37 @@ Transform:
   - {fileID: 674466580218223756}
   m_Father: {fileID: 8560454204450330359}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3548475362538940247
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3934472224031648808}
+  m_Layer: 0
+  m_Name: ThrowPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3934472224031648808
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3548475362538940247}
+  m_LocalRotation: {x: -0.000000036188176, y: -0.0000000056203584, z: 0.000000029802322,
+    w: -1}
+  m_LocalPosition: {x: -0.0425157, y: 0.07168111, z: 0.03514384}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6241522453003335052}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3565755986742102902
 GameObject:
