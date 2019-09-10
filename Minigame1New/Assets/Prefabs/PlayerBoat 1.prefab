@@ -5628,7 +5628,7 @@ PrefabInstance:
     - target: {fileID: 413980453312313521, guid: 8cbed42093938cd4398e7769c3d1fe5f,
         type: 3}
       propertyPath: EmissionModule.rateOverDistance.scalar
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8cbed42093938cd4398e7769c3d1fe5f, type: 3}
@@ -5708,7 +5708,7 @@ PrefabInstance:
     - target: {fileID: 413980453312313521, guid: 8cbed42093938cd4398e7769c3d1fe5f,
         type: 3}
       propertyPath: EmissionModule.rateOverDistance.scalar
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8cbed42093938cd4398e7769c3d1fe5f, type: 3}
