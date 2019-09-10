@@ -18,7 +18,6 @@ public class Waves : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log($"Dimensions: {Dimensions.x}, {Dimensions.y}");
 
         //Mesh Setup
         Mesh = new Mesh();
@@ -69,7 +68,6 @@ public class Waves : MonoBehaviour
                    + Mesh.vertices[index(p4.x, p4.z)].y * (max - Vector3.Distance(p4, localPos));
 
         //scale
-        Debug.Log($"Height: {height * transform.lossyScale.y / dist}");
         return height * transform.lossyScale.y / dist;
 
     }
@@ -77,7 +75,6 @@ public class Waves : MonoBehaviour
     private Vector3[] GenerateVerts()
     {
         var verts = new Vector3[(Dimensions.x + 1) * (Dimensions.y + 1)];
-        Debug.Log(verts.Length);
 
         //equaly distributed verts
         for(int x = 0; x <= Dimensions.x; x++)
@@ -105,7 +102,6 @@ public class Waves : MonoBehaviour
             }
         }
 
-        Debug.Log("Tries: " + tries.Length);
 
         return tries;
     }
@@ -122,7 +118,7 @@ public class Waves : MonoBehaviour
         {
             for (int z = 0; z <= Dimensions.y; z++)
             {
-                var vec = new Vector2((x / UVScale) % 2, (z / zUVScale) % 2);
+                var vec = new Vector2((x / UVScale) % 2, (z / UVScale) % 2);
                 uvs[index(x, z)] = new Vector2(vec.x <= 1 ? vec.x : 2 - vec.x, vec.y <= 1 ? vec.y : 2 - vec.y);
             }
         }
@@ -163,7 +159,6 @@ public class Waves : MonoBehaviour
                     }
                 }
 
-                Debug.Log($"Length: {verts.Length}, xz = {x}, {z}");
                 verts[index(x, z)] = new Vector3(x, y, z);
             }
         }

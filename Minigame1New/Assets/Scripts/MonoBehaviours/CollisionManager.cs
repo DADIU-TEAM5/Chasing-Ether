@@ -11,43 +11,46 @@ public class CollisionManager : MonoBehaviour
 
     public Vector3 respawnTemp;
     public int healthTemp;
-    private GameObject thisRigidbody;
+
+    
+    public GameObject TeleportObject;
 
     // Start is called before the first frame update
     void Start()
     {
+
+        print("wat");
         playerHealth.Value = 5;
-
-        thisRigidbody = GameObject.FindGameObjectWithTag("Player");
-
-        Vector3 temp = new Vector3(thisRigidbody.transform.position.x, thisRigidbody.transform.position.y, thisRigidbody.transform.position.z);
-        respawnPoint.Value = temp;
+        
+        respawnPoint.Value = transform.position;
     }
 
     void OnTriggerEnter(Collider collider)
     {
         if (collider.tag != "CheckPoint")
         {
-            //print("Hit!");
             Killed();
-
         }
     }
 
     public void Killed()
     {
         playerHealth.Value--;
-
+        /*  
         if (playerHealth.Value > 0)
         {
-            //print("respawn location:  " + respawnPoint.Value);
-            //print("position:   " + gameObject.transform.position);
-            thisRigidbody.transform.position.Set(respawnPoint.Value.x, respawnPoint.Value.y, respawnPoint.Value.z);
-            thisRigidbody.transform.position = respawnPoint.Value;
-
+            TeleportToLastCheckpoint();
         }
+        */
+        TeleportToLastCheckpoint();
+    }
 
-       // print(playerHealth.Value);
+    private void TeleportToLastCheckpoint() {
+        TeleportObject.transform.position = respawnPoint.Value;
+        TeleportObject.transform.rotation = Quaternion.identity;
+        transform.localPosition = Vector3.zero;
+        transform.localRotation = Quaternion.identity;
+        TeleportObject.GetComponent<PlayerController>().velocity = TeleportObject.GetComponent<PlayerController>().MinSpeed;
     }
 
 }

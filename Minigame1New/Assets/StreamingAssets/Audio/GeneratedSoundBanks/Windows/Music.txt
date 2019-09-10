@@ -1,0 +1,41 @@
+Event	ID	Name			Wwise Object Path	Notes
+	374987273	MusicMain			\Music\MusicMain	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	1546448942	DistanceToGiant			\Default Work Unit\Music\DistanceToGiant	
+
+State	ID	Name	State Group			Notes
+	0	None	DistanceToGiant			
+	1183803292	Far	DistanceToGiant			
+	2577305654	Closest	DistanceToGiant			
+	3012222967	Closer	DistanceToGiant			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	3743458	Swell_04	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\Swell_04_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Swells\Swells_Calm\Swell_04\Swell_04		2454328
+	19376472	SwellNotCalm_06	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\SwellNotCalm_06_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Swells\Swells_NotCalm\SwellNotCalm_06\SwellNotCalm_06		2147544
+	36247091	SwellNotCalm_05	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\SwellNotCalm_05_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Swells\Swells_NotCalm\SwellNotCalm_05\SwellNotCalm_05		3067892
+	161248472	Swell_08	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\Swell_08_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Swells\Swells_Calm\Swell_08\Swell_08		2454328
+	187695762	SwellVeryNotCalm_04	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\SwellVeryNotCalm_04_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Swells\Swells_VeryNotCalm\SwellVeryNotCalm_04\SwellVeryNotCalm_04		2147544
+	199030941	SwellVeryNotCalm_12	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\SwellVeryNotCalm_12_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Swells\Swells_VeryNotCalm\SwellVeryNotCalm_12\SwellVeryNotCalm_12		1840760
+	238305034	SwellNotCalm_04	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\SwellNotCalm_04_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Swells\Swells_NotCalm\SwellNotCalm_04\SwellNotCalm_04		1840760
+	248467082	SwellVeryNotCalm_01	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\SwellVeryNotCalm_01_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Swells\Swells_VeryNotCalm\SwellVeryNotCalm_01\SwellVeryNotCalm_01		3067892
+	278392918	SwellNotCalm_01	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\SwellNotCalm_01_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Swells\Swells_NotCalm\SwellNotCalm_01\SwellNotCalm_01		1227196
+	305213814	SwellVeryNotCalm_07	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\SwellVeryNotCalm_07_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Swells\Swells_VeryNotCalm\SwellVeryNotCalm_07\SwellVeryNotCalm_07		2147544
+	335101855	SwellNotCalm_02	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\SwellNotCalm_02_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Swells\Swells_NotCalm\SwellNotCalm_02\SwellNotCalm_02		2454328
+	372320826	SwellVeryNotCalm_14	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\SwellVeryNotCalm_14_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Swells\Swells_VeryNotCalm\SwellVeryNotCalm_14\SwellVeryNotCalm_14		2147544
+	376767271	Swell_07	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\Swell_07_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Swells\Swells_Calm\Swell_07\Swell_07		2454328
+	386448110	SwellVeryNotCalm_05	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\SwellVeryNotCalm_05_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Swells\Swells_VeryNotCalm\SwellVeryNotCalm_05\SwellVeryNotCalm_05		2147544
+	409905848	SwellVeryNotCalm_02	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\SwellVeryNotCalm_02_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Swells\Swells_VeryNotCalm\SwellVeryNotCalm_02\SwellVeryNotCalm_02		3067892
+	469943774	Swell_06	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\Swell_06_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Swells\Swells_Calm\Swell_06\Swell_06		2147544
+	478967398	SwellVeryNotCalm_06	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\SwellVeryNotCalm_06_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Swells\Swells_VeryNotCalm\SwellVeryNotCalm_06\SwellVeryNotCalm_06		2147544
+	552697097	Swell_01	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\Swell_01_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Swells\Swells_Calm\Swell_01\Swell_01		1840760
+	617045975	SwellVeryNotCalm_09	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\SwellVeryNotCalm_09_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Swells\Swells_VeryNotCalm\SwellVeryNotCalm_09\SwellVeryNotCalm_09		2147544
+	656107800	Swell_03	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\Swell_03_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Swells\Swells_Calm\Swell_03\Swell_03		2761108
+	856241846	SwellVeryNotCalm_13	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\SwellVeryNotCalm_13_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Swells\Swells_VeryNotCalm\SwellVeryNotCalm_13\SwellVeryNotCalm_13		1840760
+	882295003	SwellVeryNotCalm_03	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\SwellVeryNotCalm_03_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Swells\Swells_VeryNotCalm\SwellVeryNotCalm_03\SwellVeryNotCalm_03		3067892
+	906643739	SwellVeryNotCalm_11	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\SwellVeryNotCalm_11_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Swells\Swells_VeryNotCalm\SwellVeryNotCalm_11\SwellVeryNotCalm_11		2454328
+	935259986	Swell_02	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\Swell_02_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Swells\Swells_Calm\Swell_02\Swell_02		2147544
+	941476230	SwellVeryNotCalm_08	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\SwellVeryNotCalm_08_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Swells\Swells_VeryNotCalm\SwellVeryNotCalm_08\SwellVeryNotCalm_08		3067892
+	1054614242	SwellVeryNotCalm_10	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\SwellVeryNotCalm_10_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Swells\Swells_VeryNotCalm\SwellVeryNotCalm_10\SwellVeryNotCalm_10		3067892
+	1061255208	Swell_05	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\Swell_05_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Swells\Swells_Calm\Swell_05\Swell_05		2147544
+
