@@ -206,11 +206,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerBoat 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1079284844324509450, guid: e2fcee761e3e0f047a62175e9a633985,
-        type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
     - target: {fileID: 5633187977498567736, guid: e2fcee761e3e0f047a62175e9a633985,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -283,93 +278,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7097962804688195830, guid: e2fcee761e3e0f047a62175e9a633985,
         type: 3}
-      propertyPath: gyroController
+      propertyPath: distanceToDanger
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7097962804688195830, guid: e2fcee761e3e0f047a62175e9a633985,
-        type: 3}
-      propertyPath: microPhoneInput
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7097962804688195830, guid: e2fcee761e3e0f047a62175e9a633985,
-        type: 3}
-      propertyPath: fan
-      value: 
-      objectReference: {fileID: 4257399633173558688}
-    - target: {fileID: 7097962804688195830, guid: e2fcee761e3e0f047a62175e9a633985,
-        type: 3}
-      propertyPath: enablePhoneControls
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7097962804688195830, guid: e2fcee761e3e0f047a62175e9a633985,
-        type: 3}
-      propertyPath: minTiltAngleThreshold
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7097962804688195830, guid: e2fcee761e3e0f047a62175e9a633985,
-        type: 3}
-      propertyPath: MinSpeed
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 7097962804688195830, guid: e2fcee761e3e0f047a62175e9a633985,
-        type: 3}
-      propertyPath: MaxSpeed
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 7097962804688195830, guid: e2fcee761e3e0f047a62175e9a633985,
-        type: 3}
-      propertyPath: SpeedDecayRate
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7097962804688195830, guid: e2fcee761e3e0f047a62175e9a633985,
-        type: 3}
-      propertyPath: RotationSpeed
-      value: 65
-      objectReference: {fileID: 0}
-    - target: {fileID: 7097962804688195830, guid: e2fcee761e3e0f047a62175e9a633985,
-        type: 3}
-      propertyPath: BoostAccelerationRate
-      value: 200
-      objectReference: {fileID: 0}
-    - target: {fileID: 7097962804688195830, guid: e2fcee761e3e0f047a62175e9a633985,
-        type: 3}
-      propertyPath: maxRotationAngle
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 8824196592949318595, guid: e2fcee761e3e0f047a62175e9a633985,
-        type: 3}
-      propertyPath: Waves
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7862909520271985123, guid: e2fcee761e3e0f047a62175e9a633985,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1664328624081637418, guid: e2fcee761e3e0f047a62175e9a633985,
-        type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 7097962804631244480, guid: e2fcee761e3e0f047a62175e9a633985,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.071
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: 43c259d177ce18247963aaa3dceaa186,
+        type: 2}
     - target: {fileID: 1664328624081637415, guid: e2fcee761e3e0f047a62175e9a633985,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: -9.5
       objectReference: {fileID: 0}
-    - target: {fileID: 434069429663753093, guid: e2fcee761e3e0f047a62175e9a633985,
-        type: 3}
-      propertyPath: TeleportObject
-      value: 
-      objectReference: {fileID: 2629938877632833978}
     - target: {fileID: 7097962803038767167, guid: e2fcee761e3e0f047a62175e9a633985,
         type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.6
+      propertyPath: m_LocalPosition.x
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7097962803038767167, guid: e2fcee761e3e0f047a62175e9a633985,
         type: 3}
@@ -378,8 +299,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7097962803038767167, guid: e2fcee761e3e0f047a62175e9a633985,
         type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0
+      propertyPath: m_LocalPosition.z
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 6377052822092661105, guid: e2fcee761e3e0f047a62175e9a633985,
         type: 3}
@@ -407,12 +328,6 @@ GameObject:
 --- !u!4 &7253067264976099976 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5633187977498567736, guid: e2fcee761e3e0f047a62175e9a633985,
-    type: 3}
-  m_PrefabInstance: {fileID: 3063864610607578800}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &4257399633173558688 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1265611317731363600, guid: e2fcee761e3e0f047a62175e9a633985,
     type: 3}
   m_PrefabInstance: {fileID: 3063864610607578800}
   m_PrefabAsset: {fileID: 0}

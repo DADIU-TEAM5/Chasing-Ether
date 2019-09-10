@@ -77,7 +77,6 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
-        print(closesObstacle);
         distanceToDanger.Value = closesObstacle;
 
 

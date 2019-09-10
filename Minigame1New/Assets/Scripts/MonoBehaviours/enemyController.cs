@@ -25,12 +25,10 @@ public class enemyController : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        print("Collision");
         if (other.tag == "wayPoint")
         {
             point++;
             point = point % wayPoints.Length;
-            print(point);
         }
     }
 }

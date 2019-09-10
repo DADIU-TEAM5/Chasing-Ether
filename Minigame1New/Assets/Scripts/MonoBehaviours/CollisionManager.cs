@@ -20,7 +20,6 @@ public class CollisionManager : MonoBehaviour
     void Start()
     {
 
-        print("wat");
         playerHealth.Value = 5;
         
         respawnPoint.Value = transform.position;
