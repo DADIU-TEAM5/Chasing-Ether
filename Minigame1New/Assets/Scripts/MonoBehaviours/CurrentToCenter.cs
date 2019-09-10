@@ -22,6 +22,7 @@ public class CurrentToCenter : MonoBehaviour
     // Start is called before the first frame update
     void OnTriggerEnter(Collider collision) {
         _closestPoint = _boxCollider.ClosestPointOnBounds(collision.gameObject.transform.position);
+        
         StartCoroutine(MoveToInner(collision.transform.root, _closestPoint));
         EnterCurrent.Raise();
     }
@@ -31,7 +32,6 @@ public class CurrentToCenter : MonoBehaviour
     }
 
     IEnumerator MoveToInner(Transform otherTransform, Vector3 lookAt) {
-        Debug.Log("OYOO");
         var start = otherTransform.rotation;
         var end = Vector3.Normalize(lookAt - otherTransform.position); 
 
