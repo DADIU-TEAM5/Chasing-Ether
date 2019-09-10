@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 112000000, guid: eba80e8649d36bd4f8b3ffeffb3db7e6,
     type: 2}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1727,6 +1727,11 @@ PrefabInstance:
       propertyPath: microPhoneInput
       value: 
       objectReference: {fileID: 975163915}
+    - target: {fileID: 5189289374458031686, guid: b7bdfd4d8ed1b914c9a4216b25df2ba1,
+        type: 3}
+      propertyPath: enablePhoneControls
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5832390959661542771, guid: b7bdfd4d8ed1b914c9a4216b25df2ba1,
         type: 3}
       propertyPath: Waves
@@ -2800,6 +2805,7 @@ MonoBehaviour:
   playerObj: {fileID: 0}
   lerpSpeed: 2
   walkingAnim: {fileID: 0}
+  distanceToGolem: {fileID: 0}
 --- !u!4 &516275988 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 485d127f0a45bb14ab8ed3963c17365a,
