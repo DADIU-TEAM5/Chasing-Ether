@@ -27,10 +27,11 @@ public class CollisionManager : MonoBehaviour
 
     void OnTriggerEnter(Collider collider)
     {
-        if (collider.tag != "CheckPoint")
+        if (collider.tag != "CheckPoint" && collider.tag != "wayPoint")
         {
             Killed();
         }
+
     }
 
     public void Killed()

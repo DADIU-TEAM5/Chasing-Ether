@@ -7,8 +7,8 @@ public class MusicManager : MonoBehaviour
 
     public AK.Wwise.Event GameMusic;
 
-    [Range(1, 3)]
-    public int DistanceToGiant;
+    //[Range(1, 3)]
+    public FloatVariable DistanceToGiant;
 
     void Start()
     {
@@ -23,17 +23,17 @@ public class MusicManager : MonoBehaviour
     void Update()
     {
     
-        if (DistanceToGiant is 1)
+        if (DistanceToGiant.Value is 1)
         {
             AkSoundEngine.SetState("DistanceToGiant", "Far");
         }
 
-        if (DistanceToGiant is 2)
+        if (DistanceToGiant.Value is 2)
         {
             AkSoundEngine.SetState("DistanceToGiant", "Closer");
         }
 
-        if (DistanceToGiant is 3)
+        if (DistanceToGiant.Value is 3)
         {
             AkSoundEngine.SetState("DistanceToGiant", "Closest");
         }
