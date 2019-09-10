@@ -53,10 +53,12 @@ MonoBehaviour:
   RotationSpeed: 65
   BoostAccelerationRate: 200
   maxRotationAngle: 50
+  blow: {fileID: 11400000, guid: 26a0db1ea6733654aa5366f4da875d9c, type: 2}
   enablePhoneControls: 0
   minTiltAngleThreshold: 0.1
   vectorInFrontOfBoat: {fileID: 7097962803017195901}
   velocity: 0
+  distanceToDanger: {fileID: 0}
   fan: {fileID: 1265611317731363600}
   boatGraphics: {fileID: 7097962804631244483}
   gyroController: {fileID: 0}
@@ -229,6 +231,7 @@ MonoBehaviour:
   respawnPoint: {fileID: 11400000, guid: 88c24af687ea9174fadd9eab5ca5e849, type: 2}
   respawnTemp: {x: 0, y: 0, z: 0}
   healthTemp: 0
+  collisionEvent: {fileID: 11400000, guid: 1cb622c46d72b104f89874b25f598de4, type: 2}
   TeleportObject: {fileID: 1079284844324509450}
 --- !u!1 &1664328624551762187
 GameObject:
