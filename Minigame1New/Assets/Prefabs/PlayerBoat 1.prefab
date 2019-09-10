@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5633187977498567736}
   - component: {fileID: 7097962804688195830}
-  - component: {fileID: -8177120184483992621}
   m_Layer: 0
   m_Name: PlayerBoat 1
   m_TagString: Untagged
@@ -61,30 +60,6 @@ MonoBehaviour:
   boatGraphics: {fileID: 7097962804631244483}
   gyroController: {fileID: 0}
   microPhoneInput: {fileID: 0}
---- !u!114 &-8177120184483992621
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1079284844324509450}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1ce321e513b3f8448edab50e4338396, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  EngineLoop:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 247762d13f8daeb4b825c79bf88414de,
-      type: 2}
-  BoatTurn:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: a8d667cf6e2c77643915550b017fb913,
-      type: 2}
-  Speed: {fileID: 0}
-  TurnAngle: {fileID: 0}
 --- !u!1 &1664328623680440734
 GameObject:
   m_ObjectHideFlags: 0
