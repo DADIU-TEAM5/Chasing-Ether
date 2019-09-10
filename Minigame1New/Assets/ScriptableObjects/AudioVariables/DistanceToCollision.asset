@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4a4e3315c86be9408f53d6a5fa6a7c2, type: 3}
-  m_Name: DistanceToCheckpoint
+  m_Name: DistanceToCollision
   m_EditorClassIdentifier: 
   Value: 0
