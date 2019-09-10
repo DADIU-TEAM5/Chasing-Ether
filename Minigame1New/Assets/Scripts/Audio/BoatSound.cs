@@ -14,7 +14,7 @@ public class BoatSound : MonoBehaviour
     public AK.Wwise.Event CheckpointPickUpEvent;
 
     public FloatVariable DistanceToDangerVariable;
-
+    bool canPlaySound = true;
 
 
     public PlayerController Boat;
@@ -52,7 +52,11 @@ public class BoatSound : MonoBehaviour
 
     public void BlowBoost()
     {
-        Boost.Post(gameObject);
+        if (canPlaySound)
+        {
+            Boost.Post(gameObject);
+            StartCoroutine(delaySound(1f));
+        }
     }
 
     public void PlayerCollision()
@@ -65,7 +69,12 @@ public class BoatSound : MonoBehaviour
         CheckpointPickUpEvent.Post(gameObject);
     }
 
-
+    IEnumerator delaySound (float delay)
+    {
+        canPlaySound = false;
+        yield return new WaitForSeconds(delay);
+        canPlaySound = true;
+    }
 
 
 }
