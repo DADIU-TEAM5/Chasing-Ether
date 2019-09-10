@@ -291,13 +291,31 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
+--- !u!1 &416377836 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1079284844324509450, guid: e2fcee761e3e0f047a62175e9a633985,
+    type: 3}
+  m_PrefabInstance: {fileID: 984784701}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &416377837 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -8177120184483992621, guid: e2fcee761e3e0f047a62175e9a633985,
+    type: 3}
+  m_PrefabInstance: {fileID: 984784701}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416377836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1ce321e513b3f8448edab50e4338396, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &416377838 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7097962804688195830, guid: e2fcee761e3e0f047a62175e9a633985,
     type: 3}
   m_PrefabInstance: {fileID: 984784701}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 416377836}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e972d520608718b42bade4eca35166c2, type: 3}
@@ -309,6 +327,35 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 984784701}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &416377840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416377836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 938cc5bced62a614f9a7a150b603f636, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 26a0db1ea6733654aa5366f4da875d9c, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 416377837}
+        m_MethodName: BlowBoost
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &587760442
 GameObject:
   m_ObjectHideFlags: 0
@@ -708,7 +755,7 @@ PrefabInstance:
     - target: {fileID: 7097962804688195830, guid: e2fcee761e3e0f047a62175e9a633985,
         type: 3}
       propertyPath: enablePhoneControls
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8177120184483992621, guid: e2fcee761e3e0f047a62175e9a633985,
         type: 3}
@@ -732,6 +779,12 @@ PrefabInstance:
       propertyPath: BoatTransform
       value: 
       objectReference: {fileID: 973157230}
+    - target: {fileID: -8177120184483992621, guid: e2fcee761e3e0f047a62175e9a633985,
+        type: 3}
+      propertyPath: Boost.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 5143d9dec0077cd4aac5fa2e4e5c5c08,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2fcee761e3e0f047a62175e9a633985, type: 3}
 --- !u!1 &1225954609
@@ -1317,7 +1370,7 @@ PrefabInstance:
     - target: {fileID: 6226774715895006126, guid: 0a2297be0469b7c4f846e34d1efba7a4,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a2297be0469b7c4f846e34d1efba7a4, type: 3}

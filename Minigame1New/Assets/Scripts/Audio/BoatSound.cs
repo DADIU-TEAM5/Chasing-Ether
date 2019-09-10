@@ -8,6 +8,7 @@ public class BoatSound : MonoBehaviour
 
     public AK.Wwise.Event EngineLoop;
     public AK.Wwise.Event BoatTurn;
+    public AK.Wwise.Event Boost;
     public PlayerController Boat;
     public GameObject BoatTransform;
     //public FloatVariable Speed;
@@ -31,6 +32,23 @@ public class BoatSound : MonoBehaviour
         AkSoundEngine.SetRTPCValue("BoatTurnAngle", RotationSoundAngle);
         AkSoundEngine.SetRTPCValue("BoatSpeed", Boat.velocity);
 
-
+        //Debug boost
+      /*  if (Input.GetKeyDown("space"))
+        {
+            Boost.Post(gameObject);
+        }
+        */
     }
+
+    public void BlowBoost()
+    {
+        Boost.Post(gameObject);
+    }
+
+
+
+
 }
+
+
+
