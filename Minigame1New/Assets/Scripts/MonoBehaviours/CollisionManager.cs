@@ -12,6 +12,7 @@ public class CollisionManager : MonoBehaviour
     public Vector3 respawnTemp;
     public int healthTemp;
 
+    public GameEvent collisionEvent;
     
     public GameObject TeleportObject;
 
@@ -36,6 +37,7 @@ public class CollisionManager : MonoBehaviour
 
     public void Killed()
     {
+        collisionEvent.Raise();
         playerHealth.Value--;
         /*  
         if (playerHealth.Value > 0)

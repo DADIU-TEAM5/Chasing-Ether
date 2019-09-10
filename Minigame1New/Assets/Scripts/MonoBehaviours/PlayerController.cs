@@ -19,6 +19,8 @@ public class PlayerController : MonoBehaviour
     public float BoostAccelerationRate;
     public float maxRotationAngle = 45;
 
+    public GameEvent blow;
+
 
     [Header("Phone Controls")]
 
@@ -39,6 +41,8 @@ public class PlayerController : MonoBehaviour
     private CharacterController pController;
 
 
+    public FloatVariable distanceToDanger;
+
     public Transform fan;
     public GameObject boatGraphics;
 
@@ -57,6 +61,27 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        Collider[] potentialCollision = Physics.OverlapSphere(transform.position, 4);
+        float closesObstacle = float.MaxValue;
+        for (int i = 0; i < potentialCollision.Length; i++)
+        {
+            
+            if(potentialCollision[i].tag == "Untagged")
+            {
+               if(Vector3.Distance(transform.position, potentialCollision[i].ClosestPointOnBounds(transform.position)) < closesObstacle)
+                {
+                    closesObstacle = Vector3.Distance(transform.position, potentialCollision[i].ClosestPointOnBounds(transform.position));
+
+                    
+                }
+            }
+        }
+        print(closesObstacle);
+        distanceToDanger.Value = closesObstacle;
+
+
+
         /*if (phoneControl == true)
         {
             volume = GetComponent<MicrophoneInputv2>().volume;
@@ -184,7 +209,7 @@ public class PlayerController : MonoBehaviour
     {
         // Get input from keys/controller
         //boostInput = Input.GetAxis("Jump");
-
+        blow.Raise();
 
         // Set the factor for the input
         velocity += BoostAccelerationRate*Time.deltaTime;
