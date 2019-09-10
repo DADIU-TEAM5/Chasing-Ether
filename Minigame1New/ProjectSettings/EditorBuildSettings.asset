@@ -5,7 +5,19 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Design_Test_levels/TestDesignCasper.unity
     guid: 49078a4bdfcb1c74e87527eaf86b4fb9
+  - enabled: 1
+    path: Assets/Scenes/InGameLevels/Level 3.unity
+    guid: ba64d987988076343911296b9d224225
+  - enabled: 0
+    path: Assets/Scenes/InGameLevels/Tutorial.unity
+    guid: ebb600533a026fe47bbbb83f5c08105d
+  - enabled: 0
+    path: Assets/Scenes/InGameLevels/Level 1.unity
+    guid: 8a7ef1e7b0cd4584488549a4c0f77bf6
+  - enabled: 0
+    path: Assets/Scenes/InGameLevels/Level 2.unity
+    guid: 4f1ae55c1a495ad4f9baa91b96eb3252
   m_configObjects: {}
