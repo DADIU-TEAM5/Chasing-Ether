@@ -7,22 +7,25 @@ public class CollisionManager : MonoBehaviour
 {
 
     public IntVariable playerHealth;
+    public BoolVariable death;
     public Vector3Variable respawnPoint;
 
     public Vector3 respawnTemp;
     public int healthTemp;
 
+    //public GameObject[] sailors;
+    //public Vector3[] sailorsPos;
     
     public GameObject TeleportObject;
 
     // Start is called before the first frame update
     void Start()
     {
-
         print("wat");
         playerHealth.Value = 5;
         
         respawnPoint.Value = transform.position;
+
     }
 
     void OnTriggerEnter(Collider collider)
@@ -37,21 +40,27 @@ public class CollisionManager : MonoBehaviour
     public void Killed()
     {
         playerHealth.Value--;
+
+        death.Value = true;
+
+
+
         /*  
         if (playerHealth.Value > 0)
         {
             TeleportToLastCheckpoint();
         }
         */
-        TeleportToLastCheckpoint();
+        //TeleportToLastCheckpoint();
     }
 
-    private void TeleportToLastCheckpoint() {
+    public void TeleportToLastCheckpoint() {
         TeleportObject.transform.position = respawnPoint.Value;
         TeleportObject.transform.rotation = Quaternion.identity;
         transform.localPosition = Vector3.zero;
         transform.localRotation = Quaternion.identity;
         TeleportObject.GetComponent<PlayerController>().velocity = TeleportObject.GetComponent<PlayerController>().MinSpeed;
+
     }
 
 }
