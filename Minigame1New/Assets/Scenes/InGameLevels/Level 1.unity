@@ -4486,6 +4486,11 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1664328624081637418, guid: e2fcee761e3e0f047a62175e9a633985,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 7097962804631244480, guid: e2fcee761e3e0f047a62175e9a633985,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -4496,11 +4501,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -9.5
       objectReference: {fileID: 0}
-    - target: {fileID: 1664328624081637418, guid: e2fcee761e3e0f047a62175e9a633985,
-        type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
     - target: {fileID: 434069429663753093, guid: e2fcee761e3e0f047a62175e9a633985,
         type: 3}
       propertyPath: TeleportObject
@@ -4510,6 +4510,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 29.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6377052822092661105, guid: e2fcee761e3e0f047a62175e9a633985,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9.57
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2fcee761e3e0f047a62175e9a633985, type: 3}
