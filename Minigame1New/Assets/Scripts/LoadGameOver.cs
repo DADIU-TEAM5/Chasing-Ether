@@ -3,8 +3,10 @@ using UnityEngine.SceneManagement;
 
 public class LoadGameOver : MonoBehaviour
 {
+    public IntVariable SceneToLoad;
+
     public void LoadFirstScene()
     {
-        SceneManager.LoadScene("LevelDesignScene_1");
+        SceneManager.LoadScene(SceneToLoad.Value);
     }
 }
