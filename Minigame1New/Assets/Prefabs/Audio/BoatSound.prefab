@@ -71,19 +71,12 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 4c7389ba0cbeedf449744e7dae7ad1c8,
       type: 2}
-  DistanceToCheckPointEvent:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: adcbaafe1d215cd498d577147329277d,
-      type: 2}
   CheckpointPickUpEvent:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 39ccffa6897652f42a95ee2bfbdcf2b2,
       type: 2}
   DistanceToDangerVariable: {fileID: 11400000, guid: 43c259d177ce18247963aaa3dceaa186,
-    type: 2}
-  DistanceToCheckPointVariable: {fileID: 11400000, guid: 9867875e90ddbd144932a0602b18b9d3,
     type: 2}
   Boat: {fileID: 0}
   BoatTransform: {fileID: 0}

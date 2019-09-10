@@ -305,6 +305,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1664328624081637418, guid: e2fcee761e3e0f047a62175e9a633985,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 7097962804688195830, guid: e2fcee761e3e0f047a62175e9a633985,
         type: 3}
       propertyPath: gyroController
@@ -360,21 +365,16 @@ PrefabInstance:
       propertyPath: BoostAccelerationRate
       value: 200
       objectReference: {fileID: 0}
-    - target: {fileID: 8824196592949318595, guid: e2fcee761e3e0f047a62175e9a633985,
-        type: 3}
-      propertyPath: Waves
-      value: 
-      objectReference: {fileID: 775448285}
     - target: {fileID: 7862909520271985123, guid: e2fcee761e3e0f047a62175e9a633985,
         type: 3}
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1664328624081637418, guid: e2fcee761e3e0f047a62175e9a633985,
+    - target: {fileID: 8824196592949318595, guid: e2fcee761e3e0f047a62175e9a633985,
         type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
+      propertyPath: Waves
+      value: 
+      objectReference: {fileID: 775448285}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2fcee761e3e0f047a62175e9a633985, type: 3}
 --- !u!1 &394067544
@@ -639,7 +639,6 @@ MonoBehaviour:
   windspeed: 5
   countBackground: 50
   soundIsActivated: 0
-  tex: {fileID: 0}
 --- !u!114 &1107033902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1033,7 +1032,7 @@ MonoBehaviour:
   EndBlowUI: {fileID: 11400000, guid: 0dc176b651a8f59498318ffc8de91337, type: 2}
   StartTiltUI: {fileID: 11400000, guid: 2774a5e8b18671644bb837d005d4806b, type: 2}
   EndTiltUI: {fileID: 11400000, guid: 61468c29626eef842b709fd77f951a2b, type: 2}
-  TutorialLevelName: 
+  TutorialLevelName: Tutorial
 --- !u!4 &1311879937
 Transform:
   m_ObjectHideFlags: 0

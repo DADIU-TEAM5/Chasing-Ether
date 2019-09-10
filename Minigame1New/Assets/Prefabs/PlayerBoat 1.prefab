@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5633187977498567736}
   - component: {fileID: 7097962804688195830}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PlayerBoat 1
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -70,7 +70,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1664328623680440733}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FloatPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +101,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1664328623802876209}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FloatPoint (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 8824196592949318595}
   - component: {fileID: 7862909520271985123}
   - component: {fileID: 434069429663753093}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Boat 1
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -239,7 +239,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1664328624551762186}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FloatPoint (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -269,7 +269,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6205866425885693267}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Ship_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -301,7 +301,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8962207746450267541}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FloatPoint (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -331,7 +331,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7097962803017195901}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Vector In front of boat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -361,7 +361,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7097962803038767167}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: LookatPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -391,7 +391,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7097962804631244480}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: HOTFIX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -424,7 +424,7 @@ GameObject:
   - component: {fileID: 2981169782151671866}
   - component: {fileID: 3636978056346052396}
   - component: {fileID: 7552515371414112}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5185,7 +5185,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6377052822092661105}
   - component: {fileID: 2776482752529642408}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Reflection Probe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5250,7 +5250,7 @@ GameObject:
   - component: {fileID: 6116973261293225176}
   - component: {fileID: 8218178624173597943}
   - component: {fileID: 3248210604754020438}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Ship_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5326,7 +5326,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1265611317731363600}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FanRotatePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5359,7 +5359,7 @@ GameObject:
   - component: {fileID: 4087369245108542203}
   - component: {fileID: 6436236232453985284}
   - component: {fileID: 2645746121654719223}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Fan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5438,6 +5438,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterSparkleParticle
       objectReference: {fileID: 0}
+    - target: {fileID: 4600169510944355882, guid: b74aba0f0ff3d6b4c8c4cb1caf927199,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4600169510944355883, guid: b74aba0f0ff3d6b4c8c4cb1caf927199,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5492,6 +5497,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4600169511061076898, guid: b74aba0f0ff3d6b4c8c4cb1caf927199,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4600169511061076908, guid: b74aba0f0ff3d6b4c8c4cb1caf927199,
         type: 3}
