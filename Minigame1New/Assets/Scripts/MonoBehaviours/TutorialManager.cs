@@ -26,14 +26,17 @@ public class TutorialManager : MonoBehaviour
 
         StartBlowUI.Raise();
 
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(2);
+
         if (!Microphone.soundIsActivated) {
             yield return null;
         }
 
+        Debug.Log("Microphone input (y)");
+
         EndBlowUI.Raise();
         
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(2);
 
         StartTiltUI.Raise();
 
@@ -41,11 +44,13 @@ public class TutorialManager : MonoBehaviour
             yield return null;
         }
 
-        yield return new WaitForSeconds(1);  
+        Debug.Log("Gyro input (y)");
+
+        yield return new WaitForSeconds(2);  
 
         EndTiltUI.Raise();
 
-        yield return new WaitForSeconds(1);  
+        yield return new WaitForSeconds(3);  
 
         SceneManager.LoadScene(tutorialLevelName);
     }
