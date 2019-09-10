@@ -108,3 +108,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activated: 0
   latestCheckpoint: {fileID: 11400000, guid: 88c24af687ea9174fadd9eab5ca5e849, type: 2}
+  soundEvent: {fileID: 11400000, guid: b1c612766e81a3e469a2c303d8955d03, type: 2}

@@ -16,6 +16,8 @@ public class GolemBehaviour : MonoBehaviour
     private Vector3 tempSpeed = Vector3.zero;
     public BoolVariable walkingAnim;
 
+    public FloatVariable distanceToGolem;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +30,7 @@ public class GolemBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        distanceToGolem.Value = Vector3.Distance(transform.position, playerObj.transform.position);
         if(walkingAnim.Value == true)
         {
             playerCurPos = playerObj.transform.position;

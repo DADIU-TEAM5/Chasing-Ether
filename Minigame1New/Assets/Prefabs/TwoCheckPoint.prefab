@@ -111,7 +111,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activated: 0
-  latestCheckpoint: {fileID: 0}
+  latestCheckpoint: {fileID: 11400000, guid: 88c24af687ea9174fadd9eab5ca5e849, type: 2}
+  soundEvent: {fileID: 11400000, guid: b1c612766e81a3e469a2c303d8955d03, type: 2}
 --- !u!1 &4522436523215895971
 GameObject:
   m_ObjectHideFlags: 0
@@ -612,11 +613,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 3.0204034
       objectReference: {fileID: 0}
-    - target: {fileID: 233148241064302671, guid: 5201b9bc5a8374849b0629c6c1f6f681,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: eace56bcd3d5a9048b340de1fcc51db3, type: 2}
     - target: {fileID: 233148241064302668, guid: 5201b9bc5a8374849b0629c6c1f6f681,
         type: 3}
       propertyPath: InitialModule.startSize.scalar
@@ -687,6 +683,11 @@ PrefabInstance:
       propertyPath: InitialModule.startColor.maxGradient.atime0
       value: 41827
       objectReference: {fileID: 0}
+    - target: {fileID: 233148241064302671, guid: 5201b9bc5a8374849b0629c6c1f6f681,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: eace56bcd3d5a9048b340de1fcc51db3, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5201b9bc5a8374849b0629c6c1f6f681, type: 3}
 --- !u!1001 &6757249382058093805

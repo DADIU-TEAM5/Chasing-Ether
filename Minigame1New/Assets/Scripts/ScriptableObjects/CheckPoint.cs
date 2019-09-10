@@ -10,6 +10,8 @@ public class CheckPoint : MonoBehaviour
     public static GameObject[] CheckPointsList;
     public Vector3Variable latestCheckpoint;
 
+    public GameEvent soundEvent;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +35,7 @@ public class CheckPoint : MonoBehaviour
         //touch the checkpoint activate
         if (other.tag == "Player")
         {
+            soundEvent.Raise();
             ActivateCheckPoint();
             print("Checkpoint active");
             latestCheckpoint.Value = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z);
