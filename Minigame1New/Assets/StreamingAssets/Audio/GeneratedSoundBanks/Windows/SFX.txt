@@ -1,6 +1,7 @@
 Event	ID	Name			Wwise Object Path	Notes
 	28419968	BoatAngle			\SFX\Boat\BoatAngle	
 	176106368	ObstaclesDistance			\SFX\Obstacles\ObstaclesDistance	
+	621108255	Step			\SFX\Giant\Step	
 	1213636067	Obstacles_SeaUrchinHit			\SFX\Obstacles\Obstacles_SeaUrchinHit	
 	1309997348	CheckpointShimmer			\SFX\Checkpoint\CheckpointShimmer	
 	1390999685	CheckpointCheck			\SFX\Checkpoint\CheckpointCheck	
@@ -25,9 +26,11 @@ Modulator Envelope	ID	Name			Wwise Object Path	Notes
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	3384804	Debris_03	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\Debris_03_10C4C929.wem		\Actor-Mixer Hierarchy\Impacts\Clay\ImpactsClay\Clay_Debris\Debris_03		147072
 	18809969	MusicAccel_01	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\MusicAccel_01_10C4C929.wem		\Actor-Mixer Hierarchy\Boat\Accel\Accel\AccelMusic\MusicAccel_01		1602020
+	50106764	Step_Mid_01	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\Step_Mid_01_10C4C929.wem		\Actor-Mixer Hierarchy\Golem\Steps\Mid\Step_Mid_01		603706
 	53561166	ShimmerLoop	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\ShimmerLoop_D79FB2B7.wem		\Actor-Mixer Hierarchy\Checkpoint\ShimmerLoop		4908588
 	61876478	ImpactShipKrsh_05	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\ImpactShipKrsh_05_10C4C929.wem		\Actor-Mixer Hierarchy\Impacts\Ship\ImpactsShip\ShipImpactKrsh\ImpactShipKrsh_05		141860
 	63278096	CrewWhoo_05	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\CrewWhoo_05_10C4C929.wem		\Actor-Mixer Hierarchy\Boat\Accel\Accel\Cheer\CrewWhoo_05		434924
+	74882303	Step_Low_03	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\Step_Low_03_10C4C929.wem		\Actor-Mixer Hierarchy\Golem\Steps\Low\Step_Low_03		352864
 	124790683	Deep_03	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\Deep_03_10C4C929.wem		\Actor-Mixer Hierarchy\Impacts\Clay\ImpactsClay\Clay_Deep\Deep_03		225384
 	172314368	CrewWhoo_01	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\CrewWhoo_01_10C4C929.wem		\Actor-Mixer Hierarchy\Boat\Accel\Accel\Cheer\CrewWhoo_01		327192
 	188739127	WindAccel_02	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\WindAccel_02_10C4C929.wem		\Actor-Mixer Hierarchy\Boat\Accel\Accel\AccelWind\WindAccel_02		536936
@@ -36,6 +39,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	334404460	Mud_06	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\Mud_06_10C4C929.wem		\Actor-Mixer Hierarchy\Impacts\Clay\ImpactsClay\Clay_Mud\Mud_06		165292
 	375751179	TurnRev	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\TurnRev_D79FB2B7.wem		\Actor-Mixer Hierarchy\Boat\Turn\Turn\TurnRev		1809296
 	388349972	ImpactShipKrsh_04	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\ImpactShipKrsh_04_10C4C929.wem		\Actor-Mixer Hierarchy\Impacts\Ship\ImpactsShip\ShipImpactKrsh\ImpactShipKrsh_04		147608
+	411491744	Step_Mid_04	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\Step_Mid_04_10C4C929.wem		\Actor-Mixer Hierarchy\Golem\Steps\Mid\Step_Mid_04		361802
 	427070445	CrewWhoo_02	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\CrewWhoo_02_10C4C929.wem		\Actor-Mixer Hierarchy\Boat\Accel\Accel\Cheer\CrewWhoo_02		321908
 	428072678	Hit_01	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\Hit_01_10C4C929.wem		\Actor-Mixer Hierarchy\Impacts\Clay\ImpactsClay\Clay_Hit\Hit_01		82736
 	438542744	Debris_04	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\Debris_04_10C4C929.wem		\Actor-Mixer Hierarchy\Impacts\Clay\ImpactsClay\Clay_Debris\Debris_04		191304
@@ -47,6 +51,8 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	540582087	CrewWhoo_06	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\CrewWhoo_06_10C4C929.wem		\Actor-Mixer Hierarchy\Boat\Accel\Accel\Cheer\CrewWhoo_06		385528
 	561834188	WaterLoop_02	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\WaterLoop_02_D79FB2B7.wem		\Actor-Mixer Hierarchy\Atmos\AtmosMix\WaterLoop_02		8316352
 	572826344	NE_Rotor_03	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\NE_Rotor_03_D79FB2B7.wem		\Actor-Mixer Hierarchy\Boat\Rotor\Motor\NE_Rotor_03		515606
+	574707771	Step_Mid_03	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\Step_Mid_03_10C4C929.wem		\Actor-Mixer Hierarchy\Golem\Steps\Mid\Step_Mid_03		438086
+	575203537	Step_Low_01	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\Step_Low_01_10C4C929.wem		\Actor-Mixer Hierarchy\Golem\Steps\Low\Step_Low_01		419780
 	617788873	MusicAccel_04	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\MusicAccel_04_10C4C929.wem		\Actor-Mixer Hierarchy\Boat\Accel\Accel\AccelMusic\MusicAccel_04		2454328
 	642363465	NE_Rotor_02	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\NE_Rotor_02_D79FB2B7.wem		\Actor-Mixer Hierarchy\Boat\Rotor\Motor\NE_Rotor_02		1035456
 	644518232	DangerLoop3	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\DangerLoop3_D79FB2B7.wem		\Actor-Mixer Hierarchy\Obstacles\DangerDistance\DangerLoop3		1994152
@@ -62,8 +68,10 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	794094091	CrewWhoo_04	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\CrewWhoo_04_10C4C929.wem		\Actor-Mixer Hierarchy\Boat\Accel\Accel\Cheer\CrewWhoo_04		184428
 	795069920	NE_Rotor_01	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\NE_Rotor_01_D79FB2B7.wem		\Actor-Mixer Hierarchy\Boat\Rotor\Motor\NE_Rotor_01		566560
 	806027504	Hit_02	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\Hit_02_10C4C929.wem		\Actor-Mixer Hierarchy\Impacts\Clay\ImpactsClay\Clay_Hit\Hit_02		107188
+	815295131	Step_Mid_02	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\Step_Mid_02_10C4C929.wem		\Actor-Mixer Hierarchy\Golem\Steps\Mid\Step_Mid_02		429144
 	845473917	MusicAccel_03	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\MusicAccel_03_10C4C929.wem		\Actor-Mixer Hierarchy\Boat\Accel\Accel\AccelMusic\MusicAccel_03		2607720
 	872591020	Mud_01	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\Mud_01_10C4C929.wem		\Actor-Mixer Hierarchy\Impacts\Clay\ImpactsClay\Clay_Mud\Mud_01		111372
+	874778123	Step_Low_02	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\Step_Low_02_10C4C929.wem		\Actor-Mixer Hierarchy\Golem\Steps\Low\Step_Low_02		243026
 	881797494	DangerLoop1	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\DangerLoop1_D79FB2B7.wem		\Actor-Mixer Hierarchy\Obstacles\DangerDistance\DangerLoop1		1917456
 	890366297	Hit_05	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\Hit_05_10C4C929.wem		\Actor-Mixer Hierarchy\Impacts\Clay\ImpactsClay\Clay_Hit\Hit_05		100636
 	915667030	Deep_02	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\SFX\Deep_02_10C4C929.wem		\Actor-Mixer Hierarchy\Impacts\Clay\ImpactsClay\Clay_Deep\Deep_02		215248

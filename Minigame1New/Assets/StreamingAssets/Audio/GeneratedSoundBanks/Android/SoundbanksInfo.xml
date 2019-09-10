@@ -26,6 +26,7 @@
 				<Event Id="2521554274" Name="Obstacles_ClayHit" ObjectPath="\Events\SFX\Obstacles\Obstacles_ClayHit" DurationType="OneShot" DurationMin="1.219864" DurationMax="1.631633"/>
 				<Event Id="1213636067" Name="Obstacles_SeaUrchinHit" ObjectPath="\Events\SFX\Obstacles\Obstacles_SeaUrchinHit" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="176106368" Name="ObstaclesDistance" ObjectPath="\Events\SFX\Obstacles\ObstaclesDistance" DurationType="Infinite"/>
+				<Event Id="621108255" Name="Step" ObjectPath="\Events\SFX\Giant\Step" DurationType="OneShot" DurationMin="4.101338" DurationMax="6.844014"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="3384804" Language="SFX">
@@ -35,6 +36,10 @@
 				<File Id="18809969" Language="SFX">
 					<ShortName>MusicAccel_01.wav</ShortName>
 					<Path>SFX\MusicAccel_01_10C4C929.wem</Path>
+				</File>
+				<File Id="50106764" Language="SFX">
+					<ShortName>Step_Mid_01.wav</ShortName>
+					<Path>SFX\Step_Mid_01_10C4C929.wem</Path>
 				</File>
 				<File Id="53561166" Language="SFX">
 					<ShortName>ShimmerLoop.wav</ShortName>
@@ -47,6 +52,10 @@
 				<File Id="63278096" Language="SFX">
 					<ShortName>CrewWhoo_05.wav</ShortName>
 					<Path>SFX\CrewWhoo_05_10C4C929.wem</Path>
+				</File>
+				<File Id="74882303" Language="SFX">
+					<ShortName>Step_Low_03.wav</ShortName>
+					<Path>SFX\Step_Low_03_10C4C929.wem</Path>
 				</File>
 				<File Id="124790683" Language="SFX">
 					<ShortName>Deep_03.wav</ShortName>
@@ -79,6 +88,10 @@
 				<File Id="388349972" Language="SFX">
 					<ShortName>ImpactShipKrsh_04.wav</ShortName>
 					<Path>SFX\ImpactShipKrsh_04_10C4C929.wem</Path>
+				</File>
+				<File Id="411491744" Language="SFX">
+					<ShortName>Step_Mid_04.wav</ShortName>
+					<Path>SFX\Step_Mid_04_10C4C929.wem</Path>
 				</File>
 				<File Id="427070445" Language="SFX">
 					<ShortName>CrewWhoo_02.wav</ShortName>
@@ -123,6 +136,14 @@
 				<File Id="572826344" Language="SFX">
 					<ShortName>NE_Rotor_03.wav</ShortName>
 					<Path>SFX\NE_Rotor_03_D79FB2B7.wem</Path>
+				</File>
+				<File Id="574707771" Language="SFX">
+					<ShortName>Step_Mid_03.wav</ShortName>
+					<Path>SFX\Step_Mid_03_10C4C929.wem</Path>
+				</File>
+				<File Id="575203537" Language="SFX">
+					<ShortName>Step_Low_01.wav</ShortName>
+					<Path>SFX\Step_Low_01_10C4C929.wem</Path>
 				</File>
 				<File Id="617788873" Language="SFX">
 					<ShortName>MusicAccel_04.wav</ShortName>
@@ -184,6 +205,10 @@
 					<ShortName>Hit_02.wav</ShortName>
 					<Path>SFX\Hit_02_10C4C929.wem</Path>
 				</File>
+				<File Id="815295131" Language="SFX">
+					<ShortName>Step_Mid_02.wav</ShortName>
+					<Path>SFX\Step_Mid_02_10C4C929.wem</Path>
+				</File>
 				<File Id="845473917" Language="SFX">
 					<ShortName>MusicAccel_03.wav</ShortName>
 					<Path>SFX\MusicAccel_03_10C4C929.wem</Path>
@@ -191,6 +216,10 @@
 				<File Id="872591020" Language="SFX">
 					<ShortName>Mud_01.wav</ShortName>
 					<Path>SFX\Mud_01_10C4C929.wem</Path>
+				</File>
+				<File Id="874778123" Language="SFX">
+					<ShortName>Step_Low_02.wav</ShortName>
+					<Path>SFX\Step_Low_02_10C4C929.wem</Path>
 				</File>
 				<File Id="881797494" Language="SFX">
 					<ShortName>DangerLoop1.wav</ShortName>
