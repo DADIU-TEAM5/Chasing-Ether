@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="134">
 	<RootPaths>
-		<ProjectRoot>C:\Users\dadiu\Documents\Minigame1New_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\dadiu\Documents\Minigame1New_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<ProjectRoot>C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Windows\</SourceFilesRoot>
 		<SoundBanksRoot>C:\Users\dadiu\Documents\GitHub\MiniGame1_New\Minigame1New\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\dadiu\Documents\Minigame1New_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -16,15 +16,16 @@
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
 			<IncludedEvents>
+				<Event Id="3034623661" Name="Atmos" ObjectPath="\Events\Atmos\Atmos" DurationType="Infinite"/>
 				<Event Id="2966425545" Name="BoatAccel" ObjectPath="\Events\SFX\Boat\BoatAccel" DurationType="OneShot" DurationMin="9.081383" DurationMax="14.782630"/>
-				<Event Id="28419968" Name="BoatAngle" ObjectPath="\Events\SFX\Boat\BoatAngle" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="3905425309" Name="BoatCollision" ObjectPath="\Events\SFX\Boat\BoatCollision" DurationType="OneShot" DurationMin="2.793968" DurationMax="2.793968"/>
+				<Event Id="28419968" Name="BoatAngle" ObjectPath="\Events\SFX\Boat\BoatAngle" DurationType="Infinite"/>
+				<Event Id="3905425309" Name="BoatCollision" ObjectPath="\Events\SFX\Boat\BoatCollision" DurationType="OneShot" DurationMin="2.345370" DurationMax="3.328369"/>
 				<Event Id="3434945777" Name="BoatEngine" ObjectPath="\Events\SFX\Boat\BoatEngine" DurationType="Infinite"/>
 				<Event Id="1390999685" Name="CheckpointCheck" ObjectPath="\Events\SFX\Checkpoint\CheckpointCheck" DurationType="OneShot" DurationMin="4.212563" DurationMax="4.212563"/>
-				<Event Id="1309997348" Name="CheckpointShimmer" ObjectPath="\Events\SFX\Checkpoint\CheckpointShimmer" DurationType="OneShot" DurationMin="27.826099" DurationMax="27.826099"/>
+				<Event Id="1309997348" Name="CheckpointShimmer" ObjectPath="\Events\SFX\Checkpoint\CheckpointShimmer" DurationType="Infinite"/>
 				<Event Id="2521554274" Name="Obstacles_ClayHit" ObjectPath="\Events\SFX\Obstacles\Obstacles_ClayHit" DurationType="OneShot" DurationMin="1.219864" DurationMax="1.631633"/>
 				<Event Id="1213636067" Name="Obstacles_SeaUrchinHit" ObjectPath="\Events\SFX\Obstacles\Obstacles_SeaUrchinHit" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="176106368" Name="ObstaclesDistance" ObjectPath="\Events\SFX\Obstacles\ObstaclesDistance" DurationType="OneShot" DurationMin="11.304354" DurationMax="11.304354"/>
+				<Event Id="176106368" Name="ObstaclesDistance" ObjectPath="\Events\SFX\Obstacles\ObstaclesDistance" DurationType="Infinite"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="3384804" Language="SFX">
@@ -59,6 +60,10 @@
 					<ShortName>WindAccel_02.wav</ShortName>
 					<Path>SFX\WindAccel_02_10C4C929.wem</Path>
 				</File>
+				<File Id="193276537" Language="SFX">
+					<ShortName>TurnWaves.wav</ShortName>
+					<Path>SFX\TurnWaves_D79FB2B7.wem</Path>
+				</File>
 				<File Id="214932762" Language="SFX">
 					<ShortName>Deep_04.wav</ShortName>
 					<Path>SFX\Deep_04_10C4C929.wem</Path>
@@ -66,6 +71,10 @@
 				<File Id="334404460" Language="SFX">
 					<ShortName>Mud_06.wav</ShortName>
 					<Path>SFX\Mud_06_10C4C929.wem</Path>
+				</File>
+				<File Id="375751179" Language="SFX">
+					<ShortName>TurnRev.wav</ShortName>
+					<Path>SFX\TurnRev_D79FB2B7.wem</Path>
 				</File>
 				<File Id="388349972" Language="SFX">
 					<ShortName>ImpactShipKrsh_04.wav</ShortName>
@@ -107,6 +116,10 @@
 					<ShortName>CrewWhoo_06.wav</ShortName>
 					<Path>SFX\CrewWhoo_06_10C4C929.wem</Path>
 				</File>
+				<File Id="561834188" Language="SFX">
+					<ShortName>WaterLoop_02.wav</ShortName>
+					<Path>SFX\WaterLoop_02_D79FB2B7.wem</Path>
+				</File>
 				<File Id="572826344" Language="SFX">
 					<ShortName>NE_Rotor_03.wav</ShortName>
 					<Path>SFX\NE_Rotor_03_D79FB2B7.wem</Path>
@@ -121,7 +134,7 @@
 				</File>
 				<File Id="644518232" Language="SFX">
 					<ShortName>DangerLoop3.wav</ShortName>
-					<Path>SFX\DangerLoop3_10C4C929.wem</Path>
+					<Path>SFX\DangerLoop3_D79FB2B7.wem</Path>
 				</File>
 				<File Id="647319448" Language="SFX">
 					<ShortName>ImpactShipKrsh_06.wav</ShortName>
@@ -151,6 +164,10 @@
 					<ShortName>Mud_03.wav</ShortName>
 					<Path>SFX\Mud_03_10C4C929.wem</Path>
 				</File>
+				<File Id="749914559" Language="SFX">
+					<ShortName>WaterLoop_01.wav</ShortName>
+					<Path>SFX\WaterLoop_01_D79FB2B7.wem</Path>
+				</File>
 				<File Id="772224212" Language="SFX">
 					<ShortName>Debris_05.wav</ShortName>
 					<Path>SFX\Debris_05_10C4C929.wem</Path>
@@ -177,7 +194,7 @@
 				</File>
 				<File Id="881797494" Language="SFX">
 					<ShortName>DangerLoop1.wav</ShortName>
-					<Path>SFX\DangerLoop1_10C4C929.wem</Path>
+					<Path>SFX\DangerLoop1_D79FB2B7.wem</Path>
 				</File>
 				<File Id="890366297" Language="SFX">
 					<ShortName>Hit_05.wav</ShortName>
@@ -217,7 +234,7 @@
 				</File>
 				<File Id="1028421198" Language="SFX">
 					<ShortName>DangerLoop2.wav</ShortName>
-					<Path>SFX\DangerLoop2_10C4C929.wem</Path>
+					<Path>SFX\DangerLoop2_D79FB2B7.wem</Path>
 				</File>
 				<File Id="1066016862" Language="SFX">
 					<ShortName>Debris_01.wav</ShortName>
@@ -241,6 +258,116 @@
 			<IncludedEvents>
 				<Event Id="374987273" Name="MusicMain" ObjectPath="\Events\Music\MusicMain" DurationType="Infinite"/>
 			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="3743458" Language="SFX">
+					<ShortName>Swell_04.wav</ShortName>
+					<Path>SFX\Swell_04_D79FB2B7.wem</Path>
+				</File>
+				<File Id="19376472" Language="SFX">
+					<ShortName>SwellNotCalm_06.wav</ShortName>
+					<Path>SFX\SwellNotCalm_06_D79FB2B7.wem</Path>
+				</File>
+				<File Id="36247091" Language="SFX">
+					<ShortName>SwellNotCalm_05.wav</ShortName>
+					<Path>SFX\SwellNotCalm_05_D79FB2B7.wem</Path>
+				</File>
+				<File Id="161248472" Language="SFX">
+					<ShortName>Swell_08.wav</ShortName>
+					<Path>SFX\Swell_08_D79FB2B7.wem</Path>
+				</File>
+				<File Id="187695762" Language="SFX">
+					<ShortName>SwellVeryNotCalm_04.wav</ShortName>
+					<Path>SFX\SwellVeryNotCalm_04_D79FB2B7.wem</Path>
+				</File>
+				<File Id="199030941" Language="SFX">
+					<ShortName>SwellVeryNotCalm_12.wav</ShortName>
+					<Path>SFX\SwellVeryNotCalm_12_D79FB2B7.wem</Path>
+				</File>
+				<File Id="238305034" Language="SFX">
+					<ShortName>SwellNotCalm_04.wav</ShortName>
+					<Path>SFX\SwellNotCalm_04_D79FB2B7.wem</Path>
+				</File>
+				<File Id="248467082" Language="SFX">
+					<ShortName>SwellVeryNotCalm_01.wav</ShortName>
+					<Path>SFX\SwellVeryNotCalm_01_D79FB2B7.wem</Path>
+				</File>
+				<File Id="278392918" Language="SFX">
+					<ShortName>SwellNotCalm_01.wav</ShortName>
+					<Path>SFX\SwellNotCalm_01_D79FB2B7.wem</Path>
+				</File>
+				<File Id="305213814" Language="SFX">
+					<ShortName>SwellVeryNotCalm_07.wav</ShortName>
+					<Path>SFX\SwellVeryNotCalm_07_D79FB2B7.wem</Path>
+				</File>
+				<File Id="335101855" Language="SFX">
+					<ShortName>SwellNotCalm_02.wav</ShortName>
+					<Path>SFX\SwellNotCalm_02_D79FB2B7.wem</Path>
+				</File>
+				<File Id="372320826" Language="SFX">
+					<ShortName>SwellVeryNotCalm_14.wav</ShortName>
+					<Path>SFX\SwellVeryNotCalm_14_D79FB2B7.wem</Path>
+				</File>
+				<File Id="376767271" Language="SFX">
+					<ShortName>Swell_07.wav</ShortName>
+					<Path>SFX\Swell_07_D79FB2B7.wem</Path>
+				</File>
+				<File Id="386448110" Language="SFX">
+					<ShortName>SwellVeryNotCalm_05.wav</ShortName>
+					<Path>SFX\SwellVeryNotCalm_05_D79FB2B7.wem</Path>
+				</File>
+				<File Id="409905848" Language="SFX">
+					<ShortName>SwellVeryNotCalm_02.wav</ShortName>
+					<Path>SFX\SwellVeryNotCalm_02_D79FB2B7.wem</Path>
+				</File>
+				<File Id="469943774" Language="SFX">
+					<ShortName>Swell_06.wav</ShortName>
+					<Path>SFX\Swell_06_D79FB2B7.wem</Path>
+				</File>
+				<File Id="478967398" Language="SFX">
+					<ShortName>SwellVeryNotCalm_06.wav</ShortName>
+					<Path>SFX\SwellVeryNotCalm_06_D79FB2B7.wem</Path>
+				</File>
+				<File Id="552697097" Language="SFX">
+					<ShortName>Swell_01.wav</ShortName>
+					<Path>SFX\Swell_01_D79FB2B7.wem</Path>
+				</File>
+				<File Id="617045975" Language="SFX">
+					<ShortName>SwellVeryNotCalm_09.wav</ShortName>
+					<Path>SFX\SwellVeryNotCalm_09_D79FB2B7.wem</Path>
+				</File>
+				<File Id="656107800" Language="SFX">
+					<ShortName>Swell_03.wav</ShortName>
+					<Path>SFX\Swell_03_D79FB2B7.wem</Path>
+				</File>
+				<File Id="856241846" Language="SFX">
+					<ShortName>SwellVeryNotCalm_13.wav</ShortName>
+					<Path>SFX\SwellVeryNotCalm_13_D79FB2B7.wem</Path>
+				</File>
+				<File Id="882295003" Language="SFX">
+					<ShortName>SwellVeryNotCalm_03.wav</ShortName>
+					<Path>SFX\SwellVeryNotCalm_03_D79FB2B7.wem</Path>
+				</File>
+				<File Id="906643739" Language="SFX">
+					<ShortName>SwellVeryNotCalm_11.wav</ShortName>
+					<Path>SFX\SwellVeryNotCalm_11_D79FB2B7.wem</Path>
+				</File>
+				<File Id="935259986" Language="SFX">
+					<ShortName>Swell_02.wav</ShortName>
+					<Path>SFX\Swell_02_D79FB2B7.wem</Path>
+				</File>
+				<File Id="941476230" Language="SFX">
+					<ShortName>SwellVeryNotCalm_08.wav</ShortName>
+					<Path>SFX\SwellVeryNotCalm_08_D79FB2B7.wem</Path>
+				</File>
+				<File Id="1054614242" Language="SFX">
+					<ShortName>SwellVeryNotCalm_10.wav</ShortName>
+					<Path>SFX\SwellVeryNotCalm_10_D79FB2B7.wem</Path>
+				</File>
+				<File Id="1061255208" Language="SFX">
+					<ShortName>Swell_05.wav</ShortName>
+					<Path>SFX\Swell_05_D79FB2B7.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>
