@@ -9,7 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4a4e3315c86be9408f53d6a5fa6a7c2, type: 3}
-  m_Name: BoatSpeed
+  m_Script: {fileID: 11500000, guid: 009dff70e53650e4a81320758df1def3, type: 3}
+  m_Name: A46BF14E-06DF-4316-9E8F-C1B7D8EFA321
   m_EditorClassIdentifier: 
-  Value: 0
+  objectName: Closer
+  id: 3012222967
+  guid: A46BF14E-06DF-4316-9E8F-C1B7D8EFA321
+  WwiseStateGroupReference: {fileID: 0}
