@@ -5435,6 +5435,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1664328624081637415}
     m_Modifications:
+    - target: {fileID: 4600169510944355882, guid: b74aba0f0ff3d6b4c8c4cb1caf927199,
+        type: 3}
+      propertyPath: m_Name
+      value: WaterSparkleParticle
+      objectReference: {fileID: 0}
     - target: {fileID: 4600169510944355883, guid: b74aba0f0ff3d6b4c8c4cb1caf927199,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5489,11 +5494,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4600169510944355882, guid: b74aba0f0ff3d6b4c8c4cb1caf927199,
-        type: 3}
-      propertyPath: m_Name
-      value: WaterSparkleParticle
       objectReference: {fileID: 0}
     - target: {fileID: 4600169511061076908, guid: b74aba0f0ff3d6b4c8c4cb1caf927199,
         type: 3}
@@ -5625,6 +5625,11 @@ PrefabInstance:
       propertyPath: InitialModule.randomizeRotationDirection
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 413980453312313521, guid: 8cbed42093938cd4398e7769c3d1fe5f,
+        type: 3}
+      propertyPath: EmissionModule.rateOverDistance.scalar
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8cbed42093938cd4398e7769c3d1fe5f, type: 3}
 --- !u!4 &8180380613853115794 stripped
@@ -5699,6 +5704,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 413980453312313521, guid: 8cbed42093938cd4398e7769c3d1fe5f,
+        type: 3}
+      propertyPath: EmissionModule.rateOverDistance.scalar
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8cbed42093938cd4398e7769c3d1fe5f, type: 3}
