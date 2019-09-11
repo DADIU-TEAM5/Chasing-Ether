@@ -7,6 +7,6 @@ public class LoadGameOver : MonoBehaviour
 
     public void LoadFirstScene()
     {
-        SceneManager.LoadScene(SceneToLoad.Value);
+        SceneManager.LoadScene("MenuScene2");
     }
 }
