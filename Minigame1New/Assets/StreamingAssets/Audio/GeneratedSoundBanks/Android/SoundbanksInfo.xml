@@ -23,9 +23,12 @@
 				<Event Id="3434945777" Name="BoatEngine" ObjectPath="\Events\SFX\Boat\BoatEngine" DurationType="Infinite"/>
 				<Event Id="1390999685" Name="CheckpointCheck" ObjectPath="\Events\SFX\Checkpoint\CheckpointCheck" DurationType="OneShot" DurationMin="4.212563" DurationMax="4.212563"/>
 				<Event Id="1309997348" Name="CheckpointShimmer" ObjectPath="\Events\SFX\Checkpoint\CheckpointShimmer" MaxAttenuation="100.000000" DurationType="Infinite"/>
+				<Event Id="789179998" Name="CloseMenu" ObjectPath="\Events\UI\CloseMenu" DurationType="OneShot" DurationMin="0.534036" DurationMax="0.534036"/>
 				<Event Id="2521554274" Name="Obstacles_ClayHit" ObjectPath="\Events\SFX\Obstacles\Obstacles_ClayHit" DurationType="OneShot" DurationMin="1.219864" DurationMax="1.631633"/>
 				<Event Id="1213636067" Name="Obstacles_SeaUrchinHit" ObjectPath="\Events\SFX\Obstacles\Obstacles_SeaUrchinHit" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="176106368" Name="ObstaclesDistance" ObjectPath="\Events\SFX\Obstacles\ObstaclesDistance" DurationType="Infinite"/>
+				<Event Id="176106368" Name="ObstaclesDistance" ObjectPath="\Events\SFX\Obstacles\ObstaclesDistance" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2044204060" Name="OpenMenu" ObjectPath="\Events\UI\OpenMenu" DurationType="OneShot" DurationMin="1.133333" DurationMax="1.133333"/>
+				<Event Id="1432588725" Name="Select" ObjectPath="\Events\UI\Select" DurationType="OneShot" DurationMin="0.164354" DurationMax="0.164354"/>
 				<Event Id="621108255" Name="Step" ObjectPath="\Events\SFX\Giant\Step" DurationType="OneShot" DurationMin="4.101338" DurationMax="6.844014"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
@@ -53,6 +56,10 @@
 					<ShortName>CrewWhoo_05.wav</ShortName>
 					<Path>SFX\CrewWhoo_05_4B685041.wem</Path>
 				</File>
+				<File Id="72501786" Language="SFX">
+					<ShortName>Select.wav</ShortName>
+					<Path>SFX\Select_4B685041.wem</Path>
+				</File>
 				<File Id="74882303" Language="SFX">
 					<ShortName>Step_Low_03.wav</ShortName>
 					<Path>SFX\Step_Low_03_4B685041.wem</Path>
@@ -76,6 +83,10 @@
 				<File Id="214932762" Language="SFX">
 					<ShortName>Deep_04.wav</ShortName>
 					<Path>SFX\Deep_04_4B685041.wem</Path>
+				</File>
+				<File Id="272783700" Language="SFX">
+					<ShortName>OpenMenu.wav</ShortName>
+					<Path>SFX\OpenMenu_4B685041.wem</Path>
 				</File>
 				<File Id="334404460" Language="SFX">
 					<ShortName>Mud_06.wav</ShortName>
@@ -153,10 +164,6 @@
 					<ShortName>NE_Rotor_02.wav</ShortName>
 					<Path>SFX\NE_Rotor_02_D4F1E14F.wem</Path>
 				</File>
-				<File Id="644518232" Language="SFX">
-					<ShortName>DangerLoop3.wav</ShortName>
-					<Path>SFX\DangerLoop3_D4F1E14F.wem</Path>
-				</File>
 				<File Id="647319448" Language="SFX">
 					<ShortName>ImpactShipKrsh_06.wav</ShortName>
 					<Path>SFX\ImpactShipKrsh_06_4B685041.wem</Path>
@@ -221,10 +228,6 @@
 					<ShortName>Step_Low_02.wav</ShortName>
 					<Path>SFX\Step_Low_02_4B685041.wem</Path>
 				</File>
-				<File Id="881797494" Language="SFX">
-					<ShortName>DangerLoop1.wav</ShortName>
-					<Path>SFX\DangerLoop1_D4F1E14F.wem</Path>
-				</File>
 				<File Id="890366297" Language="SFX">
 					<ShortName>Hit_05.wav</ShortName>
 					<Path>SFX\Hit_05_4B685041.wem</Path>
@@ -257,13 +260,13 @@
 					<ShortName>Debris_02.wav</ShortName>
 					<Path>SFX\Debris_02_4B685041.wem</Path>
 				</File>
+				<File Id="1004751637" Language="SFX">
+					<ShortName>CloseMenu.wav</ShortName>
+					<Path>SFX\CloseMenu_4B685041.wem</Path>
+				</File>
 				<File Id="1027849569" Language="SFX">
 					<ShortName>Hit_04.wav</ShortName>
 					<Path>SFX\Hit_04_4B685041.wem</Path>
-				</File>
-				<File Id="1028421198" Language="SFX">
-					<ShortName>DangerLoop2.wav</ShortName>
-					<Path>SFX\DangerLoop2_D4F1E14F.wem</Path>
 				</File>
 				<File Id="1066016862" Language="SFX">
 					<ShortName>Debris_01.wav</ShortName>

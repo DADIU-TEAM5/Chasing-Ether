@@ -42,8 +42,8 @@ public class BoatSound : MonoBehaviour
 
 
         //Send distances from checkpoints and obstacles to wwise, controlling musical elements
-        AkSoundEngine.SetRTPCValue("DistanceToNearestObstacle", DistanceToDangerVariable.Value);
-        DistanceToCollisionDebug = DistanceToDangerVariable.Value;
+        //AkSoundEngine.SetRTPCValue("DistanceToNearestObstacle", DistanceToDangerVariable.Value);
+        //DistanceToCollisionDebug = DistanceToDangerVariable.Value;
 
 
         //Debug boost

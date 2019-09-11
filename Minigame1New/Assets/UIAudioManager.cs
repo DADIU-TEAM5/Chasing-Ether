@@ -16,7 +16,7 @@ public class UIAudioManager : MonoBehaviour
 
     void Start()
     {
-        AkSoundEngine.SetState("MenuOrNot", "Game");
+       // AkSoundEngine.SetState("MenuOrNot", "Game");
     }
 
 
@@ -42,6 +42,7 @@ public class UIAudioManager : MonoBehaviour
 
     public void OpenMenuEvent()
     {
+        Debug.Log("PlayMenuEvent");
         OpenMenu.Post(gameObject);
         AkSoundEngine.SetState("MenuOrNot", "Menu");
     }

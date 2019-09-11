@@ -13,15 +13,16 @@ State	ID	Name	State Group			Notes
 
 Custom State	ID	Name	State Group	Owner		Notes
 	46273699	Menu	MenuOrNot	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\MusicVCA\Music		
+	681389250	Game	MenuOrNot	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\MusicVCA\MenuMusic		
 	795966590	Menu	MenuOrNot	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\EverythingElseVCA		
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	731164972	EverythingElseVCAControl			\Default Work Unit\EverythingElseVCAControl	
-	2029253105	AccelEnsure			\Sidechaining\AccelEnsure	
 	4144096963	MusicVCAControl			\Default Work Unit\MusicVCAControl	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	268529915	Engine			\Default Work Unit\Master Audio Bus\EverythingElseVCA\Engine	
+	679636833	MenuMusic			\Default Work Unit\Master Audio Bus\MusicVCA\MenuMusic	
 	1316910230	Impacts			\Default Work Unit\Master Audio Bus\EverythingElseVCA\Impacts	
 	1602974396	Giant			\Default Work Unit\Master Audio Bus\EverythingElseVCA\Giant	
 	1744536905	MusicalEffects2			\Default Work Unit\Master Audio Bus\EverythingElseVCA\MusicalEffects2	
