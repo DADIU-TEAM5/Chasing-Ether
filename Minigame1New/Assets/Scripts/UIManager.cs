@@ -17,7 +17,7 @@ public class UIManager : MonoBehaviour
 
     public Slider MusicSlider;
     public Slider AudioSlider;
-
+    public Image image;
     public UIAudioManager UIAudioManager;
 
     public void pressUI()
@@ -48,8 +48,6 @@ public class UIManager : MonoBehaviour
 
     public void volumeCheck()
     {
-        GameObject imageGO = transform.Find("Image").gameObject;
-        Image image = imageGO.GetComponent <Image> ();
         
         var audioSliderValue = AudioSlider.value;
         var musicSliderValue = MusicSlider.value;
@@ -69,6 +67,22 @@ public class UIManager : MonoBehaviour
             image.sprite = middle;
         else
             image.sprite = high;
+
+        UIAudioManager.SetVolumeMusic(MusicSlider.value);
+        UIAudioManager.SetVolumeSound(AudioSlider.value);
+    }
+
+    public void volumeMusicCheck()
+    {
+
+        var audioSliderValue = AudioSlider.value;
+        var musicSliderValue = MusicSlider.value;
+        /*
+        Sprite mute = Resources.Load<Sprite>("Assets/Christians stuff/UI/Sprites/Icon_Sound_Off");
+        Sprite low = Resources.Lokad<Sprite>("Assets/Christians stuff/UI/Sprites/Icon_Sound_1");
+        Sprite middle = Resources.Load<Sprite>("Assets/Christians stuff/UI/Sprites/Icon_Sound_2");
+        Sprite high = Resources.Load<Sprite>("Assets/Christians stuff/UI/Sprites/Icon_Sound_3");
+        */
 
         UIAudioManager.SetVolumeMusic(MusicSlider.value);
         UIAudioManager.SetVolumeSound(AudioSlider.value);
