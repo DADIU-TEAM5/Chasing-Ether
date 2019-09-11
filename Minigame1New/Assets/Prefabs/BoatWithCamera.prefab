@@ -338,6 +338,11 @@ PrefabInstance:
       propertyPath: m_Resolution
       value: 32
       objectReference: {fileID: 0}
+    - target: {fileID: 434069429663753093, guid: e2fcee761e3e0f047a62175e9a633985,
+        type: 3}
+      propertyPath: camLookAtPoint
+      value: 
+      objectReference: {fileID: 5189289375026411150}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2fcee761e3e0f047a62175e9a633985, type: 3}
 --- !u!1 &2629938877632833978 stripped

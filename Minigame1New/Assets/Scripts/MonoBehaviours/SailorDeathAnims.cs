@@ -31,7 +31,6 @@ public class SailorDeathAnims : MonoBehaviour
 
     public void HideSailor()
     {
-            gameObject.SetActive(false);
             anim.enabled = false;
             death.Value = false;
 
@@ -42,5 +41,6 @@ public class SailorDeathAnims : MonoBehaviour
             {
                 GetComponentInParent<CollisionManager>().TeleportToLastCheckpoint();
             }
+            gameObject.SetActive(false);
     }
 }
