@@ -276,22 +276,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.0031275
       objectReference: {fileID: 0}
-    - target: {fileID: 7097962804688195830, guid: e2fcee761e3e0f047a62175e9a633985,
-        type: 3}
-      propertyPath: MaxSpeed
-      value: 35
-      objectReference: {fileID: 0}
-    - target: {fileID: 7097962804688195830, guid: e2fcee761e3e0f047a62175e9a633985,
-        type: 3}
-      propertyPath: RotationSpeed
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 7097962804688195830, guid: e2fcee761e3e0f047a62175e9a633985,
-        type: 3}
-      propertyPath: distanceToDanger
-      value: 
-      objectReference: {fileID: 11400000, guid: 43c259d177ce18247963aaa3dceaa186,
-        type: 2}
     - target: {fileID: 1664328624081637415, guid: e2fcee761e3e0f047a62175e9a633985,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -317,6 +301,22 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -9.57
       objectReference: {fileID: 0}
+    - target: {fileID: 7097962804688195830, guid: e2fcee761e3e0f047a62175e9a633985,
+        type: 3}
+      propertyPath: MaxSpeed
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 7097962804688195830, guid: e2fcee761e3e0f047a62175e9a633985,
+        type: 3}
+      propertyPath: RotationSpeed
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 7097962804688195830, guid: e2fcee761e3e0f047a62175e9a633985,
+        type: 3}
+      propertyPath: distanceToDanger
+      value: 
+      objectReference: {fileID: 11400000, guid: 43c259d177ce18247963aaa3dceaa186,
+        type: 2}
     - target: {fileID: 2776482752529642408, guid: e2fcee761e3e0f047a62175e9a633985,
         type: 3}
       propertyPath: m_Mode

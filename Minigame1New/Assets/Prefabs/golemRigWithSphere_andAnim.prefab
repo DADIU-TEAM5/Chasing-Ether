@@ -234,7 +234,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 8748892135801146194, guid: bf2007746718ea84bb412148baa6b4ca, type: 3}
+  - {fileID: 2100000, guid: 6ccc6c48d9972094bba70c5d7e21714e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -721,6 +721,7 @@ MonoBehaviour:
   boulder: {fileID: 0}
   boat: {fileID: 0}
   target: {fileID: 0}
+  throwing: {fileID: 0}
   handPosition: {fileID: 3934472224031648808}
   timeBetweenThrows: 2
 --- !u!1 &3014596557370697597
@@ -1890,7 +1891,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: bf2007746718ea84bb412148baa6b4ca, type: 3}
+  - {fileID: 2100000, guid: 6901f65fbab22d444a202faf82ddef50, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
