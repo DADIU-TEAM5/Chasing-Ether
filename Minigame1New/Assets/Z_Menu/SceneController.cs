@@ -51,6 +51,10 @@ public class SceneController : MonoBehaviour
         {
             SceneManager.LoadScene("Level 3");
         }
+        if (sceneNumber == 4)
+        {
+            SceneManager.LoadScene("MenuScene2");
+        }
       
        
     }
