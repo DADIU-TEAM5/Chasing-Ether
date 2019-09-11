@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 112000000, guid: a3b983427bd5aca4f9c161f6bb6f3461,
     type: 2}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -6113,16 +6113,16 @@ PrefabInstance:
       propertyPath: wayPoints.Array.data[1]
       value: 
       objectReference: {fileID: 999324470}
-    - target: {fileID: 6711025335266701838, guid: 1e817c8a5a7b38b41a8952f899cd2f4a,
-        type: 3}
-      propertyPath: Waves
-      value: 
-      objectReference: {fileID: 325505169}
     - target: {fileID: 4890043213626051393, guid: 1e817c8a5a7b38b41a8952f899cd2f4a,
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.19999999
       objectReference: {fileID: 0}
+    - target: {fileID: 6711025335266701838, guid: 1e817c8a5a7b38b41a8952f899cd2f4a,
+        type: 3}
+      propertyPath: Waves
+      value: 
+      objectReference: {fileID: 325505169}
     - target: {fileID: 1265187998144624653, guid: 1e817c8a5a7b38b41a8952f899cd2f4a,
         type: 3}
       propertyPath: m_Mode
@@ -10663,12 +10663,12 @@ PrefabInstance:
     - target: {fileID: 7892729442292193001, guid: 7fe00ebafa6984d4abec3e8e0b25d816,
         type: 3}
       propertyPath: Dimensions.x
-      value: 38
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7892729442292193001, guid: 7fe00ebafa6984d4abec3e8e0b25d816,
         type: 3}
       propertyPath: Dimensions.y
-      value: 350
+      value: 175
       objectReference: {fileID: 0}
     - target: {fileID: 7892729442292193001, guid: 7fe00ebafa6984d4abec3e8e0b25d816,
         type: 3}
@@ -10688,7 +10688,7 @@ PrefabInstance:
     - target: {fileID: 7892729442292193001, guid: 7fe00ebafa6984d4abec3e8e0b25d816,
         type: 3}
       propertyPath: Octaves.Array.data[0].speed.x
-      value: 50
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 7892729442292193001, guid: 7fe00ebafa6984d4abec3e8e0b25d816,
         type: 3}
@@ -10753,12 +10753,12 @@ PrefabInstance:
     - target: {fileID: 7892729442292193015, guid: 7fe00ebafa6984d4abec3e8e0b25d816,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 10
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7892729442292193015, guid: 7fe00ebafa6984d4abec3e8e0b25d816,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 10
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7fe00ebafa6984d4abec3e8e0b25d816, type: 3}
@@ -11995,7 +11995,7 @@ PrefabInstance:
     - target: {fileID: 5189289374458031686, guid: b7bdfd4d8ed1b914c9a4216b25df2ba1,
         type: 3}
       propertyPath: enablePhoneControls
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 514784633604525039, guid: b7bdfd4d8ed1b914c9a4216b25df2ba1,
         type: 3}
@@ -12793,16 +12793,16 @@ PrefabInstance:
       propertyPath: wayPoints.Array.data[1]
       value: 
       objectReference: {fileID: 1986939995}
-    - target: {fileID: 6711025335266701838, guid: 1e817c8a5a7b38b41a8952f899cd2f4a,
-        type: 3}
-      propertyPath: Waves
-      value: 
-      objectReference: {fileID: 325505169}
     - target: {fileID: 4890043213626051393, guid: 1e817c8a5a7b38b41a8952f899cd2f4a,
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.19999999
       objectReference: {fileID: 0}
+    - target: {fileID: 6711025335266701838, guid: 1e817c8a5a7b38b41a8952f899cd2f4a,
+        type: 3}
+      propertyPath: Waves
+      value: 
+      objectReference: {fileID: 325505169}
     - target: {fileID: 1265187998144624653, guid: 1e817c8a5a7b38b41a8952f899cd2f4a,
         type: 3}
       propertyPath: m_Mode
@@ -14442,16 +14442,16 @@ PrefabInstance:
       propertyPath: wayPoints.Array.data[1]
       value: 
       objectReference: {fileID: 121791029}
-    - target: {fileID: 6711025335266701838, guid: 1e817c8a5a7b38b41a8952f899cd2f4a,
-        type: 3}
-      propertyPath: Waves
-      value: 
-      objectReference: {fileID: 325505169}
     - target: {fileID: 4890043213626051393, guid: 1e817c8a5a7b38b41a8952f899cd2f4a,
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.2
       objectReference: {fileID: 0}
+    - target: {fileID: 6711025335266701838, guid: 1e817c8a5a7b38b41a8952f899cd2f4a,
+        type: 3}
+      propertyPath: Waves
+      value: 
+      objectReference: {fileID: 325505169}
     - target: {fileID: 1265187998144624653, guid: 1e817c8a5a7b38b41a8952f899cd2f4a,
         type: 3}
       propertyPath: m_Mode
@@ -16173,16 +16173,16 @@ PrefabInstance:
       propertyPath: wayPoints.Array.data[1]
       value: 
       objectReference: {fileID: 523596823}
-    - target: {fileID: 6711025335266701838, guid: 1e817c8a5a7b38b41a8952f899cd2f4a,
-        type: 3}
-      propertyPath: Waves
-      value: 
-      objectReference: {fileID: 325505169}
     - target: {fileID: 4890043213626051393, guid: 1e817c8a5a7b38b41a8952f899cd2f4a,
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.19999999
       objectReference: {fileID: 0}
+    - target: {fileID: 6711025335266701838, guid: 1e817c8a5a7b38b41a8952f899cd2f4a,
+        type: 3}
+      propertyPath: Waves
+      value: 
+      objectReference: {fileID: 325505169}
     - target: {fileID: 1265187998144624653, guid: 1e817c8a5a7b38b41a8952f899cd2f4a,
         type: 3}
       propertyPath: m_Mode
