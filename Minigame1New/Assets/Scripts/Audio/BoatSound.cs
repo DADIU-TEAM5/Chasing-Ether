@@ -22,6 +22,7 @@ public class BoatSound : MonoBehaviour
     //public FloatVariable Speed;
     // public FloatVariable TurnAngle;
     public float RotationSoundAngle;
+    public float DistanceToCollisionDebug;
 
 
     void Start()
@@ -39,8 +40,11 @@ public class BoatSound : MonoBehaviour
         AkSoundEngine.SetRTPCValue("BoatTurnAngle", RotationSoundAngle);
         AkSoundEngine.SetRTPCValue("BoatSpeed", Boat.velocity);
 
+
         //Send distances from checkpoints and obstacles to wwise, controlling musical elements
         AkSoundEngine.SetRTPCValue("DistanceToNearestObstacle", DistanceToDangerVariable.Value);
+        DistanceToCollisionDebug = DistanceToDangerVariable.Value;
+
 
         //Debug boost
         /*  if (Input.GetKeyDown("space"))

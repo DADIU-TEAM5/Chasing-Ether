@@ -28,10 +28,8 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	50106764	Step_Mid_01	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Android\SFX\Step_Mid_01_4B685041.wem		\Actor-Mixer Hierarchy\Golem\Steps\Mid\Step_Mid_01		40960
 	53561166	ShimmerLoop	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Android\SFX\ShimmerLoop_D4F1E14F.wem		\Actor-Mixer Hierarchy\Checkpoint\ShimmerLoop		431352
 	61876478	ImpactShipKrsh_05	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Android\SFX\ImpactShipKrsh_05_4B685041.wem		\Actor-Mixer Hierarchy\Impacts\Ship\ImpactsShip\ShipImpactKrsh\ImpactShipKrsh_05		13801
-	63278096	CrewWhoo_05	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Android\SFX\CrewWhoo_05_4B685041.wem		\Actor-Mixer Hierarchy\Boat\Accel\Accel\Cheer\CrewWhoo_05		26233
 	74882303	Step_Low_03	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Android\SFX\Step_Low_03_4B685041.wem		\Actor-Mixer Hierarchy\Golem\Steps\Low\Step_Low_03		18221
 	124790683	Deep_03	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Android\SFX\Deep_03_4B685041.wem		\Actor-Mixer Hierarchy\Impacts\Clay\ImpactsClay\Clay_Deep\Deep_03		24844
-	172314368	CrewWhoo_01	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Android\SFX\CrewWhoo_01_4B685041.wem		\Actor-Mixer Hierarchy\Boat\Accel\Accel\Cheer\CrewWhoo_01		20421
 	188739127	WindAccel_02	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Android\SFX\WindAccel_02_4B685041.wem		\Actor-Mixer Hierarchy\Boat\Accel\Accel\AccelWind\WindAccel_02		41630
 	193276537	TurnWaves	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Android\SFX\TurnWaves_D4F1E14F.wem		\Actor-Mixer Hierarchy\Boat\Turn\Turn\TurnWaves		164949
 	214932762	Deep_04	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Android\SFX\Deep_04_4B685041.wem		\Actor-Mixer Hierarchy\Impacts\Clay\ImpactsClay\Clay_Deep\Deep_04		26794
@@ -39,7 +37,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	375751179	TurnRev	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Android\SFX\TurnRev_D4F1E14F.wem		\Actor-Mixer Hierarchy\Boat\Turn\Turn\TurnRev		151520
 	388349972	ImpactShipKrsh_04	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Android\SFX\ImpactShipKrsh_04_4B685041.wem		\Actor-Mixer Hierarchy\Impacts\Ship\ImpactsShip\ShipImpactKrsh\ImpactShipKrsh_04		13598
 	411491744	Step_Mid_04	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Android\SFX\Step_Mid_04_4B685041.wem		\Actor-Mixer Hierarchy\Golem\Steps\Mid\Step_Mid_04		28564
-	427070445	CrewWhoo_02	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Android\SFX\CrewWhoo_02_4B685041.wem		\Actor-Mixer Hierarchy\Boat\Accel\Accel\Cheer\CrewWhoo_02		21229
 	428072678	Hit_01	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Android\SFX\Hit_01_4B685041.wem		\Actor-Mixer Hierarchy\Impacts\Clay\ImpactsClay\Clay_Hit\Hit_01		7790
 	438542744	Debris_04	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Android\SFX\Debris_04_4B685041.wem		\Actor-Mixer Hierarchy\Impacts\Clay\ImpactsClay\Clay_Debris\Debris_04		25835
 	467555403	BlowAccel_02	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Android\SFX\BlowAccel_02_4B685041.wem		\Actor-Mixer Hierarchy\Boat\Accel\Accel\AccelBlow\BlowAccel_02		43805
@@ -47,7 +44,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	519217007	ImpactShipKrsh_02	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Android\SFX\ImpactShipKrsh_02_4B685041.wem		\Actor-Mixer Hierarchy\Impacts\Ship\ImpactsShip\ShipImpactKrsh\ImpactShipKrsh_02		15312
 	523447198	Deep_01	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Android\SFX\Deep_01_4B685041.wem		\Actor-Mixer Hierarchy\Impacts\Clay\ImpactsClay\Clay_Deep\Deep_01		25747
 	524877822	ImpactShipKrsh_01	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Android\SFX\ImpactShipKrsh_01_4B685041.wem		\Actor-Mixer Hierarchy\Impacts\Ship\ImpactsShip\ShipImpactKrsh\ImpactShipKrsh_01		16141
-	540582087	CrewWhoo_06	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Android\SFX\CrewWhoo_06_4B685041.wem		\Actor-Mixer Hierarchy\Boat\Accel\Accel\Cheer\CrewWhoo_06		34330
 	561834188	WaterLoop_02	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Android\SFX\WaterLoop_02_D4F1E14F.wem		\Actor-Mixer Hierarchy\Atmos\AtmosMix\WaterLoop_02		703712
 	572826344	NE_Rotor_03	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Android\SFX\NE_Rotor_03_D4F1E14F.wem		\Actor-Mixer Hierarchy\Boat\Rotor\Motor\NE_Rotor_03		46939
 	574707771	Step_Mid_03	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Android\SFX\Step_Mid_03_4B685041.wem		\Actor-Mixer Hierarchy\Golem\Steps\Mid\Step_Mid_03		36981
@@ -60,11 +56,9 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	669569358	ImpactShipKrsh_07	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Android\SFX\ImpactShipKrsh_07_4B685041.wem		\Actor-Mixer Hierarchy\Impacts\Ship\ImpactsShip\ShipImpactKrsh\ImpactShipKrsh_07		21816
 	678068285	Mud_04	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Android\SFX\Mud_04_4B685041.wem		\Actor-Mixer Hierarchy\Impacts\Clay\ImpactsClay\Clay_Mud\Mud_04		7572
 	697746665	ImpactShipBase	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Android\SFX\ImpactShipBase_4B685041.wem		\Actor-Mixer Hierarchy\Impacts\Ship\ImpactsShip\ImpactShipBase		26544
-	703308049	CrewWhoo_03	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Android\SFX\CrewWhoo_03_4B685041.wem		\Actor-Mixer Hierarchy\Boat\Accel\Accel\Cheer\CrewWhoo_03		19212
 	712549483	Mud_03	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Android\SFX\Mud_03_4B685041.wem		\Actor-Mixer Hierarchy\Impacts\Clay\ImpactsClay\Clay_Mud\Mud_03		8811
 	749914559	WaterLoop_01	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Android\SFX\WaterLoop_01_D4F1E14F.wem		\Actor-Mixer Hierarchy\Atmos\AtmosMix\WaterLoop_01		649658
 	772224212	Debris_05	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Android\SFX\Debris_05_4B685041.wem		\Actor-Mixer Hierarchy\Impacts\Clay\ImpactsClay\Clay_Debris\Debris_05		32622
-	794094091	CrewWhoo_04	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Android\SFX\CrewWhoo_04_4B685041.wem		\Actor-Mixer Hierarchy\Boat\Accel\Accel\Cheer\CrewWhoo_04		11096
 	795069920	NE_Rotor_01	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Android\SFX\NE_Rotor_01_D4F1E14F.wem		\Actor-Mixer Hierarchy\Boat\Rotor\Motor\NE_Rotor_01		57192
 	806027504	Hit_02	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Android\SFX\Hit_02_4B685041.wem		\Actor-Mixer Hierarchy\Impacts\Clay\ImpactsClay\Clay_Hit\Hit_02		10913
 	815295131	Step_Mid_02	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame1New_WwiseProject\.cache\Android\SFX\Step_Mid_02_4B685041.wem		\Actor-Mixer Hierarchy\Golem\Steps\Mid\Step_Mid_02		31235

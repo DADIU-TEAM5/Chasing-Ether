@@ -22,7 +22,7 @@
 				<Event Id="3905425309" Name="BoatCollision" ObjectPath="\Events\SFX\Boat\BoatCollision" DurationType="OneShot" DurationMin="2.345370" DurationMax="3.328369"/>
 				<Event Id="3434945777" Name="BoatEngine" ObjectPath="\Events\SFX\Boat\BoatEngine" DurationType="Infinite"/>
 				<Event Id="1390999685" Name="CheckpointCheck" ObjectPath="\Events\SFX\Checkpoint\CheckpointCheck" DurationType="OneShot" DurationMin="4.212563" DurationMax="4.212563"/>
-				<Event Id="1309997348" Name="CheckpointShimmer" ObjectPath="\Events\SFX\Checkpoint\CheckpointShimmer" DurationType="Infinite"/>
+				<Event Id="1309997348" Name="CheckpointShimmer" ObjectPath="\Events\SFX\Checkpoint\CheckpointShimmer" MaxAttenuation="100.000000" DurationType="Infinite"/>
 				<Event Id="2521554274" Name="Obstacles_ClayHit" ObjectPath="\Events\SFX\Obstacles\Obstacles_ClayHit" DurationType="OneShot" DurationMin="1.219864" DurationMax="1.631633"/>
 				<Event Id="1213636067" Name="Obstacles_SeaUrchinHit" ObjectPath="\Events\SFX\Obstacles\Obstacles_SeaUrchinHit" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="176106368" Name="ObstaclesDistance" ObjectPath="\Events\SFX\Obstacles\ObstaclesDistance" DurationType="Infinite"/>
@@ -49,10 +49,6 @@
 					<ShortName>ImpactShipKrsh_05.wav</ShortName>
 					<Path>SFX\ImpactShipKrsh_05_4B685041.wem</Path>
 				</File>
-				<File Id="63278096" Language="SFX">
-					<ShortName>CrewWhoo_05.wav</ShortName>
-					<Path>SFX\CrewWhoo_05_4B685041.wem</Path>
-				</File>
 				<File Id="74882303" Language="SFX">
 					<ShortName>Step_Low_03.wav</ShortName>
 					<Path>SFX\Step_Low_03_4B685041.wem</Path>
@@ -60,10 +56,6 @@
 				<File Id="124790683" Language="SFX">
 					<ShortName>Deep_03.wav</ShortName>
 					<Path>SFX\Deep_03_4B685041.wem</Path>
-				</File>
-				<File Id="172314368" Language="SFX">
-					<ShortName>CrewWhoo_01.wav</ShortName>
-					<Path>SFX\CrewWhoo_01_4B685041.wem</Path>
 				</File>
 				<File Id="188739127" Language="SFX">
 					<ShortName>WindAccel_02.wav</ShortName>
@@ -93,10 +85,6 @@
 					<ShortName>Step_Mid_04.wav</ShortName>
 					<Path>SFX\Step_Mid_04_4B685041.wem</Path>
 				</File>
-				<File Id="427070445" Language="SFX">
-					<ShortName>CrewWhoo_02.wav</ShortName>
-					<Path>SFX\CrewWhoo_02_4B685041.wem</Path>
-				</File>
 				<File Id="428072678" Language="SFX">
 					<ShortName>Hit_01.wav</ShortName>
 					<Path>SFX\Hit_01_4B685041.wem</Path>
@@ -124,10 +112,6 @@
 				<File Id="524877822" Language="SFX">
 					<ShortName>ImpactShipKrsh_01.wav</ShortName>
 					<Path>SFX\ImpactShipKrsh_01_4B685041.wem</Path>
-				</File>
-				<File Id="540582087" Language="SFX">
-					<ShortName>CrewWhoo_06.wav</ShortName>
-					<Path>SFX\CrewWhoo_06_4B685041.wem</Path>
 				</File>
 				<File Id="561834188" Language="SFX">
 					<ShortName>WaterLoop_02.wav</ShortName>
@@ -177,10 +161,6 @@
 					<ShortName>ImpactShipBase.wav</ShortName>
 					<Path>SFX\ImpactShipBase_4B685041.wem</Path>
 				</File>
-				<File Id="703308049" Language="SFX">
-					<ShortName>CrewWhoo_03.wav</ShortName>
-					<Path>SFX\CrewWhoo_03_4B685041.wem</Path>
-				</File>
 				<File Id="712549483" Language="SFX">
 					<ShortName>Mud_03.wav</ShortName>
 					<Path>SFX\Mud_03_4B685041.wem</Path>
@@ -192,10 +172,6 @@
 				<File Id="772224212" Language="SFX">
 					<ShortName>Debris_05.wav</ShortName>
 					<Path>SFX\Debris_05_4B685041.wem</Path>
-				</File>
-				<File Id="794094091" Language="SFX">
-					<ShortName>CrewWhoo_04.wav</ShortName>
-					<Path>SFX\CrewWhoo_04_4B685041.wem</Path>
 				</File>
 				<File Id="795069920" Language="SFX">
 					<ShortName>NE_Rotor_01.wav</ShortName>
