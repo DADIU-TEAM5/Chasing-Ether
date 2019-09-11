@@ -15,6 +15,11 @@ public class UIManager : MonoBehaviour
     public GameEvent openMenuEvent;
     public GameEvent closeMenuEvent;
 
+    public Slider MusicSlider;
+    public Slider AudioSlider;
+
+    public UIAudioManager UIAudioManager;
+
     public void pressUI()
     {
         bool originalState = gameObject.activeSelf;
@@ -43,26 +48,30 @@ public class UIManager : MonoBehaviour
 
     public void volumeCheck()
     {
-        GameObject sliderGO = transform.Find("Slider").gameObject;
         GameObject imageGO = transform.Find("Image").gameObject;
-        Slider slider = sliderGO.GetComponent<Slider>();
         Image image = imageGO.GetComponent <Image> ();
+        
+        var audioSliderValue = AudioSlider.value;
+        var musicSliderValue = MusicSlider.value;
         /*
         Sprite mute = Resources.Load<Sprite>("Assets/Christians stuff/UI/Sprites/Icon_Sound_Off");
-        Sprite low = Resources.Load<Sprite>("Assets/Christians stuff/UI/Sprites/Icon_Sound_1");
+        Sprite low = Resources.Lokad<Sprite>("Assets/Christians stuff/UI/Sprites/Icon_Sound_1");
         Sprite middle = Resources.Load<Sprite>("Assets/Christians stuff/UI/Sprites/Icon_Sound_2");
         Sprite high = Resources.Load<Sprite>("Assets/Christians stuff/UI/Sprites/Icon_Sound_3");
         */
         
         
-        if (slider.value < Mathf.Epsilon)
+        if (audioSliderValue < Mathf.Epsilon)
             image.sprite = mute;
-        else if (slider.value < 0.33)
+        else if (audioSliderValue < 0.33)
             image.sprite = low;
-        else if (slider.value < 0.66)
+        else if (audioSliderValue < 0.66)
             image.sprite = middle;
         else
             image.sprite = high;
+
+        UIAudioManager.SetVolumeMusic(MusicSlider.value);
+        UIAudioManager.SetVolumeSound(AudioSlider.value);
     }
 
     public void flatPop()

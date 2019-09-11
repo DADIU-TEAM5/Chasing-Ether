@@ -12,20 +12,26 @@ State	ID	Name	State Group			Notes
 	3012222967	Closer	DistanceToGiant			
 
 Custom State	ID	Name	State Group	Owner		Notes
-	46273699	Menu	MenuOrNot	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music		
+	46273699	Menu	MenuOrNot	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\MusicVCA\Music		
+	795966590	Menu	MenuOrNot	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\EverythingElseVCA		
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
+	731164972	EverythingElseVCAControl			\Default Work Unit\EverythingElseVCAControl	
 	2029253105	AccelEnsure			\Sidechaining\AccelEnsure	
+	4144096963	MusicVCAControl			\Default Work Unit\MusicVCAControl	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
-	268529915	Engine			\Default Work Unit\Master Audio Bus\Engine	
-	1316910230	Impacts			\Default Work Unit\Master Audio Bus\Impacts	
-	1602974396	Giant			\Default Work Unit\Master Audio Bus\Giant	
-	1744536905	MusicalEffects2			\Default Work Unit\Master Audio Bus\MusicalEffects2	
-	1778882555	Accel			\Default Work Unit\Master Audio Bus\Accel	
-	3034623661	Atmos			\Default Work Unit\Master Audio Bus\Atmos	
+	268529915	Engine			\Default Work Unit\Master Audio Bus\EverythingElseVCA\Engine	
+	1316910230	Impacts			\Default Work Unit\Master Audio Bus\EverythingElseVCA\Impacts	
+	1602974396	Giant			\Default Work Unit\Master Audio Bus\EverythingElseVCA\Giant	
+	1744536905	MusicalEffects2			\Default Work Unit\Master Audio Bus\EverythingElseVCA\MusicalEffects2	
+	1778882555	Accel			\Default Work Unit\Master Audio Bus\EverythingElseVCA\Accel	
+	1872958639	UIVCA			\Default Work Unit\Master Audio Bus\UIVCA	
+	3034623661	Atmos			\Default Work Unit\Master Audio Bus\EverythingElseVCA\Atmos	
+	3527005228	MusicVCA			\Default Work Unit\Master Audio Bus\MusicVCA	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
-	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
+	3991942870	Music			\Default Work Unit\Master Audio Bus\MusicVCA\Music	
+	4082905169	EverythingElseVCA			\Default Work Unit\Master Audio Bus\EverythingElseVCA	
 
 Effect plug-ins	ID	Name	Type				Notes
 	160285390	Wwise Meter (Custom)	Wwise Meter			
