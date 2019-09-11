@@ -11,10 +11,16 @@ public class UIManager : MonoBehaviour
     public Sprite middle;
     public Sprite high;
 
+    public GameEvent clickSoundEvent;
+    public GameEvent openMenuEvent;
+    public GameEvent closeMenuEvent;
+
     public void pressUI()
     {
         bool originalState = gameObject.activeSelf;
         gameObject.SetActive(!originalState);
+
+        clickSoundEvent.Raise();
     }
 
     public void playAnimation()
@@ -24,6 +30,15 @@ public class UIManager : MonoBehaviour
         animator = GetComponent<Animator>();
         animatorStatus =animator.GetBool("isOpen");
         animator.SetBool("isOpen", !animatorStatus);
+        if (animatorStatus)
+        {
+            closeMenuEvent.Raise();
+        }
+        else
+        {
+            openMenuEvent.Raise();
+        }
+
     }
 
     public void volumeCheck()
