@@ -49,6 +49,10 @@
 					<ShortName>ImpactShipKrsh_05.wav</ShortName>
 					<Path>SFX\ImpactShipKrsh_05_10C4C929.wem</Path>
 				</File>
+				<File Id="63278096" Language="SFX">
+					<ShortName>CrewWhoo_05.wav</ShortName>
+					<Path>SFX\CrewWhoo_05_10C4C929.wem</Path>
+				</File>
 				<File Id="74882303" Language="SFX">
 					<ShortName>Step_Low_03.wav</ShortName>
 					<Path>SFX\Step_Low_03_10C4C929.wem</Path>
@@ -56,6 +60,10 @@
 				<File Id="124790683" Language="SFX">
 					<ShortName>Deep_03.wav</ShortName>
 					<Path>SFX\Deep_03_10C4C929.wem</Path>
+				</File>
+				<File Id="172314368" Language="SFX">
+					<ShortName>CrewWhoo_01.wav</ShortName>
+					<Path>SFX\CrewWhoo_01_10C4C929.wem</Path>
 				</File>
 				<File Id="188739127" Language="SFX">
 					<ShortName>WindAccel_02.wav</ShortName>
@@ -85,6 +93,10 @@
 					<ShortName>Step_Mid_04.wav</ShortName>
 					<Path>SFX\Step_Mid_04_10C4C929.wem</Path>
 				</File>
+				<File Id="427070445" Language="SFX">
+					<ShortName>CrewWhoo_02.wav</ShortName>
+					<Path>SFX\CrewWhoo_02_10C4C929.wem</Path>
+				</File>
 				<File Id="428072678" Language="SFX">
 					<ShortName>Hit_01.wav</ShortName>
 					<Path>SFX\Hit_01_10C4C929.wem</Path>
@@ -112,6 +124,10 @@
 				<File Id="524877822" Language="SFX">
 					<ShortName>ImpactShipKrsh_01.wav</ShortName>
 					<Path>SFX\ImpactShipKrsh_01_10C4C929.wem</Path>
+				</File>
+				<File Id="540582087" Language="SFX">
+					<ShortName>CrewWhoo_06.wav</ShortName>
+					<Path>SFX\CrewWhoo_06_10C4C929.wem</Path>
 				</File>
 				<File Id="561834188" Language="SFX">
 					<ShortName>WaterLoop_02.wav</ShortName>
@@ -161,6 +177,10 @@
 					<ShortName>ImpactShipBase.wav</ShortName>
 					<Path>SFX\ImpactShipBase_10C4C929.wem</Path>
 				</File>
+				<File Id="703308049" Language="SFX">
+					<ShortName>CrewWhoo_03.wav</ShortName>
+					<Path>SFX\CrewWhoo_03_10C4C929.wem</Path>
+				</File>
 				<File Id="712549483" Language="SFX">
 					<ShortName>Mud_03.wav</ShortName>
 					<Path>SFX\Mud_03_10C4C929.wem</Path>
@@ -172,6 +192,10 @@
 				<File Id="772224212" Language="SFX">
 					<ShortName>Debris_05.wav</ShortName>
 					<Path>SFX\Debris_05_10C4C929.wem</Path>
+				</File>
+				<File Id="794094091" Language="SFX">
+					<ShortName>CrewWhoo_04.wav</ShortName>
+					<Path>SFX\CrewWhoo_04_10C4C929.wem</Path>
 				</File>
 				<File Id="795069920" Language="SFX">
 					<ShortName>NE_Rotor_01.wav</ShortName>
