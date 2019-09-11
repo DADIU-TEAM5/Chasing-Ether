@@ -34,7 +34,7 @@ public class SailorDeathAnims : MonoBehaviour
             gameObject.SetActive(false);
             anim.enabled = false;
             death.Value = false;
-​
+
             if (playerHealth.Value == 0)
             {
                 SceneManager.LoadScene("GameOver");
