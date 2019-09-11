@@ -297,6 +297,10 @@ MonoBehaviour:
   clickSoundEvent: {fileID: 0}
   openMenuEvent: {fileID: 0}
   closeMenuEvent: {fileID: 0}
+  MusicSlider: {fileID: 0}
+  AudioSlider: {fileID: 0}
+  UIAudioManager: {fileID: -4966074212821308760, guid: 29c144f24d0614640a7e3d3b97431ba5,
+    type: 3}
 --- !u!114 &3502203886574946872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -386,6 +390,9 @@ MonoBehaviour:
   clickSoundEvent: {fileID: 11400000, guid: 618c83960f1e99a4c8172bb84ce811cf, type: 2}
   openMenuEvent: {fileID: 11400000, guid: 95440a174fd02bb48b98526ed98414e2, type: 2}
   closeMenuEvent: {fileID: 11400000, guid: 5082e8f10dfe28c40ac8c7a7add917b4, type: 2}
+  MusicSlider: {fileID: 0}
+  AudioSlider: {fileID: 0}
+  UIAudioManager: {fileID: 0}
 --- !u!1 &3502203887571014740
 GameObject:
   m_ObjectHideFlags: 0
@@ -708,6 +715,9 @@ MonoBehaviour:
   clickSoundEvent: {fileID: 0}
   openMenuEvent: {fileID: 0}
   closeMenuEvent: {fileID: 0}
+  MusicSlider: {fileID: 0}
+  AudioSlider: {fileID: 0}
+  UIAudioManager: {fileID: 0}
 --- !u!114 &3502203887258329425
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -927,6 +937,9 @@ MonoBehaviour:
   clickSoundEvent: {fileID: 0}
   openMenuEvent: {fileID: 0}
   closeMenuEvent: {fileID: 0}
+  MusicSlider: {fileID: 0}
+  AudioSlider: {fileID: 0}
+  UIAudioManager: {fileID: 0}
 --- !u!1001 &3502203886485285531
 PrefabInstance:
   m_ObjectHideFlags: 0
