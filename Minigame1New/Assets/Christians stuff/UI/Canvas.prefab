@@ -294,6 +294,9 @@ MonoBehaviour:
   low: {fileID: 21300000, guid: 419a2244ec39ab14c8d2ceb8cef67246, type: 3}
   middle: {fileID: 21300000, guid: 783def5c1c3de4f41ae839713cbd5050, type: 3}
   high: {fileID: 21300000, guid: 89d43eb64f6ea554982c0889a00d8c5b, type: 3}
+  clickSoundEvent: {fileID: 0}
+  openMenuEvent: {fileID: 0}
+  closeMenuEvent: {fileID: 0}
 --- !u!114 &3502203886574946872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -380,6 +383,9 @@ MonoBehaviour:
   low: {fileID: 21300000, guid: 419a2244ec39ab14c8d2ceb8cef67246, type: 3}
   middle: {fileID: 21300000, guid: 783def5c1c3de4f41ae839713cbd5050, type: 3}
   high: {fileID: 21300000, guid: 89d43eb64f6ea554982c0889a00d8c5b, type: 3}
+  clickSoundEvent: {fileID: 11400000, guid: 618c83960f1e99a4c8172bb84ce811cf, type: 2}
+  openMenuEvent: {fileID: 11400000, guid: 95440a174fd02bb48b98526ed98414e2, type: 2}
+  closeMenuEvent: {fileID: 11400000, guid: 5082e8f10dfe28c40ac8c7a7add917b4, type: 2}
 --- !u!1 &3502203887571014740
 GameObject:
   m_ObjectHideFlags: 0
@@ -699,6 +705,9 @@ MonoBehaviour:
   low: {fileID: 0}
   middle: {fileID: 0}
   high: {fileID: 0}
+  clickSoundEvent: {fileID: 0}
+  openMenuEvent: {fileID: 0}
+  closeMenuEvent: {fileID: 0}
 --- !u!114 &3502203887258329425
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -915,6 +924,9 @@ MonoBehaviour:
   low: {fileID: 0}
   middle: {fileID: 0}
   high: {fileID: 0}
+  clickSoundEvent: {fileID: 0}
+  openMenuEvent: {fileID: 0}
+  closeMenuEvent: {fileID: 0}
 --- !u!1001 &3502203886485285531
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1393,6 +1405,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 4723756531670210618, guid: 14d363fe01c2a294996f4abae3cc0bf7,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: fa2cee27eb086dd48b3768ad277c12d4, type: 2}
     - target: {fileID: 4723756531417481261, guid: 14d363fe01c2a294996f4abae3cc0bf7,
         type: 3}
       propertyPath: m_Name
@@ -1403,11 +1420,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4723756531670210618, guid: 14d363fe01c2a294996f4abae3cc0bf7,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: fa2cee27eb086dd48b3768ad277c12d4, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14d363fe01c2a294996f4abae3cc0bf7, type: 3}
 --- !u!1 &3502203886950468810 stripped
