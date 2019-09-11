@@ -1206,11 +1206,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9148287470451300285, guid: 49a8b2f319cf4584a841b54d58c05f09,
-        type: 3}
-      propertyPath: m_ApplyRootMotion
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2255973190482320742, guid: 49a8b2f319cf4584a841b54d58c05f09,
         type: 3}
       propertyPath: playerObj
@@ -1246,6 +1241,11 @@ PrefabInstance:
         type: 3}
       propertyPath: timeBetweenThrows
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9148287470451300285, guid: 49a8b2f319cf4584a841b54d58c05f09,
+        type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 49a8b2f319cf4584a841b54d58c05f09, type: 3}
@@ -2279,6 +2279,26 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0
       objectReference: {fileID: 0}
+    - target: {fileID: 2747604374319085276, guid: e3baebb010d28484791ce94275fab174,
+        type: 3}
+      propertyPath: m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2747604374319085276, guid: e3baebb010d28484791ce94275fab174,
+        type: 3}
+      propertyPath: m_CustomBakedTexture
+      value: 
+      objectReference: {fileID: 8900000, guid: 0183df0596de38542b01ab7bad9aaa9a, type: 3}
+    - target: {fileID: 7822860326704824102, guid: e3baebb010d28484791ce94275fab174,
+        type: 3}
+      propertyPath: m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7822860326704824102, guid: e3baebb010d28484791ce94275fab174,
+        type: 3}
+      propertyPath: m_CustomBakedTexture
+      value: 
+      objectReference: {fileID: 8900000, guid: 0183df0596de38542b01ab7bad9aaa9a, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3baebb010d28484791ce94275fab174, type: 3}
 --- !u!1001 &556619784
@@ -2652,6 +2672,26 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0
       objectReference: {fileID: 0}
+    - target: {fileID: 2747604374319085276, guid: e3baebb010d28484791ce94275fab174,
+        type: 3}
+      propertyPath: m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2747604374319085276, guid: e3baebb010d28484791ce94275fab174,
+        type: 3}
+      propertyPath: m_CustomBakedTexture
+      value: 
+      objectReference: {fileID: 8900000, guid: 0183df0596de38542b01ab7bad9aaa9a, type: 3}
+    - target: {fileID: 7822860326704824102, guid: e3baebb010d28484791ce94275fab174,
+        type: 3}
+      propertyPath: m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7822860326704824102, guid: e3baebb010d28484791ce94275fab174,
+        type: 3}
+      propertyPath: m_CustomBakedTexture
+      value: 
+      objectReference: {fileID: 8900000, guid: 0183df0596de38542b01ab7bad9aaa9a, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3baebb010d28484791ce94275fab174, type: 3}
 --- !u!1001 &674689573
@@ -6863,15 +6903,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7183451006682720275, guid: 885476aa385fc4249a1ab4330e7eb645,
-        type: 3}
-      propertyPath: m_Size.z
-      value: 53.11
-      objectReference: {fileID: 0}
     - target: {fileID: 5701378870843856057, guid: 885476aa385fc4249a1ab4330e7eb645,
         type: 3}
       propertyPath: NextLevelName
       value: Level 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7183451006682720275, guid: 885476aa385fc4249a1ab4330e7eb645,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 53.11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 885476aa385fc4249a1ab4330e7eb645, type: 3}

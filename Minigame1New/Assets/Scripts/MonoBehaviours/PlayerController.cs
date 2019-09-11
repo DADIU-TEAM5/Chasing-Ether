@@ -51,6 +51,8 @@ public class PlayerController : MonoBehaviour
     public GyroController gyroController;
     public MicrophoneInput microPhoneInput;
 
+    public BoolVariable death;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -114,9 +116,14 @@ public class PlayerController : MonoBehaviour
             currentRotation = Input.GetAxis("Horizontal");
             
         }
-        
 
-        Movement();
+
+        if (!death.Value)
+        {
+            Movement();
+        }
+
+        //Movement();
     }
 
     public void Movement()
