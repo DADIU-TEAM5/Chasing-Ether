@@ -16,13 +16,14 @@ public class MusicManager : MonoBehaviour
 
         AkSoundEngine.SetState("DistanceToGiant", "Far");
 
+
     }
 
 
 
     void Update()
     {
-    
+        /*
         if (DistanceToGiant.Value is 1)
         {
             AkSoundEngine.SetState("DistanceToGiant", "Far");
@@ -36,6 +37,6 @@ public class MusicManager : MonoBehaviour
         if (DistanceToGiant.Value is 3)
         {
             AkSoundEngine.SetState("DistanceToGiant", "Closest");
-        }
+        }*/
     }
 }

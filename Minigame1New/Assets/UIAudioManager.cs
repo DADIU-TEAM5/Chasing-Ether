@@ -16,7 +16,7 @@ public class UIAudioManager : MonoBehaviour
 
     void Start()
     {
-        
+        AkSoundEngine.SetState("MenuOrNot", "Game");
     }
 
 
