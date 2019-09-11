@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 112000000, guid: a3b983427bd5aca4f9c161f6bb6f3461,
     type: 2}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -6113,16 +6113,26 @@ PrefabInstance:
       propertyPath: wayPoints.Array.data[1]
       value: 
       objectReference: {fileID: 999324470}
-    - target: {fileID: 4890043213626051393, guid: 1e817c8a5a7b38b41a8952f899cd2f4a,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.19999999
-      objectReference: {fileID: 0}
     - target: {fileID: 6711025335266701838, guid: 1e817c8a5a7b38b41a8952f899cd2f4a,
         type: 3}
       propertyPath: Waves
       value: 
       objectReference: {fileID: 325505169}
+    - target: {fileID: 4890043213626051393, guid: 1e817c8a5a7b38b41a8952f899cd2f4a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.19999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1265187998144624653, guid: 1e817c8a5a7b38b41a8952f899cd2f4a,
+        type: 3}
+      propertyPath: m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1265187998144624653, guid: 1e817c8a5a7b38b41a8952f899cd2f4a,
+        type: 3}
+      propertyPath: m_CustomBakedTexture
+      value: 
+      objectReference: {fileID: 8900000, guid: ac997e816e3560a4faa1f22718b00cab, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e817c8a5a7b38b41a8952f899cd2f4a, type: 3}
 --- !u!1001 &581681585
@@ -6282,6 +6292,26 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 88c24af687ea9174fadd9eab5ca5e849,
         type: 2}
+    - target: {fileID: 2747604374319085276, guid: e3baebb010d28484791ce94275fab174,
+        type: 3}
+      propertyPath: m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2747604374319085276, guid: e3baebb010d28484791ce94275fab174,
+        type: 3}
+      propertyPath: m_CustomBakedTexture
+      value: 
+      objectReference: {fileID: 8900000, guid: cabd1624d81531f4f85934e12814d036, type: 3}
+    - target: {fileID: 7822860326704824102, guid: e3baebb010d28484791ce94275fab174,
+        type: 3}
+      propertyPath: m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7822860326704824102, guid: e3baebb010d28484791ce94275fab174,
+        type: 3}
+      propertyPath: m_CustomBakedTexture
+      value: 
+      objectReference: {fileID: 8900000, guid: 94c910e4b4d64f74d8e8e370c70904ce, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3baebb010d28484791ce94275fab174, type: 3}
 --- !u!4 &586305543 stripped
@@ -12763,16 +12793,26 @@ PrefabInstance:
       propertyPath: wayPoints.Array.data[1]
       value: 
       objectReference: {fileID: 1986939995}
-    - target: {fileID: 4890043213626051393, guid: 1e817c8a5a7b38b41a8952f899cd2f4a,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.19999999
-      objectReference: {fileID: 0}
     - target: {fileID: 6711025335266701838, guid: 1e817c8a5a7b38b41a8952f899cd2f4a,
         type: 3}
       propertyPath: Waves
       value: 
       objectReference: {fileID: 325505169}
+    - target: {fileID: 4890043213626051393, guid: 1e817c8a5a7b38b41a8952f899cd2f4a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.19999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1265187998144624653, guid: 1e817c8a5a7b38b41a8952f899cd2f4a,
+        type: 3}
+      propertyPath: m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1265187998144624653, guid: 1e817c8a5a7b38b41a8952f899cd2f4a,
+        type: 3}
+      propertyPath: m_CustomBakedTexture
+      value: 
+      objectReference: {fileID: 8900000, guid: cabd1624d81531f4f85934e12814d036, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e817c8a5a7b38b41a8952f899cd2f4a, type: 3}
 --- !u!1001 &1392221631
@@ -14402,16 +14442,26 @@ PrefabInstance:
       propertyPath: wayPoints.Array.data[1]
       value: 
       objectReference: {fileID: 121791029}
-    - target: {fileID: 4890043213626051393, guid: 1e817c8a5a7b38b41a8952f899cd2f4a,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.2
-      objectReference: {fileID: 0}
     - target: {fileID: 6711025335266701838, guid: 1e817c8a5a7b38b41a8952f899cd2f4a,
         type: 3}
       propertyPath: Waves
       value: 
       objectReference: {fileID: 325505169}
+    - target: {fileID: 4890043213626051393, guid: 1e817c8a5a7b38b41a8952f899cd2f4a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1265187998144624653, guid: 1e817c8a5a7b38b41a8952f899cd2f4a,
+        type: 3}
+      propertyPath: m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1265187998144624653, guid: 1e817c8a5a7b38b41a8952f899cd2f4a,
+        type: 3}
+      propertyPath: m_CustomBakedTexture
+      value: 
+      objectReference: {fileID: 8900000, guid: 4441a8ead6cb23142a8b767245e35695, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e817c8a5a7b38b41a8952f899cd2f4a, type: 3}
 --- !u!1001 &1635703814
@@ -16123,16 +16173,26 @@ PrefabInstance:
       propertyPath: wayPoints.Array.data[1]
       value: 
       objectReference: {fileID: 523596823}
-    - target: {fileID: 4890043213626051393, guid: 1e817c8a5a7b38b41a8952f899cd2f4a,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.19999999
-      objectReference: {fileID: 0}
     - target: {fileID: 6711025335266701838, guid: 1e817c8a5a7b38b41a8952f899cd2f4a,
         type: 3}
       propertyPath: Waves
       value: 
       objectReference: {fileID: 325505169}
+    - target: {fileID: 4890043213626051393, guid: 1e817c8a5a7b38b41a8952f899cd2f4a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.19999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1265187998144624653, guid: 1e817c8a5a7b38b41a8952f899cd2f4a,
+        type: 3}
+      propertyPath: m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1265187998144624653, guid: 1e817c8a5a7b38b41a8952f899cd2f4a,
+        type: 3}
+      propertyPath: m_CustomBakedTexture
+      value: 
+      objectReference: {fileID: 8900000, guid: 0183df0596de38542b01ab7bad9aaa9a, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e817c8a5a7b38b41a8952f899cd2f4a, type: 3}
 --- !u!1001 &1807231884

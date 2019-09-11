@@ -7,6 +7,7 @@ public class CollisionManager : MonoBehaviour
 {
 
     public IntVariable playerHealth;
+    public BoolVariable death;
     public Vector3Variable respawnPoint;
 
     public Vector3 respawnTemp;
@@ -37,21 +38,24 @@ public class CollisionManager : MonoBehaviour
     public void Killed()
     {
         collisionEvent.Raise();
+        GameObject.FindWithTag("collisionSplash").GetComponent<ParticleSystem>().Play();
         playerHealth.Value--;
+        death.Value = true;
         /*  
         if (playerHealth.Value > 0)
         {
             TeleportToLastCheckpoint();
         }
         */
-        TeleportToLastCheckpoint();
+        //TeleportToLastCheckpoint();
     }
 
-    private void TeleportToLastCheckpoint() {
+    public void TeleportToLastCheckpoint() {
         TeleportObject.transform.position = respawnPoint.Value;
         TeleportObject.transform.rotation = Quaternion.identity;
         transform.localPosition = Vector3.zero;
         transform.localRotation = Quaternion.identity;
+        GameObject.FindWithTag("boatSplash").GetComponent<ParticleSystem>().Play();
         TeleportObject.GetComponent<PlayerController>().velocity = TeleportObject.GetComponent<PlayerController>().MinSpeed;
     }
 
