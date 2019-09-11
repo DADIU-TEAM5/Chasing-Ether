@@ -9,7 +9,7 @@ public class CollisionManager : MonoBehaviour
     public IntVariable playerHealth;
     public BoolVariable death;
     public Vector3Variable respawnPoint;
-    public Vector3Variable respawnPointCam;
+    private Vector3 boatInitLocPos;
 
     public Vector3 respawnTemp;
     public int healthTemp;
@@ -22,11 +22,14 @@ public class CollisionManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        death.Value = false;
 
         playerHealth.Value = 5;
         
         respawnPoint.Value = transform.position;
-        respawnPointCam.Value = camLookAtPoint.transform.position;
+
+        boatInitLocPos = transform.localPosition;
+
     }
 
     void OnTriggerEnter(Collider collider)
@@ -56,13 +59,10 @@ public class CollisionManager : MonoBehaviour
     public void TeleportToLastCheckpoint() {
         TeleportObject.transform.position = respawnPoint.Value;
         TeleportObject.transform.rotation = Quaternion.identity;
-        transform.localPosition = Vector3.zero;
+        transform.localPosition = boatInitLocPos;
         transform.localRotation = Quaternion.identity;
         GameObject.FindWithTag("boatSplash").GetComponent<ParticleSystem>().Play();
         TeleportObject.GetComponent<PlayerController>().velocity = TeleportObject.GetComponent<PlayerController>().MinSpeed;
-
-        camLookAtPoint.transform.position = respawnPoint.Value + camLookAtPoint.transform.localPosition;
-        camLookAtPoint.transform.rotation = Quaternion.identity;
     }
 
 }
