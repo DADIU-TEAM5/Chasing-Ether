@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SailorDeathAnims : MonoBehaviour
 {
@@ -32,7 +33,14 @@ public class SailorDeathAnims : MonoBehaviour
     {
             gameObject.SetActive(false);
             anim.enabled = false;
-            GetComponentInParent<CollisionManager>().TeleportToLastCheckpoint(); 
-            death.Value = false; 
+            death.Value = false;
+​
+            if (playerHealth.Value == 0)
+            {
+                SceneManager.LoadScene("GameOver");
+            } else
+            {
+                GetComponentInParent<CollisionManager>().TeleportToLastCheckpoint();
+            }
     }
 }
