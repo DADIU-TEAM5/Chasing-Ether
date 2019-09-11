@@ -10190,7 +10190,7 @@ ReflectionProbe:
   m_Mode: 0
   m_RefreshMode: 0
   m_TimeSlicingMode: 0
-  m_Resolution: 512
+  m_Resolution: 32
   m_UpdateFrequency: 0
   m_BoxSize: {x: 10, y: 10, z: 10}
   m_BoxOffset: {x: 0, y: 0, z: 0}
@@ -10847,11 +10847,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7097962804631244480}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 13f6ac3b60b80684091c6ba76517f367,
-        type: 3}
-      propertyPath: m_Name
-      value: sailorDeath_singles_sailor_01
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 13f6ac3b60b80684091c6ba76517f367,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10921,6 +10916,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 13f6ac3b60b80684091c6ba76517f367,
+        type: 3}
+      propertyPath: m_Name
+      value: sailorDeath_singles_sailor_01
       objectReference: {fileID: 0}
     - target: {fileID: -6057140222963153312, guid: 13f6ac3b60b80684091c6ba76517f367,
         type: 3}
