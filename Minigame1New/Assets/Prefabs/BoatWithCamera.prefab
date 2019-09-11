@@ -191,6 +191,7 @@ Transform:
   m_Children:
   - {fileID: 7253067264976099976}
   - {fileID: 3063864609867233276}
+  - {fileID: 1804114649570622938}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -351,9 +352,117 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 3063864610607578800}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5189289374458031686 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7097962804688195830, guid: e2fcee761e3e0f047a62175e9a633985,
+    type: 3}
+  m_PrefabInstance: {fileID: 3063864610607578800}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2629938877632833978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e972d520608718b42bade4eca35166c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &5189289374669123699 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7097962804631244483, guid: e2fcee761e3e0f047a62175e9a633985,
+    type: 3}
+  m_PrefabInstance: {fileID: 3063864610607578800}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &5189289375026411150 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7097962803038767166, guid: e2fcee761e3e0f047a62175e9a633985,
     type: 3}
   m_PrefabInstance: {fileID: 3063864610607578800}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8678500255028347017
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 514784633604525039}
+    m_Modifications:
+    - target: {fileID: 5628065097005710452, guid: 021f9377ca50db8499e7bac2d802418f,
+        type: 3}
+      propertyPath: m_Name
+      value: BoatSound
+      objectReference: {fileID: 0}
+    - target: {fileID: 7023850390104194387, guid: 021f9377ca50db8499e7bac2d802418f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.792009
+      objectReference: {fileID: 0}
+    - target: {fileID: 7023850390104194387, guid: 021f9377ca50db8499e7bac2d802418f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5645882
+      objectReference: {fileID: 0}
+    - target: {fileID: 7023850390104194387, guid: 021f9377ca50db8499e7bac2d802418f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.44906235
+      objectReference: {fileID: 0}
+    - target: {fileID: 7023850390104194387, guid: 021f9377ca50db8499e7bac2d802418f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7023850390104194387, guid: 021f9377ca50db8499e7bac2d802418f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7023850390104194387, guid: 021f9377ca50db8499e7bac2d802418f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7023850390104194387, guid: 021f9377ca50db8499e7bac2d802418f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7023850390104194387, guid: 021f9377ca50db8499e7bac2d802418f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7023850390104194387, guid: 021f9377ca50db8499e7bac2d802418f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7023850390104194387, guid: 021f9377ca50db8499e7bac2d802418f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7023850390104194387, guid: 021f9377ca50db8499e7bac2d802418f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6385800785780528000, guid: 021f9377ca50db8499e7bac2d802418f,
+        type: 3}
+      propertyPath: Boat
+      value: 
+      objectReference: {fileID: 5189289374458031686}
+    - target: {fileID: 6385800785780528000, guid: 021f9377ca50db8499e7bac2d802418f,
+        type: 3}
+      propertyPath: BoatTransform
+      value: 
+      objectReference: {fileID: 5189289374669123699}
+    - target: {fileID: 6385800785780528000, guid: 021f9377ca50db8499e7bac2d802418f,
+        type: 3}
+      propertyPath: DistanceToDangerEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 021f9377ca50db8499e7bac2d802418f, type: 3}
+--- !u!4 &1804114649570622938 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7023850390104194387, guid: 021f9377ca50db8499e7bac2d802418f,
+    type: 3}
+  m_PrefabInstance: {fileID: 8678500255028347017}
   m_PrefabAsset: {fileID: 0}

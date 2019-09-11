@@ -45,5 +45,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SoundObjects:
   - {fileID: 6322504589537381367, guid: 0a2297be0469b7c4f846e34d1efba7a4, type: 3}
-  - {fileID: 7544585081309814776, guid: d2c3796133e48c749bf94939f09b3d51, type: 3}
-  - {fileID: 4799613056233913864, guid: 1a2382bdc7663154299b68c50f6d39e6, type: 3}
+  - {fileID: 2807455164969090697, guid: 29c144f24d0614640a7e3d3b97431ba5, type: 3}
+  - {fileID: 3963424882865726719, guid: cf9e5debc5880534ab3ffd5dfe6f3772, type: 3}
