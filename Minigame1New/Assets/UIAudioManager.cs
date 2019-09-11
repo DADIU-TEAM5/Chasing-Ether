@@ -23,7 +23,21 @@ public class UIAudioManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+     
+
+
+    }
+
+    public void SetVolumeSound(float vol)
+    {
+        var akValue = -96 + (96 * vol);
+        AkSoundEngine.SetRTPCValue("EverythingElseVCAControl", akValue);
+    }
+
+    public void SetVolumeMusic(float vol)
+    {
+        var akValue = -96 + (96 * vol);
+        AkSoundEngine.SetRTPCValue("MusicVCAControl", akValue);
     }
 
     public void OpenMenuEvent()
