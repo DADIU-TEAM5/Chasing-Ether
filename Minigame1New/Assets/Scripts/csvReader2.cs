@@ -9,22 +9,32 @@ public class csvReader2 : MonoBehaviour
     List<string> rokokoBones = new List<string>();
     public List<Frame2> animations = new List<Frame2>();
     public bool done2 = false;
+
+
+    float timer;
     static int currentFrame = 0;
     List<Transform> listOfAllBones = new List<Transform>();
+
+    List<Transform> startBones = new List<Transform>();
     string csvfile =
-        @"/Users/xijia/SmartsuitStudioProjects/new/Export/scene-1/take-1_MIXAMO_I99.csv";
+        @"C:\Users\dadiu\Documents\DADIU\Git\MiniGame1_New\scene-1\take-1_MIXAMO_I99.csv";
 
     // Start is called before the first frame update
     void Start()
     {
         GetAllChildren(rokokoSkeleton, listOfAllBones);
         streamReader();
+
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+
+        timer += Time.deltaTime;
         Frame2 thisframe = new Frame2();
+
         if(done2 && (currentFrame < animations.Count))
         {
             thisframe = animations[currentFrame++];
@@ -32,6 +42,7 @@ public class csvReader2 : MonoBehaviour
             //here just find the joint name and give its values
             giveJointValues(thisframe);
         }
+        
     }
 
     private void giveJointValues(Frame2 thisframe)
@@ -40,10 +51,11 @@ public class csvReader2 : MonoBehaviour
         {
             for (int j = 0; j < thisframe.joints.Length; j++)
             {
-                if (thisframe.joints[j].JointName == listOfAllBones[i].name)
+                if (thisframe.joints[j].JointName.Equals(listOfAllBones[i].name))
                 {
                     listOfAllBones[i].position = thisframe.joints[j].position;
-                    listOfAllBones[i].rotation = vec4ToQuaternion(thisframe.joints[j].rotation);
+                    var newRot = vec4ToQuaternion(thisframe.joints[j].rotation);
+                    listOfAllBones[i].rotation = Quaternion.identity;
                 }
             }
         }
@@ -89,14 +101,22 @@ public class csvReader2 : MonoBehaviour
             // Convesion from string to float
             for (int i = 0; i < values.Length; i++)
             {
-                if (values[i].Contains("E"))
-                {
-                    floatValues[i] = 0f;
-                }
-                else
-                {
-                    floatValues[i] = float.Parse(values[i]);
-                }
+                if (values[i].Contains("."))
+                    {
+                        int valueLength = values[i].Length;
+                        floatValues[i] = float.Parse(values[i]);
+
+                        int start = 0;
+                        if (values[i].Contains("-"))
+                        {
+                            start++;
+                        }
+
+                        for (int j = start; j < valueLength - 2; j++)
+                        {
+                            floatValues[i] *= 0.1f;
+                        }
+                    }
 
             }
 
