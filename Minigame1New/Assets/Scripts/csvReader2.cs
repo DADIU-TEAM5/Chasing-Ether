@@ -11,8 +11,8 @@ public class csvReader2 : MonoBehaviour
     public bool done2 = false;
     static int currentFrame = 0;
     List<Transform> listOfAllBones = new List<Transform>();
-    public string csvfile =
-        @"/Users/xijia/SmartsuitStudioProjects/Sampleproject/Export/scene-1/SuddenCrouch_MIXAMO_E46.csv";
+    string csvfile =
+        @"/Users/xijia/SmartsuitStudioProjects/new/Export/scene-1/take-1_MIXAMO_I99.csv";
 
     // Start is called before the first frame update
     void Start()
@@ -69,7 +69,6 @@ public class csvReader2 : MonoBehaviour
     void streamReader()
     {
         StreamReader reader = new StreamReader(csvfile);
-
 
         readNames(reader);
         readstream(reader);

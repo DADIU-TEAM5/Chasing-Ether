@@ -230,7 +230,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rokokoSkeleton: {fileID: 1842782719}
   done2: 0
-  csvfile: /Users/xijia/SmartsuitStudioProjects/Sampleproject/Export/scene-1/SuddenCrouch_MIXAMO_E46.csv
+  csvfile: 
 --- !u!4 &461289545
 Transform:
   m_ObjectHideFlags: 0
